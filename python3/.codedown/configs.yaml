@@ -1,0 +1,181 @@
+interpreter_infos:
+- argv:
+  - /nix/store/cq869h7f0jxm8fpzbhkpprgxkapvjzni-python3-3.8.13-env/bin/python
+  - -m
+  - ipykernel
+  - -f
+  - '{connection_file}'
+  display_name: Python 3.8.13
+  name: python38
+  env_variables:
+  - - COLUMNS
+    - '80'
+  logo64: /nix/store/kjbx4pcf72bhhrl264z646i3pwy61cgx-logo-64x64.png
+  extensions:
+  - py
+  variable_inspector:
+    inspect_variable_command: print(TODO)
+    list_variables_command: _codedown_variableinspector_dict_list()
+    initial_code_path: /nix/store/f411qaxbgs9d1ik0365s3943i726z0i1-variable_inspector.py
+  metadata:
+    codedown:
+      extensions:
+      - py
+      variable_inspector:
+        inspect_variable_command: print(TODO)
+        list_variables_command: _codedown_variableinspector_dict_list()
+        initial_code_path: /nix/store/f411qaxbgs9d1ik0365s3943i726z0i1-variable_inspector.py
+      priority: 1
+      attrs:
+      - python38
+      - python
+  logo32: /nix/store/z6cx61d8fdd2akqxyscfz9pfwijjgap1-logo-32x32.png
+  config_path: /nix/store/dwdrqlcpb24qdg310hbxn5b9n50jzl61-codedown-environment/lib/codedown/kernels/python38/kernel.json
+  attrs:
+  - python
+  - python38
+- argv:
+  - /nix/store/cbq3l6zx6yp57xx8jxlyd3z6kmwii9mj-python3-3.9.13-env/bin/python
+  - -m
+  - bash_kernel
+  - -f
+  - '{connection_file}'
+  display_name: Bash
+  name: bash
+  logo64: /nix/store/ms4228wqkviv0c3qn6m1crkgzfkd07l1-bash.png
+  extensions:
+  - bash
+  - sh
+  metadata:
+    codedown:
+      extensions:
+      - sh
+      - bash
+      priority: 10
+      attrs:
+      - bash
+  logo32: /nix/store/ms4228wqkviv0c3qn6m1crkgzfkd07l1-bash.png
+  config_path: /nix/store/dwdrqlcpb24qdg310hbxn5b9n50jzl61-codedown-environment/lib/codedown/kernels/bash/kernel.json
+  attrs:
+  - bash
+nix_files: {}
+repl_infos:
+- display_name: ZSH 5.8.1
+  icon: /nix/store/7j21ks0fgsx1vbpigkc044i4ahbr7s9p-default_icon_64x64.png
+  args:
+  - /nix/store/wr5b4v2ax70j9kwl7wpskp5fp0kcmc5y-zsh-5.8.1/lib/codedown/shell
+- display_name: IPython 8.2.0
+  icon: /nix/store/kjbx4pcf72bhhrl264z646i3pwy61cgx-logo-64x64.png
+  args:
+  - /nix/store/cq869h7f0jxm8fpzbhkpprgxkapvjzni-python3-3.8.13-env/bin/ipython
+language_server_infos:
+- display_name: Notebook LSP Server
+  name: notebook
+  type: stream
+  notebook_suffix: ''
+  extensions:
+  - md
+  - ipynb
+  description: Integrates other language servers into the notebook.
+  primary: true
+  attrs: []
+  args: []
+  is_built_in: true
+- name: spellchecker
+  type: stream
+  notebook_suffix: .spellchecker
+  icon: /nix/store/f0zjymys807gxjv9f31sjdc836xb9jwi-pen-alt.svg
+  extensions:
+  - md
+  - ipynb
+  file: /nix/store/dwdrqlcpb24qdg310hbxn5b9n50jzl61-codedown-environment/lib/codedown/language-servers/hunspell-spellchecker.yaml
+  attrs:
+  - markdown
+  args:
+  - /nix/store/h942qv2bbj9zcsr8i13ppl3zd9hkg392-markdown-spellcheck-lsp-wrapped/bin/markdown-spellcheck-lsp
+  - --stdio
+- display_name: Jedi
+  name: jedi
+  type: stream
+  notebook_suffix: .py
+  icon: /nix/store/bwrbdvgxz7azknl5sl8lx2f8mq06afbc-logo.png
+  extensions:
+  - py
+  file: /nix/store/dwdrqlcpb24qdg310hbxn5b9n50jzl61-codedown-environment/lib/codedown/language-servers/python-jedi.yaml
+  description: A language server exclusively for Jedi. If Jedi supports it well, this
+    language server should too.
+  attrs:
+  - python
+  args:
+  - /nix/store/3gi8alf72898qkas44p0wy0qncvv7a2y-python3.8-jedi-language-server-0.13.2/bin/jedi-language-server
+  env:
+    JEDI_LANGUAGE_SERVER_EXTRA_PATHS: /nix/store/g2wnlhx7xmqday3fgwm2zdra3c5n7ij6-python3-3.8.13-env/lib/python3.8/site-packages:/home/user/.local/lib/python3.8/site-packages
+  kernel_name: python38
+exporter_infos:
+- display_name: AsciiDoc (.asciidoc)
+  name: codedown-exporter-asciidoc
+  extension: asciidoc
+  args:
+  - /nix/store/9y7r55h262783x8fjg1pjs9i3i14kdyp-codedown-exporter-asciidoc/bin/export
+- display_name: LaTeX (.tex)
+  name: codedown-exporter-latex
+  extension: tex
+  args:
+  - /nix/store/1a3y1nbqflp6r3w12dgcq7cj3dgs8vxq-codedown-exporter-latex/bin/export
+- display_name: PDF (.pdf)
+  name: codedown-exporter-pdf
+  extension: pdf
+  args:
+  - /nix/store/jpbi3kjnyn10wwv1a1pgbdlq52hnlh8h-codedown-exporter-pdf/bin/export
+- display_name: HTML (.html)
+  name: codedown-exporter-html
+  extension: html
+  args:
+  - /nix/store/812c4xyi21d60z0chs03k5ikklvcvyya-codedown-exporter-html/bin/export
+- display_name: reStructuredText (.rst)
+  name: codedown-exporter-rst
+  extension: .rst
+  args:
+  - /nix/store/mkl2s5k2avdgww3g3kg0ibfpzz18674j-codedown-exporter-rst/bin/export
+- display_name: Slides (.html)
+  name: codedown-exporter-slides
+  extension: .html
+  args:
+  - /nix/store/rx2zlh3zqrvvkvnalsjg7nx0bz3y3zs9-codedown-exporter-slides/bin/export
+- display_name: Slidy (.html)
+  name: codedown-exporter-slidy
+  extension: html
+  args:
+  - /nix/store/j2bjaxf92zb7pcy03q7pbyafc6xk0b3c-codedown-exporter-slidy/bin/export
+- display_name: Beamer slides (.pdf)
+  name: codedown-exporter-beamer
+  extension: pdf
+  args:
+  - /nix/store/d3cfwzhy1wvy7bvsq86x131naw60fagm-codedown-exporter-beamer/bin/export
+- display_name: Markdown (.md)
+  name: codedown-exporter-markdown
+  extension: .md
+  args:
+  - /nix/store/dbm132d90ran459fgds48ii3wf4dyqjy-codedown-exporter-markdown/bin/export
+mode_infos:
+- extensions:
+  - htm
+  - html
+  code_mirror_mode: htmlmixed
+  attrs:
+  - html
+  code_mirror_mime_type: text/html
+- extensions:
+  - sh
+  - bash
+  file: /nix/store/dwdrqlcpb24qdg310hbxn5b9n50jzl61-codedown-environment/lib/codedown/modes/bash.yaml
+  code_mirror_mode: shell
+  attrs:
+  - bash
+- extensions:
+  - py
+  file: /nix/store/dwdrqlcpb24qdg310hbxn5b9n50jzl61-codedown-environment/lib/codedown/modes/python.yaml
+  code_mirror_mode: python
+  attrs:
+  - python
+  - python38

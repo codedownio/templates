@@ -1,0 +1,151 @@
+interpreter_infos:
+- argv:
+  - /nix/store/i6zzyzyiqyp6vladzy96063xw6s89vmf-ihaskell-0.10.2.2/bin/ihaskell
+  - kernel
+  - '{connection_file}'
+  - -l
+  - /nix/store/zafwqawkb5qn9hkjx7jr9ggyyxh6447r-ghc-9.0.2-with-packages/lib/ghc-9.0.2
+  - +RTS
+  - -M3g
+  - -N2
+  - -RTS
+  display_name: Haskell (GHC 9.0.2)
+  name: haskell-ghc902
+  env_variables:
+  - - PATH
+    - /nix/store/zafwqawkb5qn9hkjx7jr9ggyyxh6447r-ghc-9.0.2-with-packages/bin:/nix/store/n95cd4q1dqzdvsiy1hmrkx9shwi3n4sh-gcc-wrapper-11.3.0/bin
+  logo64: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
+  extensions:
+  - hs
+  metadata:
+    codedown:
+      extensions:
+      - hs
+      repls:
+      - display_name: GHCi
+        proc: /nix/store/zafwqawkb5qn9hkjx7jr9ggyyxh6447r-ghc-9.0.2-with-packages/bin/ghci
+      priority: 1
+      attrs:
+      - haskell-ghc902
+      - haskell
+  logo32: /nix/store/gzgdxv2ys5brzncb5srdipycc3c7ssd8-haskell-logo-32x32.png
+  config_path: /nix/store/6dx69fpllb5fj9z1yw1b98fhrb4wywkw-codedown-environment/lib/codedown/kernels/haskell-ghc902/kernel.json
+  attrs:
+  - haskell
+  - haskell-ghc902
+nix_files: {}
+repl_infos:
+- display_name: ZSH 5.8.1
+  icon: /nix/store/7j21ks0fgsx1vbpigkc044i4ahbr7s9p-default_icon_64x64.png
+  args:
+  - /nix/store/wr5b4v2ax70j9kwl7wpskp5fp0kcmc5y-zsh-5.8.1/lib/codedown/shell
+- display_name: GHCi 9.0.2
+  icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
+  args:
+  - /nix/store/zafwqawkb5qn9hkjx7jr9ggyyxh6447r-ghc-9.0.2-with-packages/bin/ghci
+language_server_infos:
+- display_name: Notebook LSP Server
+  name: notebook
+  type: stream
+  notebook_suffix: ''
+  extensions:
+  - md
+  - ipynb
+  description: Integrates other language servers into the notebook.
+  primary: true
+  attrs: []
+  args: []
+  is_built_in: true
+- display_name: Haskell Language Server
+  name: haskell-language-server
+  type: stream
+  notebook_suffix: ''
+  icon: /nix/store/y2d3g6zcclla87vcivg9p3ywnb388zgy-icon_64x64.png
+  extensions: []
+  file: /nix/store/6dx69fpllb5fj9z1yw1b98fhrb4wywkw-codedown-environment/lib/codedown/language-servers/haskell-hls.yaml
+  description: LSP server for GHC
+  primary: true
+  attrs:
+  - haskell
+  args:
+  - /nix/store/8ic9xaa4d5r48fhnpg4z7lzwbj3g2h24-haskell-notebook-language-server-0.1.0.0/bin/haskell-notebook-language-server
+  - --wrapped-hls
+  - /nix/store/ipjcncvc9fnbr019a1adzb1dhchy2jhl-haskell-language-server-wrapped-1.7.0.0/bin/haskell-language-server
+  - --hls-args
+  - --lsp
+  env: {}
+  kernel_name: haskell-ghc902
+- name: spellchecker
+  type: stream
+  notebook_suffix: .spellchecker
+  icon: /nix/store/f0zjymys807gxjv9f31sjdc836xb9jwi-pen-alt.svg
+  extensions:
+  - md
+  - ipynb
+  file: /nix/store/6dx69fpllb5fj9z1yw1b98fhrb4wywkw-codedown-environment/lib/codedown/language-servers/hunspell-spellchecker.yaml
+  attrs:
+  - markdown
+  args:
+  - /nix/store/h942qv2bbj9zcsr8i13ppl3zd9hkg392-markdown-spellcheck-lsp-wrapped/bin/markdown-spellcheck-lsp
+  - --stdio
+exporter_infos:
+- display_name: AsciiDoc (.asciidoc)
+  name: codedown-exporter-asciidoc
+  extension: asciidoc
+  args:
+  - /nix/store/9y7r55h262783x8fjg1pjs9i3i14kdyp-codedown-exporter-asciidoc/bin/export
+- display_name: LaTeX (.tex)
+  name: codedown-exporter-latex
+  extension: tex
+  args:
+  - /nix/store/1a3y1nbqflp6r3w12dgcq7cj3dgs8vxq-codedown-exporter-latex/bin/export
+- display_name: PDF (.pdf)
+  name: codedown-exporter-pdf
+  extension: pdf
+  args:
+  - /nix/store/jpbi3kjnyn10wwv1a1pgbdlq52hnlh8h-codedown-exporter-pdf/bin/export
+- display_name: HTML (.html)
+  name: codedown-exporter-html
+  extension: html
+  args:
+  - /nix/store/812c4xyi21d60z0chs03k5ikklvcvyya-codedown-exporter-html/bin/export
+- display_name: reStructuredText (.rst)
+  name: codedown-exporter-rst
+  extension: .rst
+  args:
+  - /nix/store/mkl2s5k2avdgww3g3kg0ibfpzz18674j-codedown-exporter-rst/bin/export
+- display_name: Slides (.html)
+  name: codedown-exporter-slides
+  extension: .html
+  args:
+  - /nix/store/rx2zlh3zqrvvkvnalsjg7nx0bz3y3zs9-codedown-exporter-slides/bin/export
+- display_name: Slidy (.html)
+  name: codedown-exporter-slidy
+  extension: html
+  args:
+  - /nix/store/j2bjaxf92zb7pcy03q7pbyafc6xk0b3c-codedown-exporter-slidy/bin/export
+- display_name: Beamer slides (.pdf)
+  name: codedown-exporter-beamer
+  extension: pdf
+  args:
+  - /nix/store/d3cfwzhy1wvy7bvsq86x131naw60fagm-codedown-exporter-beamer/bin/export
+- display_name: Markdown (.md)
+  name: codedown-exporter-markdown
+  extension: .md
+  args:
+  - /nix/store/dbm132d90ran459fgds48ii3wf4dyqjy-codedown-exporter-markdown/bin/export
+mode_infos:
+- extensions:
+  - htm
+  - html
+  code_mirror_mode: htmlmixed
+  attrs:
+  - html
+  code_mirror_mime_type: text/html
+- extensions:
+  - hs
+  file: /nix/store/6dx69fpllb5fj9z1yw1b98fhrb4wywkw-codedown-environment/lib/codedown/modes/haskell.yaml
+  code_mirror_mode: haskell
+  attrs:
+  - haskell
+  - haskell-ghc902
