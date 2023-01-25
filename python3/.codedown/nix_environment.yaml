@@ -1,54 +1,54 @@
 channels:
-- name: codedown
-  src:
-    sha256: 1d1ynw7kiwj2wpk9frql8scyc422pbbh2shg9dnzvv4m3gj7cw3h
-    repo: codedown-languages
-    rev: 95b4c02d7f04f8419164e72746aa268e48a9989c
-    tag: fetch_from_github
-    owner: codedownio
-  special: true
-  overlays: []
-- name: nixpkgs
-  src:
-    sha256: sha256-hcwRboK+NxMWUJh0fQ3VsocDcAHrYJ95FmPEHlddV0Y
-    repo: nixpkgs
-    rev: 051448e41537c3463ae776d46115d01afb6c498d
-    tag: fetch_from_github
-    owner: NixOS
-  overlays: []
-- name: nixpkgs-unstable
-  src:
-    sha256: sha256-SvT64apetqc8P5nYp1/fOZvUmHUPdPFUZbhSpKy+1aI=
-    repo: nixpkgs
-    rev: d2fc6856824cb87742177eefc8dd534bdb6c3439
-    tag: fetch_from_github
-    owner: NixOS
-  overlays: []
+  - name: codedown
+    src:
+      sha256: 0aypjnb2lwhlm9ips67v06v0pqm164k5b6hhv4dajwg3dhk175hy
+      repo: codedown-languages
+      rev: 6702650511c71786508d721831f37ea47c306f2e
+      tag: fetch_from_github
+      owner: codedownio
+    special: true
+    overlays: []
+  - name: nixpkgs
+    src:
+      sha256: sha256-hcwRboK+NxMWUJh0fQ3VsocDcAHrYJ95FmPEHlddV0Y
+      repo: nixpkgs
+      rev: 051448e41537c3463ae776d46115d01afb6c498d
+      tag: fetch_from_github
+      owner: NixOS
+    overlays: []
+  - name: nixpkgs-unstable
+    src:
+      sha256: sha256-SvT64apetqc8P5nYp1/fOZvUmHUPdPFUZbhSpKy+1aI=
+      repo: nixpkgs
+      rev: d2fc6856824cb87742177eefc8dd534bdb6c3439
+      tag: fetch_from_github
+      owner: NixOS
+    overlays: []
 kernels:
-- name: python38
-  display_name: Python 3.8.13
-  packages:
-  - name: matplotlib
-  language_servers:
-  - name: jedi
-  icon: /nix/store/kjbx4pcf72bhhrl264z646i3pwy61cgx-logo-64x64.png
-  channel: codedown
-  settings:
-    permitUserSite: false
-    enableVariableInspector: true
-- name: bashInteractive
-  display_name: Bash 5.1
-  packages: []
-  language_servers: []
-  icon: /nix/store/ms4228wqkviv0c3qn6m1crkgzfkd07l1-bash.png
-  channel: codedown
+  - name: python38
+    display_name: Python 3.8.13
+    packages:
+      - name: matplotlib
+    language_servers:
+      - name: jedi
+    icon: /nix/store/kjbx4pcf72bhhrl264z646i3pwy61cgx-logo-64x64.png
+    channel: codedown
+    settings:
+      permitUserSite: false
+      enableVariableInspector: true
+  - name: bashInteractive
+    display_name: Bash 5.1
+    packages: []
+    language_servers: []
+    icon: /nix/store/ms4228wqkviv0c3qn6m1crkgzfkd07l1-bash.png
+    channel: codedown
 other_packages:
-- name: zsh-5.8.1
-  channel: codedown
-  attr: shells.zsh
-- name: codedown-spellchecker
-  channel: codedown
-  attr: spellchecker
-- name: nbconvert-exporters-small
-  channel: codedown
-  attr: exporters.nbconvert-small
+  - name: zsh-5.8.1
+    channel: codedown
+    attr: shells.zsh
+  - name: codedown-spellchecker
+    channel: codedown
+    attr: spellchecker
+  - name: nbconvert-exporters-small
+    channel: codedown
+    attr: exporters.nbconvert-small
