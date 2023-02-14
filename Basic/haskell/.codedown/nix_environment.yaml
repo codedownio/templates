@@ -1,9 +1,9 @@
 channels:
   - name: codedown
     src:
-      sha256: 09x2c7p4acpww9gz249myrir7qzfk1r2m4p3qza6dp8fr5x1b4xx
+      sha256: 1b00mng2zgz089ww57p8ywh3wllr23rdnhidq2553y1470sw6glz
       repo: codedown-languages
-      rev: 105eff4288f56b1b416a228d5c8e0aaae706050a
+      rev: 693b8070bc062628ff25cc7dfa31dabc836007f6
       tag: fetch_from_github
       owner: codedownio
     special: true
@@ -39,6 +39,3 @@ other_packages:
   - name: codedown-spellchecker
     channel: codedown
     attr: spellchecker
-  - name: nbconvert-exporters-small
-    channel: codedown
-    attr: exporters.nbconvert-small
