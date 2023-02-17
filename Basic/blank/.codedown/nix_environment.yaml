@@ -24,24 +24,7 @@ channels:
       tag: fetch_from_github
       owner: NixOS
     overlays: []
-kernels:
-  - name: python39
-    display_name: Python 3.9
-    packages:
-      - name: matplotlib
-    language_servers:
-      - name: jedi
-    icon: /nix/store/kjbx4pcf72bhhrl264z646i3pwy61cgx-logo-64x64.png
-    channel: codedown
-    settings:
-      permitUserSite: false
-      enableVariableInspector: true
-  - name: bashInteractive
-    display_name: Bash 5.1
-    packages: []
-    language_servers: []
-    icon: /nix/store/ms4228wqkviv0c3qn6m1crkgzfkd07l1-bash.png
-    channel: codedown
+kernels: []
 other_packages:
   - name: zsh-5.8.1
     channel: codedown
