@@ -1,3 +1,6 @@
+- folder: blank
+  name: Blank
+  description: Blank template
 - folder: python3
   name: Python 3
   description: Python 3 template
