@@ -10,17 +10,12 @@ channels:
     overlays: []
   - name: nixpkgs
     src:
-      sha256: sha256-hcwRboK+NxMWUJh0fQ3VsocDcAHrYJ95FmPEHlddV0Y
       repo: nixpkgs
-      rev: 051448e41537c3463ae776d46115d01afb6c498d
-      tag: fetch_from_github
-      owner: NixOS
-    overlays: []
-  - name: nixpkgs-unstable
-    src:
-      sha256: sha256-SvT64apetqc8P5nYp1/fOZvUmHUPdPFUZbhSpKy+1aI=
-      repo: nixpkgs
-      rev: d2fc6856824cb87742177eefc8dd534bdb6c3439
+      ref:
+        tag: branch
+        contents: release-22.11
+      rev: 523b39618444fa921d3230c8f10f1563612d785d
+      sha256: DVKPeIZqzkNOOsxxx6iHTg2J+R/8hLWZLppK25ixD00=
       tag: fetch_from_github
       owner: NixOS
     overlays: []
