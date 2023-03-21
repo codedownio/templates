@@ -19,7 +19,7 @@ language_server_infos:
     args: []
     notebook_suffix: ''
   - icon: /nix/store/f0zjymys807gxjv9f31sjdc836xb9jwi-pen-alt.svg
-    file: /nix/store/zgl7q2dymzvanddkq0mq72kawmlngmid-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
+    file: /nix/store/4jrbdwbx1v113b9qdif9q4jxjdn4fdgp-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
     name: spellchecker
     extensions:
       - md

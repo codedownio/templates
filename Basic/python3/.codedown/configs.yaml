@@ -1,5 +1,5 @@
 interpreter_infos:
-  - config_path: /nix/store/nzpb28p41h3zdczq1wjvrnr3azy1j10j-codedown-environment/lib/codedown/kernels/bash/kernel.json
+  - config_path: /nix/store/aszjmbdn3pgj7crnwz0djk49saawfayf-codedown-environment/lib/codedown/kernels/bash/kernel.json
     metadata:
       codedown:
         attrs:
@@ -26,7 +26,7 @@ interpreter_infos:
   - env_variables:
       - - COLUMNS
         - '80'
-    config_path: /nix/store/nzpb28p41h3zdczq1wjvrnr3azy1j10j-codedown-environment/lib/codedown/kernels/python39/kernel.json
+    config_path: /nix/store/aszjmbdn3pgj7crnwz0djk49saawfayf-codedown-environment/lib/codedown/kernels/python39/kernel.json
     metadata:
       codedown:
         attrs:
@@ -45,7 +45,7 @@ interpreter_infos:
       initial_code_path: /nix/store/f411qaxbgs9d1ik0365s3943i726z0i1-variable_inspector.py
       list_variables_command: _codedown_variableinspector_dict_list()
       inspect_variable_command: print(TODO)
-    nix_kernel_hash: 525dda8a4abbb5779fba019289fca026
+    nix_kernel_hash: 0425bce499fa47026a75c85e8b7f82f1
     attrs:
       - python
       - python39
@@ -83,7 +83,7 @@ language_server_infos:
     args: []
     notebook_suffix: ''
   - icon: /nix/store/f0zjymys807gxjv9f31sjdc836xb9jwi-pen-alt.svg
-    file: /nix/store/nzpb28p41h3zdczq1wjvrnr3azy1j10j-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
+    file: /nix/store/aszjmbdn3pgj7crnwz0djk49saawfayf-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
     name: spellchecker
     extensions:
       - md
@@ -106,7 +106,7 @@ language_server_infos:
     kernel_name: python39
     env:
       JEDI_LANGUAGE_SERVER_EXTRA_PATHS: /nix/store/89vdqxn76vl600a76m3r6a3afrqxardw-python3-3.9.15-env/lib/python3.9/site-packages:/home/user/.local/lib/python3.9/site-packages
-    file: /nix/store/nzpb28p41h3zdczq1wjvrnr3azy1j10j-codedown-environment/lib/codedown/language-servers/python-jedi.yaml
+    file: /nix/store/aszjmbdn3pgj7crnwz0djk49saawfayf-codedown-environment/lib/codedown/language-servers/python-jedi.yaml
     name: jedi
     extensions:
       - py
@@ -125,14 +125,14 @@ mode_infos:
       - htm
       - html
   - code_mirror_mode: shell
-    file: /nix/store/nzpb28p41h3zdczq1wjvrnr3azy1j10j-codedown-environment/lib/codedown/modes/bash.yaml
+    file: /nix/store/aszjmbdn3pgj7crnwz0djk49saawfayf-codedown-environment/lib/codedown/modes/bash.yaml
     attrs:
       - bash
     extensions:
       - sh
       - bash
   - code_mirror_mode: python
-    file: /nix/store/nzpb28p41h3zdczq1wjvrnr3azy1j10j-codedown-environment/lib/codedown/modes/python.yaml
+    file: /nix/store/aszjmbdn3pgj7crnwz0djk49saawfayf-codedown-environment/lib/codedown/modes/python.yaml
     attrs:
       - python
       - python39
