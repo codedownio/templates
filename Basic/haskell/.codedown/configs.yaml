@@ -2,7 +2,7 @@ interpreter_infos:
   - env_variables:
       - - PATH
         - /nix/store/23rrx6002yw52f7f77myp6ga6sgh38nj-ghc-9.0.2-with-packages/bin:/nix/store/dq0xwmsk1g0i2ayg6pb7y87na2knzylh-gcc-wrapper-11.3.0/bin
-    config_path: /nix/store/rfd4l1rlinvixx0h361y86ac8gd8zcny-codedown-environment/lib/codedown/kernels/haskell-ghc902/kernel.json
+    config_path: /nix/store/yadcmlgksm3f6dw2grf5r6bzk3kbbjis-codedown-environment/lib/codedown/kernels/haskell-ghc902/kernel.json
     metadata:
       codedown:
         attrs:
@@ -16,7 +16,7 @@ interpreter_infos:
             proc: /nix/store/23rrx6002yw52f7f77myp6ga6sgh38nj-ghc-9.0.2-with-packages/bin/ghci
     logo32: /nix/store/gzgdxv2ys5brzncb5srdipycc3c7ssd8-haskell-logo-32x32.png
     logo64: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
-    nix_kernel_hash: 767520a020093018a1dde7a368489d8d
+    nix_kernel_hash: 6cae1a6a80d2da7d0233e8e0cc9f48ad
     attrs:
       - haskell
       - haskell-ghc902
@@ -63,21 +63,21 @@ language_server_infos:
     primary: true
     kernel_name: haskell-ghc902
     env: {}
-    file: /nix/store/rfd4l1rlinvixx0h361y86ac8gd8zcny-codedown-environment/lib/codedown/language-servers/haskell-hls.yaml
+    file: /nix/store/yadcmlgksm3f6dw2grf5r6bzk3kbbjis-codedown-environment/lib/codedown/language-servers/haskell-hls.yaml
     name: haskell-language-server
     extensions: []
     attrs:
       - haskell
     type: stream
     args:
-      - /nix/store/5zg2lnh7ps6q7rqczk9gqjfbc2v2n2wf-haskell-notebook-language-server-0.1.0.0/bin/haskell-notebook-language-server
+      - /nix/store/39wn2pjab14alcyh6kh3pply3i8iqy7l-haskell-notebook-language-server-0.1.0.0/bin/haskell-notebook-language-server
       - --wrapped-hls
       - /nix/store/v4p1swyqlk902418n05bjfl7iwvd7wh3-haskell-language-server-1.8.0.0-wrapped/bin/haskell-language-server
       - --hls-args
       - --lsp
     notebook_suffix: ''
   - icon: /nix/store/f0zjymys807gxjv9f31sjdc836xb9jwi-pen-alt.svg
-    file: /nix/store/rfd4l1rlinvixx0h361y86ac8gd8zcny-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
+    file: /nix/store/yadcmlgksm3f6dw2grf5r6bzk3kbbjis-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
     name: spellchecker
     extensions:
       - md
@@ -86,7 +86,7 @@ language_server_infos:
       - markdown
     type: stream
     args:
-      - /nix/store/897c3y02b9cg27yvcp60611mm36hh4z9-markdown-spellcheck-lsp-wrapped/bin/markdown-spellcheck-lsp
+      - /nix/store/7frpnm0pk7mk2kn54sw03gbpz3m5g87c-markdown-spellcheck-lsp-wrapped/bin/markdown-spellcheck-lsp
       - --affix-file
       - /nix/store/0val44db9sxzfwl0bd74py2qf5p5xsxy-hunspell-dict-en-us-wordlist-2018.04.16/share/hunspell/en_US.aff
       - --dic-file
@@ -102,7 +102,7 @@ mode_infos:
       - htm
       - html
   - code_mirror_mode: haskell
-    file: /nix/store/rfd4l1rlinvixx0h361y86ac8gd8zcny-codedown-environment/lib/codedown/modes/haskell.yaml
+    file: /nix/store/yadcmlgksm3f6dw2grf5r6bzk3kbbjis-codedown-environment/lib/codedown/modes/haskell.yaml
     attrs:
       - haskell
       - haskell-ghc902
