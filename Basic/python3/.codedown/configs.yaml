@@ -1,5 +1,5 @@
 interpreter_infos:
-  - config_path: /nix/store/mjb1gasflxf44clxr00iz26jagad7qxs-codedown-environment/lib/codedown/kernels/bash/kernel.json
+  - config_path: /nix/store/mww4z1x4p18v2m3gjmiccl78pjb4brkn-codedown-environment/lib/codedown/kernels/bash/kernel.json
     metadata:
       codedown:
         attrs:
@@ -26,7 +26,7 @@ interpreter_infos:
   - env_variables:
       - - COLUMNS
         - '80'
-    config_path: /nix/store/mjb1gasflxf44clxr00iz26jagad7qxs-codedown-environment/lib/codedown/kernels/python39/kernel.json
+    config_path: /nix/store/mww4z1x4p18v2m3gjmiccl78pjb4brkn-codedown-environment/lib/codedown/kernels/python39/kernel.json
     metadata:
       codedown:
         attrs:
@@ -45,7 +45,7 @@ interpreter_infos:
       initial_code_path: /nix/store/f411qaxbgs9d1ik0365s3943i726z0i1-variable_inspector.py
       list_variables_command: _codedown_variableinspector_dict_list()
       inspect_variable_command: print(TODO)
-    nix_kernel_hash: 8b2585e4de1e7091119f2e9baf4eb187
+    nix_kernel_hash: feec7a537fd8cfbf9dfc0f4caa39fba3
     attrs:
       - python
       - python39
@@ -83,7 +83,7 @@ language_server_infos:
     args: []
     notebook_suffix: ''
   - icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
-    file: /nix/store/mjb1gasflxf44clxr00iz26jagad7qxs-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
+    file: /nix/store/mww4z1x4p18v2m3gjmiccl78pjb4brkn-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
     name: spellchecker
     extensions:
       - md
@@ -105,8 +105,8 @@ language_server_infos:
     icon: /nix/store/bwrbdvgxz7azknl5sl8lx2f8mq06afbc-logo.png
     kernel_name: python39
     env:
-      JEDI_LANGUAGE_SERVER_EXTRA_PATHS: /nix/store/89vdqxn76vl600a76m3r6a3afrqxardw-python3-3.9.15-env/lib/python3.9/site-packages:/home/user/.local/lib/python3.9/site-packages
-    file: /nix/store/mjb1gasflxf44clxr00iz26jagad7qxs-codedown-environment/lib/codedown/language-servers/python-jedi.yaml
+      JEDI_LANGUAGE_SERVER_EXTRA_PATHS: /nix/store/s4ricvlfmivjzah6nhdppvngd1p6n47g-python3-3.9.15-env/lib/python3.9/site-packages:/home/user/.local/lib/python3.9/site-packages
+    file: /nix/store/mww4z1x4p18v2m3gjmiccl78pjb4brkn-codedown-environment/lib/codedown/language-servers/python-jedi.yaml
     name: jedi
     extensions:
       - py
@@ -114,7 +114,7 @@ language_server_infos:
       - python
     type: stream
     args:
-      - /nix/store/ifvq74sk2qnp5dc6am8ry01wmdgyg3bf-python3.9-jedi-language-server-0.13.2/bin/jedi-language-server
+      - /nix/store/kkh4b5v0gg3y2qzad4my7jiwqi1mrvyn-python3.9-jedi-language-server-0.40.0/bin/jedi-language-server
     notebook_suffix: .py
 mode_infos:
   - code_mirror_mode: htmlmixed
@@ -125,14 +125,14 @@ mode_infos:
       - htm
       - html
   - code_mirror_mode: shell
-    file: /nix/store/mjb1gasflxf44clxr00iz26jagad7qxs-codedown-environment/lib/codedown/modes/bash.yaml
+    file: /nix/store/mww4z1x4p18v2m3gjmiccl78pjb4brkn-codedown-environment/lib/codedown/modes/bash.yaml
     attrs:
       - bash
     extensions:
       - sh
       - bash
   - code_mirror_mode: python
-    file: /nix/store/mjb1gasflxf44clxr00iz26jagad7qxs-codedown-environment/lib/codedown/modes/python.yaml
+    file: /nix/store/mww4z1x4p18v2m3gjmiccl78pjb4brkn-codedown-environment/lib/codedown/modes/python.yaml
     attrs:
       - python
       - python39
