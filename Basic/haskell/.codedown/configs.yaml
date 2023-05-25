@@ -2,7 +2,7 @@ interpreter_infos:
   - env_variables:
       - - PATH
         - /nix/store/z6z8y7ac9gsrrqghdb63cjgmz4q53dq8-ghc-9.0.2-with-packages/bin:/nix/store/9nj6qjqp0d25giirzj9f0k35g2s58g0h-gcc-wrapper-11.3.0/bin
-    config_path: /nix/store/w5f8cf1xm51j4yc74f3ziil2pvddf8fg-codedown-environment/lib/codedown/kernels/haskell-ghc902/kernel.json
+    config_path: /nix/store/555mnm2rmmkvw66qwjp86qfaz2mk611n-codedown-environment/lib/codedown/kernels/haskell-ghc902/kernel.json
     metadata:
       codedown:
         attrs:
@@ -16,7 +16,7 @@ interpreter_infos:
             proc: /nix/store/z6z8y7ac9gsrrqghdb63cjgmz4q53dq8-ghc-9.0.2-with-packages/bin/ghci
     logo32: /nix/store/gzgdxv2ys5brzncb5srdipycc3c7ssd8-haskell-logo-32x32.png
     logo64: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
-    nix_kernel_hash: f77df718fa18f8d1b46bf7c4ff0d28f0
+    nix_kernel_hash: 128fced781ff416c3c61a2aa61263adc
     attrs:
       - haskell
       - haskell-ghc902
@@ -63,7 +63,7 @@ language_server_infos:
     primary: true
     kernel_name: haskell-ghc902
     env: {}
-    file: /nix/store/w5f8cf1xm51j4yc74f3ziil2pvddf8fg-codedown-environment/lib/codedown/language-servers/haskell-hls.yaml
+    file: /nix/store/555mnm2rmmkvw66qwjp86qfaz2mk611n-codedown-environment/lib/codedown/language-servers/haskell-haskell-ghc902-hls.yaml
     name: haskell-language-server
     extensions: []
     attrs:
@@ -77,7 +77,7 @@ language_server_infos:
       - --lsp
     notebook_suffix: ''
   - icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
-    file: /nix/store/w5f8cf1xm51j4yc74f3ziil2pvddf8fg-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
+    file: /nix/store/555mnm2rmmkvw66qwjp86qfaz2mk611n-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
     name: spellchecker
     extensions:
       - md
@@ -102,7 +102,7 @@ mode_infos:
       - htm
       - html
   - code_mirror_mode: haskell
-    file: /nix/store/w5f8cf1xm51j4yc74f3ziil2pvddf8fg-codedown-environment/lib/codedown/modes/haskell.yaml
+    file: /nix/store/555mnm2rmmkvw66qwjp86qfaz2mk611n-codedown-environment/lib/codedown/modes/haskell.yaml
     attrs:
       - haskell
       - haskell-ghc902

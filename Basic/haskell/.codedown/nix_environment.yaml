@@ -1,9 +1,9 @@
 channels:
   - name: codedown
     src:
-      sha256: 04vn63wfs0is39c6gr9q83pycj53mkna2zp521c7a7r4apd4y5h9
+      sha256: 18rp4dbpxgy6ii7hh487lh9vvvpbdkcmdgl7lima212sncik91sf
       repo: codedown-languages
-      rev: 34a1cb5ae35526551e256eec4b85bfa71a1be336
+      rev: f72fb52bf36ad1fe590d3e44bb5da4ec54f6399c
       tag: fetch_from_github
       owner: codedownio
     special: true
@@ -23,8 +23,6 @@ kernels:
   - name: haskell-ghc902
     display_name: Haskell (GHC 9.0.2)
     packages: []
-    language_servers:
-      - name: haskell-language-server
     icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
     channel: codedown
 other_packages:

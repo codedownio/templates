@@ -1,9 +1,9 @@
 channels:
   - name: codedown
     src:
-      sha256: 04vn63wfs0is39c6gr9q83pycj53mkna2zp521c7a7r4apd4y5h9
+      sha256: 18rp4dbpxgy6ii7hh487lh9vvvpbdkcmdgl7lima212sncik91sf
       repo: codedown-languages
-      rev: 34a1cb5ae35526551e256eec4b85bfa71a1be336
+      rev: f72fb52bf36ad1fe590d3e44bb5da4ec54f6399c
       tag: fetch_from_github
       owner: codedownio
     special: true
@@ -24,8 +24,6 @@ kernels:
     display_name: Python 3.9
     packages:
       - name: matplotlib
-    language_servers:
-      - name: jedi
     icon: /nix/store/kjbx4pcf72bhhrl264z646i3pwy61cgx-logo-64x64.png
     channel: codedown
     settings:
@@ -34,7 +32,6 @@ kernels:
   - name: bashInteractive
     display_name: Bash 5.1
     packages: []
-    language_servers: []
     icon: /nix/store/ms4228wqkviv0c3qn6m1crkgzfkd07l1-bash.png
     channel: codedown
 other_packages:
