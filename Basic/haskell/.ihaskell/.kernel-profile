@@ -1,1 +1,0 @@
-Profile {ip = "127.0.0.1", transport = TCP, stdinPort = 53186, controlPort = 58674, hbPort = 50772, shellPort = 61422, iopubPort = 58618, signatureKey = "fixed_key"}

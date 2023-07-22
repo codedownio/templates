@@ -1,35 +1,34 @@
 interpreter_infos:
   - env_variables:
       - - PATH
-        - /nix/store/z6z8y7ac9gsrrqghdb63cjgmz4q53dq8-ghc-9.0.2-with-packages/bin:/nix/store/9nj6qjqp0d25giirzj9f0k35g2s58g0h-gcc-wrapper-11.3.0/bin
-    config_path: /nix/store/m5w3vjilqbmaxkmra19x5bqw1mhc54ka-codedown-environment/lib/codedown/kernels/haskell-ghc902/kernel.json
+        - /nix/store/g4vdahbiz1hzkfcsjdz45rf0mpzqhqx6-ghc-9.0.2-with-packages/bin:/nix/store/d9fndiing52fkalp5knfalrvlb3isi6w-gcc-wrapper-12.2.0/bin
+    config_path: /nix/store/0n759j8bkfdj0a8n2x0rspc3hpganyyb-codedown-environment/lib/codedown/kernels/haskell-ghc90/kernel.json
     metadata:
       codedown:
         attrs:
-          - haskell-ghc902
+          - haskell-ghc90
           - haskell
         extensions:
           - hs
         priority: 1
         repls:
           - display_name: GHCi
-            proc: /nix/store/z6z8y7ac9gsrrqghdb63cjgmz4q53dq8-ghc-9.0.2-with-packages/bin/ghci
+            proc: /nix/store/g4vdahbiz1hzkfcsjdz45rf0mpzqhqx6-ghc-9.0.2-with-packages/bin/ghci
     logo32: /nix/store/gzgdxv2ys5brzncb5srdipycc3c7ssd8-haskell-logo-32x32.png
     logo64: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
-    nix_kernel_hash: 128fced781ff416c3c61a2aa61263adc
     attrs:
+      - haskell-ghc90
       - haskell
-      - haskell-ghc902
     extensions:
       - hs
     display_name: Haskell (GHC 9.0.2)
-    name: haskell-ghc902
+    name: haskell
     argv:
-      - /nix/store/9yskw67djslmgnkwcmmfcgy7h58ba15n-ihaskell-0.10.3.0/bin/ihaskell
+      - /nix/store/jm9k1hkzsvxxagsymgx6a2niinbv1gkf-ihaskell-0.10.3.0/bin/ihaskell
       - kernel
       - '{connection_file}'
       - -l
-      - /nix/store/z6z8y7ac9gsrrqghdb63cjgmz4q53dq8-ghc-9.0.2-with-packages/lib/ghc-9.0.2
+      - /nix/store/g4vdahbiz1hzkfcsjdz45rf0mpzqhqx6-ghc-9.0.2-with-packages/lib/ghc-9.0.2
       - +RTS
       - -M3g
       - -N2
@@ -38,11 +37,11 @@ repl_infos:
   - icon: /nix/store/7j21ks0fgsx1vbpigkc044i4ahbr7s9p-default_icon_64x64.png
     display_name: ZSH 5.9
     args:
-      - /nix/store/fak1asgssjiwyfnaaanxhh6dxmxk6syz-zsh-5.9/lib/codedown/shell
+      - /nix/store/qga3x88101vnrmwcpyc3akb99rg9bhp5-zsh-5.9/lib/codedown/shell
   - icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
     display_name: GHCi 9.0.2
     args:
-      - /nix/store/z6z8y7ac9gsrrqghdb63cjgmz4q53dq8-ghc-9.0.2-with-packages/bin/ghci
+      - /nix/store/g4vdahbiz1hzkfcsjdz45rf0mpzqhqx6-ghc-9.0.2-with-packages/bin/ghci
 exporter_infos: []
 language_server_infos:
   - description: Integrates other language servers into the notebook.
@@ -57,27 +56,8 @@ language_server_infos:
     type: stream
     args: []
     notebook_suffix: ''
-  - description: LSP server for GHC
-    display_name: Haskell Language Server
-    icon: /nix/store/y2d3g6zcclla87vcivg9p3ywnb388zgy-icon_64x64.png
-    primary: true
-    kernel_name: haskell-ghc902
-    env: {}
-    file: /nix/store/m5w3vjilqbmaxkmra19x5bqw1mhc54ka-codedown-environment/lib/codedown/language-servers/haskell-haskell-ghc902-hls.yaml
-    name: haskell-language-server
-    extensions: []
-    attrs:
-      - haskell
-    type: stream
-    args:
-      - /nix/store/cm0wdg6m5xmqfi75i3lgwp1zf1gl2psw-haskell-notebook-language-server-0.1.0.0/bin/haskell-notebook-language-server
-      - --wrapped-hls
-      - /nix/store/y6979nhn5x0vhncg0pigx0p4bkgvzcip-haskell-language-server-1.8.0.0-wrapped/bin/haskell-language-server
-      - --hls-args
-      - --lsp
-    notebook_suffix: ''
   - icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
-    file: /nix/store/m5w3vjilqbmaxkmra19x5bqw1mhc54ka-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
+    file: /nix/store/0n759j8bkfdj0a8n2x0rspc3hpganyyb-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
     name: spellchecker
     extensions:
       - md
@@ -86,13 +66,32 @@ language_server_infos:
       - markdown
     type: stream
     args:
-      - /nix/store/dnbdxp1gzdxf031za7l08fq3770hli00-markdown-spellcheck-lsp-wrapped/bin/markdown-spellcheck-lsp
+      - /nix/store/q8g7vx57mr17j44dh3bqghlzccl57wfk-markdown-spellcheck-lsp-wrapped/bin/markdown-spellcheck-lsp
       - --affix-file
-      - /nix/store/rlf9n9qg85s941f0vfcmqr58kfdrfdz8-hunspell-dict-en-us-wordlist-2018.04.16/share/hunspell/en_US.aff
+      - /nix/store/4xlm87nhfk97vz7ly90jpngfc4b8fhfw-hunspell-dict-en-us-wordlist-2018.04.16/share/hunspell/en_US.aff
       - --dic-file
-      - /nix/store/rlf9n9qg85s941f0vfcmqr58kfdrfdz8-hunspell-dict-en-us-wordlist-2018.04.16/share/hunspell/en_US.dic
+      - /nix/store/4xlm87nhfk97vz7ly90jpngfc4b8fhfw-hunspell-dict-en-us-wordlist-2018.04.16/share/hunspell/en_US.dic
       - --stdio
     notebook_suffix: .spellchecker
+  - description: LSP server for GHC
+    display_name: Haskell Language Server
+    icon: /nix/store/y2d3g6zcclla87vcivg9p3ywnb388zgy-icon_64x64.png
+    primary: true
+    kernel_name: haskell-ghc90
+    env: {}
+    file: /nix/store/0n759j8bkfdj0a8n2x0rspc3hpganyyb-codedown-environment/lib/codedown/language-servers/haskell-haskell-ghc90-hls.yaml
+    name: haskell-language-server
+    extensions: []
+    attrs:
+      - haskell
+    type: stream
+    args:
+      - /nix/store/3rlzhjqb5kx87w08c2iyjhmwiw715pws-haskell-notebook-language-server-0.1.0.0/bin/haskell-notebook-language-server
+      - --wrapped-hls
+      - /nix/store/kb4mp8ryll3hqkf208z8k7iiyi81ms0y-haskell-language-server-1.10.0.0-wrapped/bin/haskell-language-server
+      - --hls-args
+      - --lsp
+    notebook_suffix: ''
 mode_infos:
   - code_mirror_mode: htmlmixed
     code_mirror_mime_type: text/html
@@ -102,10 +101,10 @@ mode_infos:
       - htm
       - html
   - code_mirror_mode: haskell
-    file: /nix/store/m5w3vjilqbmaxkmra19x5bqw1mhc54ka-codedown-environment/lib/codedown/modes/haskell.yaml
+    file: /nix/store/0n759j8bkfdj0a8n2x0rspc3hpganyyb-codedown-environment/lib/codedown/modes/haskell.yaml
     attrs:
       - haskell
-      - haskell-ghc902
+      - haskell-ghc90
     extensions:
       - hs
 nix_files:

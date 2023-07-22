@@ -1,9 +1,9 @@
 channels:
   - name: codedown
     src:
-      sha256: 1nj15kv0h09k6g0y0fbhrw6swnirz7n84hwny1ig3rqpa6rh1i69
+      sha256: 14waifhcwxbyrbpm6z523fa3ljjvcvm44fd2j48p98hgc44xhrlv
       repo: codedown-languages
-      rev: 4d66e96751acfc57a195d1ceb5af4801469649f4
+      rev: 150db6b63f66fa566cd092b59069def08a54fb7a
       tag: fetch_from_github
       owner: codedownio
     special: true
@@ -20,7 +20,7 @@ channels:
       owner: NixOS
     overlays: []
 kernels:
-  - name: haskell-ghc902
+  - name: haskell-ghc90
     display_name: Haskell (GHC 9.0.2)
     packages: []
     icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
