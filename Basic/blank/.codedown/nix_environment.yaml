@@ -1,9 +1,9 @@
 channels:
   - name: codedown
     src:
-      sha256: 14waifhcwxbyrbpm6z523fa3ljjvcvm44fd2j48p98hgc44xhrlv
+      sha256: 0lhlrim895hzf1a7l7jr1msmgfwqlny8zycrj53fr3yd04r6gasw
       repo: codedown-languages
-      rev: 150db6b63f66fa566cd092b59069def08a54fb7a
+      rev: 1998558890a3579dae6ed999ae0d36e9f333da16
       tag: fetch_from_github
       owner: codedownio
     special: true

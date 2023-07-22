@@ -2,7 +2,7 @@ interpreter_infos:
   - env_variables:
       - - PATH
         - /nix/store/g4vdahbiz1hzkfcsjdz45rf0mpzqhqx6-ghc-9.0.2-with-packages/bin:/nix/store/d9fndiing52fkalp5knfalrvlb3isi6w-gcc-wrapper-12.2.0/bin
-    config_path: /nix/store/0n759j8bkfdj0a8n2x0rspc3hpganyyb-codedown-environment/lib/codedown/kernels/haskell-ghc90/kernel.json
+    config_path: /nix/store/6fqjlpd230vy8dakb9yaca73q2hcd4n9-codedown-environment/lib/codedown/kernels/haskell-ghc90/kernel.json
     metadata:
       codedown:
         attrs:
@@ -22,13 +22,17 @@ interpreter_infos:
     extensions:
       - hs
     display_name: Haskell (GHC 9.0.2)
-    name: haskell
+    name: haskell-ghc90
     argv:
-      - /nix/store/jm9k1hkzsvxxagsymgx6a2niinbv1gkf-ihaskell-0.10.3.0/bin/ihaskell
+      - /nix/store/l3idilsaxr9v16jqbqymrmw5rz84am37-ihaskell-0.10.3.0/bin/ihaskell
       - kernel
       - '{connection_file}'
       - -l
       - /nix/store/g4vdahbiz1hzkfcsjdz45rf0mpzqhqx6-ghc-9.0.2-with-packages/lib/ghc-9.0.2
+      - --html-code-wrapper-class
+      - cm-s-hite
+      - --html-code-token-prefix
+      - ''
       - +RTS
       - -M3g
       - -N2
@@ -57,7 +61,7 @@ language_server_infos:
     args: []
     notebook_suffix: ''
   - icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
-    file: /nix/store/0n759j8bkfdj0a8n2x0rspc3hpganyyb-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
+    file: /nix/store/6fqjlpd230vy8dakb9yaca73q2hcd4n9-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
     name: spellchecker
     extensions:
       - md
@@ -79,14 +83,14 @@ language_server_infos:
     primary: true
     kernel_name: haskell-ghc90
     env: {}
-    file: /nix/store/0n759j8bkfdj0a8n2x0rspc3hpganyyb-codedown-environment/lib/codedown/language-servers/haskell-haskell-ghc90-hls.yaml
+    file: /nix/store/6fqjlpd230vy8dakb9yaca73q2hcd4n9-codedown-environment/lib/codedown/language-servers/haskell-haskell-ghc90-hls.yaml
     name: haskell-language-server
     extensions: []
     attrs:
       - haskell
     type: stream
     args:
-      - /nix/store/3rlzhjqb5kx87w08c2iyjhmwiw715pws-haskell-notebook-language-server-0.1.0.0/bin/haskell-notebook-language-server
+      - /nix/store/lkxbwxjri1023h6r9hr7bn3yya2g1iy1-haskell-notebook-language-server-0.1.0.0/bin/haskell-notebook-language-server
       - --wrapped-hls
       - /nix/store/kb4mp8ryll3hqkf208z8k7iiyi81ms0y-haskell-language-server-1.10.0.0-wrapped/bin/haskell-language-server
       - --hls-args
@@ -101,7 +105,7 @@ mode_infos:
       - htm
       - html
   - code_mirror_mode: haskell
-    file: /nix/store/0n759j8bkfdj0a8n2x0rspc3hpganyyb-codedown-environment/lib/codedown/modes/haskell.yaml
+    file: /nix/store/6fqjlpd230vy8dakb9yaca73q2hcd4n9-codedown-environment/lib/codedown/modes/haskell.yaml
     attrs:
       - haskell
       - haskell-ghc90

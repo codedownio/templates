@@ -1,5 +1,5 @@
 interpreter_infos:
-  - config_path: /nix/store/a35w4nnkrkjk0i2wc01npxys7hqirc7i-codedown-environment/lib/codedown/kernels/bash/kernel.json
+  - config_path: /nix/store/aszk6aj7wrl3c8znxhj48alx5lzsc75f-codedown-environment/lib/codedown/kernels/bash/kernel.json
     metadata:
       codedown:
         attrs:
@@ -26,7 +26,7 @@ interpreter_infos:
   - env_variables:
       - - COLUMNS
         - '80'
-    config_path: /nix/store/a35w4nnkrkjk0i2wc01npxys7hqirc7i-codedown-environment/lib/codedown/kernels/python311/kernel.json
+    config_path: /nix/store/aszk6aj7wrl3c8znxhj48alx5lzsc75f-codedown-environment/lib/codedown/kernels/python311/kernel.json
     metadata:
       codedown:
         attrs:
@@ -89,7 +89,7 @@ language_server_infos:
     kernel_name: python311
     env:
       JEDI_LANGUAGE_SERVER_EXTRA_PATHS: /nix/store/7fq4aqwlmiwvxz0fpw998b0iqvdwbnis-python3-3.11.3-env/lib/python3.11/site-packages:/home/user/.local/lib/python3.11/site-packages
-    file: /nix/store/a35w4nnkrkjk0i2wc01npxys7hqirc7i-codedown-environment/lib/codedown/language-servers/python-python311-jedi.yaml
+    file: /nix/store/aszk6aj7wrl3c8znxhj48alx5lzsc75f-codedown-environment/lib/codedown/language-servers/python-python311-jedi.yaml
     name: jedi
     extensions:
       - py
@@ -100,7 +100,7 @@ language_server_infos:
       - /nix/store/iqr4i2a956r4arwkyqky3b2mc0lcifhf-python3.11-jedi-language-server-0.40.0/bin/jedi-language-server
     notebook_suffix: .py
   - icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
-    file: /nix/store/a35w4nnkrkjk0i2wc01npxys7hqirc7i-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
+    file: /nix/store/aszk6aj7wrl3c8znxhj48alx5lzsc75f-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
     name: spellchecker
     extensions:
       - md
@@ -117,7 +117,7 @@ language_server_infos:
       - --stdio
     notebook_suffix: .spellchecker
   - primary: true
-    file: /nix/store/a35w4nnkrkjk0i2wc01npxys7hqirc7i-codedown-environment/lib/codedown/language-servers/bash-bashInteractive-bash-language-server.yaml
+    file: /nix/store/aszk6aj7wrl3c8znxhj48alx5lzsc75f-codedown-environment/lib/codedown/language-servers/bash-bashInteractive-bash-language-server.yaml
     name: bash-language-server
     extensions:
       - sh
@@ -138,14 +138,14 @@ mode_infos:
       - htm
       - html
   - code_mirror_mode: shell
-    file: /nix/store/a35w4nnkrkjk0i2wc01npxys7hqirc7i-codedown-environment/lib/codedown/modes/bash.yaml
+    file: /nix/store/aszk6aj7wrl3c8znxhj48alx5lzsc75f-codedown-environment/lib/codedown/modes/bash.yaml
     attrs:
       - bash
     extensions:
       - sh
       - bash
   - code_mirror_mode: python
-    file: /nix/store/a35w4nnkrkjk0i2wc01npxys7hqirc7i-codedown-environment/lib/codedown/modes/python.yaml
+    file: /nix/store/aszk6aj7wrl3c8znxhj48alx5lzsc75f-codedown-environment/lib/codedown/modes/python.yaml
     attrs:
       - python
       - python311
