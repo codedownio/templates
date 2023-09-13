@@ -2,6 +2,7 @@ interpreter_infos: []
 repl_infos:
   - icon: /nix/store/7j21ks0fgsx1vbpigkc044i4ahbr7s9p-default_icon_64x64.png
     display_name: ZSH 5.9
+    executable_name: zsh-with-theme
     args:
       - /nix/store/qga3x88101vnrmwcpyc3akb99rg9bhp5-zsh-5.9/lib/codedown/shell
 exporter_infos: []
@@ -19,7 +20,7 @@ language_server_infos:
     args: []
     notebook_suffix: ''
   - icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
-    file: /nix/store/qbv6x050z8mfais54ayw55mi72nllx1b-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
+    file: /nix/store/6dy0x33pzl6ncq7m8wxf76mbx5k599pa-codedown-environment/lib/codedown/language-servers/codedown-spellchecker.yaml
     name: spellchecker
     extensions:
       - md
