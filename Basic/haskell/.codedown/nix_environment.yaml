@@ -1,34 +1,63 @@
 channels:
-  - name: codedown
-    src:
-      sha256: 1d6gafkw2c33b03xnp7qqirzbwagj75fyyg5m5p25kjjiaxz2zv4
-      repo: codedown-languages
-      rev: 6086b68648d5c3deea05260253e9e02ac1b816df
-      tag: fetch_from_github
-      owner: codedownio
-    special: true
-    overlays: []
-  - name: nixpkgs
-    src:
-      repo: nixpkgs
-      ref:
-        tag: branch
-        contents: release-22.11
-      rev: 523b39618444fa921d3230c8f10f1563612d785d
-      sha256: DVKPeIZqzkNOOsxxx6iHTg2J+R/8hLWZLppK25ixD00=
-      tag: fetch_from_github
-      owner: NixOS
-    overlays: []
+- name: codedown
+  special: true
+  src:
+    owner: codedownio
+    repo: codedown-languages
+    rev: ba7d4a3c66ee2c40fd56c502af7f5a307e6a0bc4
+    sha256: 1sqamw0d6wvrl2jwlfqdfq1gw1zxc4mgx66q57bdv1n1zh4zb1k7
+    tag: fetch_from_github
+- name: nixpkgs
+  src:
+    owner: NixOS
+    ref:
+      contents: release-22.11
+      tag: branch
+    repo: nixpkgs
+    rev: 523b39618444fa921d3230c8f10f1563612d785d
+    sha256: DVKPeIZqzkNOOsxxx6iHTg2J+R/8hLWZLppK25ixD00=
+    tag: fetch_from_github
 kernels:
-  - name: haskell-ghc90
-    display_name: Haskell (GHC 9.0.2)
-    packages: []
-    icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
-    channel: codedown
+- name: haskell-ghc90
+  display_name: Haskell
+  packages: []
+  channel: codedown
+  icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
+  modes:
+    attrs:
+    - haskell
+    - haskell-ghc90
+    code_mirror_mode: haskell
+    extensions:
+    - hs
+  settings:
+    enableHlintOutput: false
+    lsp.haskell-language-server.debug: false
+    lsp.haskell-language-server.enable: true
+  settings_schema:
+  - defaultValue: true
+    target: lsp.haskell-language-server.enable
+    title: Enable haskell-language-server
+    type: boolean
+  - defaultValue: false
+    description: Print verbose debug output.
+    target: lsp.haskell-language-server.debug
+    title: 'Haskell-language-server: enable debug output'
+    type: boolean
+  - defaultValue: false
+    description: Show hlint warnings as part of Jupyter kernel output. Normally you
+      don't want this because it is provided by haskell-language-server.
+    target: enableHlintOutput
+    title: Enable hlint warnings in code output.
+    type: boolean
 other_packages:
-  - name: zsh-5.8.1
-    channel: codedown
-    attr: shells.zsh
-  - name: codedown-spellchecker
-    channel: codedown
-    attr: spellchecker
+- attr: shells.zsh
+  channel: codedown
+  meta:
+    description: The Z shell
+    homepage: https://www.zsh.org/
+- attr: spellchecker
+  channel: codedown
+  meta:
+    description: Spell checker
+    homepage: https://hunspell.sourceforge.net

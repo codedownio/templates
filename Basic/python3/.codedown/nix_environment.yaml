@@ -1,43 +1,121 @@
 channels:
-  - name: codedown
-    src:
-      sha256: 1d6gafkw2c33b03xnp7qqirzbwagj75fyyg5m5p25kjjiaxz2zv4
-      repo: codedown-languages
-      rev: 6086b68648d5c3deea05260253e9e02ac1b816df
-      tag: fetch_from_github
-      owner: codedownio
-    special: true
-    overlays: []
-  - name: nixpkgs
-    src:
-      repo: nixpkgs
-      ref:
-        tag: branch
-        contents: release-22.11
-      rev: 523b39618444fa921d3230c8f10f1563612d785d
-      sha256: DVKPeIZqzkNOOsxxx6iHTg2J+R/8hLWZLppK25ixD00=
-      tag: fetch_from_github
-      owner: NixOS
-    overlays: []
+- name: codedown
+  special: true
+  src:
+    owner: codedownio
+    repo: codedown-languages
+    rev: ba7d4a3c66ee2c40fd56c502af7f5a307e6a0bc4
+    sha256: 1sqamw0d6wvrl2jwlfqdfq1gw1zxc4mgx66q57bdv1n1zh4zb1k7
+    tag: fetch_from_github
+- name: nixpkgs
+  src:
+    owner: NixOS
+    ref:
+      contents: release-22.11
+      tag: branch
+    repo: nixpkgs
+    rev: 523b39618444fa921d3230c8f10f1563612d785d
+    sha256: DVKPeIZqzkNOOsxxx6iHTg2J+R/8hLWZLppK25ixD00=
+    tag: fetch_from_github
 kernels:
-  - name: python311
-    display_name: Python 3.11
-    packages:
-      - name: matplotlib
-    icon: /nix/store/kjbx4pcf72bhhrl264z646i3pwy61cgx-logo-64x64.png
-    channel: codedown
-    settings:
-      permitUserSite: false
-      enableVariableInspector: true
-  - name: bashInteractive
-    display_name: Bash 5.1
-    packages: []
-    icon: /nix/store/ms4228wqkviv0c3qn6m1crkgzfkd07l1-bash.png
-    channel: codedown
+- name: python3
+  display_name: Python 3.10.11
+  packages:
+  - matplotlib
+  channel: codedown
+  icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
+  modes:
+    attrs:
+    - python
+    - python3
+    code_mirror_mode: python
+    extensions:
+    - py
+  settings:
+    enableVariableInspector: true
+    lsp.flake8.enable: false
+    lsp.jedi.enable: true
+    lsp.microsoft.enable: false
+    lsp.pycodestyle.enable: false
+    lsp.pylint.enable: false
+    lsp.pyright.enable: false
+    lsp.python-language-server.enable: false
+    lsp.python-lsp-server.enable: false
+    permitUserSite: false
+  settings_schema:
+  - level: 1
+    title: Language servers
+    type: heading
+  - defaultValue: true
+    target: lsp.jedi.enable
+    title: Enable Jedi language server
+    type: boolean
+  - defaultValue: false
+    target: lsp.pyright.enable
+    title: Enable Pyright language server
+    type: boolean
+  - defaultValue: false
+    target: lsp.pylint.enable
+    title: Enable Pylint language server
+    type: boolean
+  - defaultValue: false
+    target: lsp.flake8.enable
+    title: Enable Flake8 language server
+    type: boolean
+  - defaultValue: false
+    target: lsp.pycodestyle.enable
+    title: Enable pycodestyle language server
+    type: boolean
+  - defaultValue: false
+    target: lsp.microsoft.enable
+    title: Enable Microsoft Python language server
+    type: boolean
+  - defaultValue: false
+    target: lsp.python-lsp-server.enable
+    title: Enable python-lsp-server language server
+    type: boolean
+  - defaultValue: false
+    target: lsp.python-language-server.enable
+    title: Enable python-language-server language server
+    type: boolean
+  - level: 1
+    title: Miscellaneous
+    type: heading
+  - defaultValue: false
+    description: Skip setting the PYTHONNOUSERSITE variable. This will allow your
+      Python code to import local packages (e.g. from ~/.local/lib). This is useful
+      if you want to use pip to install Python packages independently of Nix.
+    target: permitUserSite
+    title: Permit user site-packages
+    type: boolean
+  - defaultValue: true
+    description: Enable the variable inspector, which will fetch runtime values of
+      variables to show in the variables list.
+    target: enableVariableInspector
+    title: Enable variable inspector
+    type: boolean
+- name: bash
+  display_name: Bash 5.2
+  packages: []
+  channel: codedown
+  icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
+  modes:
+    attrs:
+    - bash
+    code_mirror_mode: shell
+    extensions:
+    - sh
+    - bash
+  settings: {}
+  settings_schema: {}
 other_packages:
-  - name: zsh-5.8.1
-    channel: codedown
-    attr: shells.zsh
-  - name: codedown-spellchecker
-    channel: codedown
-    attr: spellchecker
+- attr: shells.zsh
+  channel: codedown
+  meta:
+    description: The Z shell
+    homepage: https://www.zsh.org/
+- attr: spellchecker
+  channel: codedown
+  meta:
+    description: Spell checker
+    homepage: https://hunspell.sourceforge.net
