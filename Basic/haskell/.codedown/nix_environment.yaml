@@ -25,8 +25,8 @@ kernels:
   icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
   modes:
     attrs:
-    - haskell
     - haskell-ghc90
+    - haskell
     code_mirror_mode: haskell
     extensions:
     - hs

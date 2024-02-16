@@ -26,8 +26,8 @@ kernels:
   icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
   modes:
     attrs:
-    - python
     - python3
+    - python
     code_mirror_mode: python
     extensions:
     - py
