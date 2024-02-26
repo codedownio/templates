@@ -11,11 +11,11 @@ channels:
   src:
     owner: NixOS
     ref:
-      contents: release-22.11
+      contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: 523b39618444fa921d3230c8f10f1563612d785d
-    sha256: DVKPeIZqzkNOOsxxx6iHTg2J+R/8hLWZLppK25ixD00=
+    rev: 0a3303dbed8e80f2d4ee4cd8eae0f002e6a1dab5
+    sha256: ijBLhyxmFQ4B9zKH0IfNzqD72lpkUtSKyxX8jqUAqhQ=
     tag: fetch_from_github
 kernels:
 - name: python3
