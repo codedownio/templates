@@ -4,8 +4,8 @@ channels:
   src:
     owner: codedownio
     repo: codedown-languages
-    rev: edd57fb96535490cf16f70d31381cde1edd87524
-    sha256: 13kh11jkb9y6q8ifrdjzwvc1mkb3hc8q9iax2g4x28l6y74mvsx7
+    rev: b1c4a43b1778c8c74ad5198b3ff3daa52d0ba1e9
+    sha256: 1v08q4ll7nh071iahlf3slq7vzf740312fqf3pchz7y08rfis1jg
     tag: fetch_from_github
 - name: nixpkgs
   src:
@@ -14,8 +14,8 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: c8e74c2f83fe12b4e5a8bd1abbc090575b0f7611
-    sha256: GWrv9a+AgGhG4/eI/CyVVIIygia7cEy68Huv3P8oyaw=
+    rev: 3bc91a8eac7e96d263d7a4d96510f0ab3e09e2f9
+    sha256: 1hHb9dCsEaUordnd3n5mHKWn0amGICALpxllrKwE6ZQ=
     tag: fetch_from_github
 kernels: []
 other_packages:
@@ -24,8 +24,20 @@ other_packages:
   meta:
     description: The Z shell
     homepage: https://www.zsh.org/
+    maintainers:
+    - name: Pascal Wittmann
+      email: mail@pascal-wittmann.de
+      github: pSub
+      githubId: 83842
+    - name: Artturi N
+      email: artturin@artturin.com
+      github: Artturin
+      githubId: 56650223
+      matrix: '@artturin:matrix.org'
+    version: '5.9'
 - attr: spellchecker
   channel: codedown
   meta:
     description: Spell checker
     homepage: https://hunspell.sourceforge.net
+    maintainers: []
