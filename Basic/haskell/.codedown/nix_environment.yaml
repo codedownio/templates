@@ -4,8 +4,8 @@ channels:
   src:
     owner: codedownio
     repo: codedown-languages
-    rev: b1c4a43b1778c8c74ad5198b3ff3daa52d0ba1e9
-    sha256: 1v08q4ll7nh071iahlf3slq7vzf740312fqf3pchz7y08rfis1jg
+    rev: e3acd8da9f47dcbb1827fd22e7e1da9d588ee521
+    sha256: 0xb2qdpp37a9626s0xmfbz5sk4mxrgzc2p657crpl68055x3wjab
     tag: fetch_from_github
 - name: nixpkgs
   src:
@@ -14,8 +14,8 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: 3bc91a8eac7e96d263d7a4d96510f0ab3e09e2f9
-    sha256: 1hHb9dCsEaUordnd3n5mHKWn0amGICALpxllrKwE6ZQ=
+    rev: 880992dcc006a5e00dd0591446fdf723e6a51a64
+    sha256: tix36Y7u0rkn6mTm0lA45b45oab2cFLqAzDbJxeXS+c=
     tag: fetch_from_github
 kernels:
 - name: haskell-ghc90

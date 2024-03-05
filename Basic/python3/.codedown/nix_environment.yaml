@@ -4,8 +4,8 @@ channels:
   src:
     owner: codedownio
     repo: codedown-languages
-    rev: b1c4a43b1778c8c74ad5198b3ff3daa52d0ba1e9
-    sha256: 1v08q4ll7nh071iahlf3slq7vzf740312fqf3pchz7y08rfis1jg
+    rev: e3acd8da9f47dcbb1827fd22e7e1da9d588ee521
+    sha256: 0xb2qdpp37a9626s0xmfbz5sk4mxrgzc2p657crpl68055x3wjab
     tag: fetch_from_github
 - name: nixpkgs
   src:
@@ -14,14 +14,28 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: 3bc91a8eac7e96d263d7a4d96510f0ab3e09e2f9
-    sha256: 1hHb9dCsEaUordnd3n5mHKWn0amGICALpxllrKwE6ZQ=
+    rev: 880992dcc006a5e00dd0591446fdf723e6a51a64
+    sha256: tix36Y7u0rkn6mTm0lA45b45oab2cFLqAzDbJxeXS+c=
     tag: fetch_from_github
 kernels:
 - name: python3
   display_name: Python 3.10.11
   packages:
-  - matplotlib
+  - name: matplotlib
+    meta:
+      changelog: https://github.com/matplotlib/matplotlib/releases/tag/v3.7.0
+      description: Python plotting library, making publication quality plots
+      homepage: https://matplotlib.org/
+      maintainers:
+      - name: Jason O'Conal
+        email: jason@oconal.id.au
+        github: lovek323
+        githubId: 265084
+      - name: Dmitry Kalinkin
+        email: veprbl@gmail.com
+        github: veprbl
+        githubId: 245573
+      version: 3.7.0
   channel: codedown
   icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
   modes:
