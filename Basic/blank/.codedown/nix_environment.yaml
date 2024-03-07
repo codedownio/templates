@@ -4,8 +4,8 @@ channels:
   src:
     owner: codedownio
     repo: codedown-languages
-    rev: e3acd8da9f47dcbb1827fd22e7e1da9d588ee521
-    sha256: 0xb2qdpp37a9626s0xmfbz5sk4mxrgzc2p657crpl68055x3wjab
+    rev: 7f8f3a1bef58d557325fdfd065bb6cdbab72132f
+    sha256: 01hja6xm0p0aik1nvfc5ngy6ba6dapkx8wc9s61z35zxx8zdx5lk
     tag: fetch_from_github
 - name: nixpkgs
   src:
@@ -14,8 +14,8 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: 880992dcc006a5e00dd0591446fdf723e6a51a64
-    sha256: tix36Y7u0rkn6mTm0lA45b45oab2cFLqAzDbJxeXS+c=
+    rev: 03e303468a0b89792bc40c2f3a7cd8a322b66fad
+    sha256: CopSGZnFg+7n7WwBZ/iqIQhLJo0Xc59OWQo9zN9gmwo=
     tag: fetch_from_github
 kernels: []
 other_packages:

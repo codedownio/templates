@@ -4,8 +4,8 @@ channels:
   src:
     owner: codedownio
     repo: codedown-languages
-    rev: e3acd8da9f47dcbb1827fd22e7e1da9d588ee521
-    sha256: 0xb2qdpp37a9626s0xmfbz5sk4mxrgzc2p657crpl68055x3wjab
+    rev: 7f8f3a1bef58d557325fdfd065bb6cdbab72132f
+    sha256: 01hja6xm0p0aik1nvfc5ngy6ba6dapkx8wc9s61z35zxx8zdx5lk
     tag: fetch_from_github
 - name: nixpkgs
   src:
@@ -14,8 +14,8 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: 880992dcc006a5e00dd0591446fdf723e6a51a64
-    sha256: tix36Y7u0rkn6mTm0lA45b45oab2cFLqAzDbJxeXS+c=
+    rev: 03e303468a0b89792bc40c2f3a7cd8a322b66fad
+    sha256: CopSGZnFg+7n7WwBZ/iqIQhLJo0Xc59OWQo9zN9gmwo=
     tag: fetch_from_github
 kernels:
 - name: python3
@@ -38,6 +38,23 @@ kernels:
       version: 3.7.0
   channel: codedown
   icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
+  meta:
+    changelog: https://docs.python.org/release/3.10.11/whatsnew/changelog.html
+    description: A high-level dynamically-typed programming language
+    homepage: https://www.python.org
+    icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
+    maintainers:
+    - name: Frederik Rietdijk
+      email: fridh@fridh.nl
+      github: FRidh
+      githubId: 2129135
+    modes:
+      attrs:
+      - python3
+      - python
+      code_mirror_mode: python
+      extensions:
+      - py
   modes:
     attrs:
     - python3
@@ -113,6 +130,24 @@ kernels:
   packages: []
   channel: codedown
   icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
+  meta:
+    description: GNU Bourne-Again Shell, the de facto standard shell on Linux
+    homepage: https://www.gnu.org/software/bash/
+    icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
+    maintainers:
+    - name: Will Dietz
+      email: w@wdtz.org
+      github: dtzWill
+      githubId: 817330
+      keys:
+      - fingerprint: 389A 78CB CD88 5E0C 4701  DEB9 FD42 C7D0 D414 94C8
+    modes:
+      attrs:
+      - bash
+      code_mirror_mode: shell
+      extensions:
+      - sh
+      - bash
   modes:
     attrs:
     - bash
