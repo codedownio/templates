@@ -4,8 +4,8 @@ channels:
   src:
     owner: codedownio
     repo: codedown-languages
-    rev: 7f8f3a1bef58d557325fdfd065bb6cdbab72132f
-    sha256: 01hja6xm0p0aik1nvfc5ngy6ba6dapkx8wc9s61z35zxx8zdx5lk
+    rev: b1eba24bf193479065796508ad2868591b5691ee
+    sha256: 188fnlmh2ykp321s9460fb8l2n9c4lcf8vr6wx04k9z8b0qdgpv2
     tag: fetch_from_github
 - name: nixpkgs
   src:
@@ -14,16 +14,15 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: 03e303468a0b89792bc40c2f3a7cd8a322b66fad
-    sha256: CopSGZnFg+7n7WwBZ/iqIQhLJo0Xc59OWQo9zN9gmwo=
+    rev: ee4811ae5ac6c9d5481f692d65f204ebcd9993ec
+    sha256: jxbYuM5nWjjl8Y0jd85AGUV9PDWhDlI/ZGa3i4syoKo=
     tag: fetch_from_github
 kernels:
 - name: haskell-ghc90
-  display_name: Haskell
   packages: []
   channel: codedown
-  icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
   meta:
+    display_name: Haskell
     description: An advanced, purely functional programming language (GHC 9.0.2)
     icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
     modes:
@@ -33,6 +32,22 @@ kernels:
       code_mirror_mode: haskell
       extensions:
       - hs
+    settings_schema:
+    - defaultValue: true
+      target: lsp.haskell-language-server.enable
+      title: Enable haskell-language-server
+      type: boolean
+    - defaultValue: false
+      description: Print verbose debug output.
+      target: lsp.haskell-language-server.debug
+      title: 'Haskell-language-server: enable debug output'
+      type: boolean
+    - defaultValue: false
+      description: Show hlint warnings as part of Jupyter kernel output. Normally
+        you don't want this because it is provided by haskell-language-server.
+      target: enableHlintOutput
+      title: Enable hlint warnings in code output.
+      type: boolean
   modes:
     attrs:
     - haskell-ghc90
@@ -44,22 +59,6 @@ kernels:
     enableHlintOutput: false
     lsp.haskell-language-server.debug: false
     lsp.haskell-language-server.enable: true
-  settings_schema:
-  - defaultValue: true
-    target: lsp.haskell-language-server.enable
-    title: Enable haskell-language-server
-    type: boolean
-  - defaultValue: false
-    description: Print verbose debug output.
-    target: lsp.haskell-language-server.debug
-    title: 'Haskell-language-server: enable debug output'
-    type: boolean
-  - defaultValue: false
-    description: Show hlint warnings as part of Jupyter kernel output. Normally you
-      don't want this because it is provided by haskell-language-server.
-    target: enableHlintOutput
-    title: Enable hlint warnings in code output.
-    type: boolean
 other_packages:
 - attr: shells.zsh
   channel: codedown

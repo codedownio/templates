@@ -4,8 +4,8 @@ channels:
   src:
     owner: codedownio
     repo: codedown-languages
-    rev: 7f8f3a1bef58d557325fdfd065bb6cdbab72132f
-    sha256: 01hja6xm0p0aik1nvfc5ngy6ba6dapkx8wc9s61z35zxx8zdx5lk
+    rev: b1eba24bf193479065796508ad2868591b5691ee
+    sha256: 188fnlmh2ykp321s9460fb8l2n9c4lcf8vr6wx04k9z8b0qdgpv2
     tag: fetch_from_github
 - name: nixpkgs
   src:
@@ -14,12 +14,11 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: 03e303468a0b89792bc40c2f3a7cd8a322b66fad
-    sha256: CopSGZnFg+7n7WwBZ/iqIQhLJo0Xc59OWQo9zN9gmwo=
+    rev: ee4811ae5ac6c9d5481f692d65f204ebcd9993ec
+    sha256: jxbYuM5nWjjl8Y0jd85AGUV9PDWhDlI/ZGa3i4syoKo=
     tag: fetch_from_github
 kernels:
 - name: python3
-  display_name: Python 3.10.11
   packages:
   - name: matplotlib
     meta:
@@ -37,8 +36,8 @@ kernels:
         githubId: 245573
       version: 3.7.0
   channel: codedown
-  icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
   meta:
+    display_name: Python 3.10.11
     changelog: https://docs.python.org/release/3.10.11/whatsnew/changelog.html
     description: A high-level dynamically-typed programming language
     homepage: https://www.python.org
@@ -55,6 +54,59 @@ kernels:
       code_mirror_mode: python
       extensions:
       - py
+    settings_schema:
+    - level: 1
+      title: Language servers
+      type: heading
+    - defaultValue: true
+      target: lsp.jedi.enable
+      title: Enable Jedi language server
+      type: boolean
+    - defaultValue: false
+      target: lsp.pyright.enable
+      title: Enable Pyright language server
+      type: boolean
+    - defaultValue: false
+      target: lsp.pylint.enable
+      title: Enable Pylint language server
+      type: boolean
+    - defaultValue: false
+      target: lsp.flake8.enable
+      title: Enable Flake8 language server
+      type: boolean
+    - defaultValue: false
+      target: lsp.pycodestyle.enable
+      title: Enable pycodestyle language server
+      type: boolean
+    - defaultValue: false
+      target: lsp.microsoft.enable
+      title: Enable Microsoft Python language server
+      type: boolean
+    - defaultValue: false
+      target: lsp.python-lsp-server.enable
+      title: Enable python-lsp-server language server
+      type: boolean
+    - defaultValue: false
+      target: lsp.python-language-server.enable
+      title: Enable python-language-server language server
+      type: boolean
+    - level: 1
+      title: Miscellaneous
+      type: heading
+    - defaultValue: false
+      description: Skip setting the PYTHONNOUSERSITE variable. This will allow your
+        Python code to import local packages (e.g. from ~/.local/lib). This is useful
+        if you want to use pip to install Python packages independently of Nix.
+      target: permitUserSite
+      title: Permit user site-packages
+      type: boolean
+    - defaultValue: true
+      description: Enable the variable inspector, which will fetch runtime values
+        of variables to show in the variables list.
+      target: enableVariableInspector
+      title: Enable variable inspector
+      type: boolean
+    spdx_id: Python-2.0
   modes:
     attrs:
     - python3
@@ -73,64 +125,11 @@ kernels:
     lsp.python-language-server.enable: false
     lsp.python-lsp-server.enable: false
     permitUserSite: false
-  settings_schema:
-  - level: 1
-    title: Language servers
-    type: heading
-  - defaultValue: true
-    target: lsp.jedi.enable
-    title: Enable Jedi language server
-    type: boolean
-  - defaultValue: false
-    target: lsp.pyright.enable
-    title: Enable Pyright language server
-    type: boolean
-  - defaultValue: false
-    target: lsp.pylint.enable
-    title: Enable Pylint language server
-    type: boolean
-  - defaultValue: false
-    target: lsp.flake8.enable
-    title: Enable Flake8 language server
-    type: boolean
-  - defaultValue: false
-    target: lsp.pycodestyle.enable
-    title: Enable pycodestyle language server
-    type: boolean
-  - defaultValue: false
-    target: lsp.microsoft.enable
-    title: Enable Microsoft Python language server
-    type: boolean
-  - defaultValue: false
-    target: lsp.python-lsp-server.enable
-    title: Enable python-lsp-server language server
-    type: boolean
-  - defaultValue: false
-    target: lsp.python-language-server.enable
-    title: Enable python-language-server language server
-    type: boolean
-  - level: 1
-    title: Miscellaneous
-    type: heading
-  - defaultValue: false
-    description: Skip setting the PYTHONNOUSERSITE variable. This will allow your
-      Python code to import local packages (e.g. from ~/.local/lib). This is useful
-      if you want to use pip to install Python packages independently of Nix.
-    target: permitUserSite
-    title: Permit user site-packages
-    type: boolean
-  - defaultValue: true
-    description: Enable the variable inspector, which will fetch runtime values of
-      variables to show in the variables list.
-    target: enableVariableInspector
-    title: Enable variable inspector
-    type: boolean
 - name: bash
-  display_name: Bash 5.2
   packages: []
   channel: codedown
-  icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
   meta:
+    display_name: Bash 5.2
     description: GNU Bourne-Again Shell, the de facto standard shell on Linux
     homepage: https://www.gnu.org/software/bash/
     icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
@@ -148,6 +147,12 @@ kernels:
       extensions:
       - sh
       - bash
+    settings_schema:
+    - defaultValue: true
+      target: lsp.bash-language-server.enable
+      title: Enable Bash language server
+      type: boolean
+    spdx_id: GPL-3.0-or-later
   modes:
     attrs:
     - bash
@@ -156,11 +161,6 @@ kernels:
     - sh
     - bash
   settings: {}
-  settings_schema:
-  - defaultValue: true
-    target: lsp.bash-language-server.enable
-    title: Enable Bash language server
-    type: boolean
 other_packages:
 - attr: shells.zsh
   channel: codedown
