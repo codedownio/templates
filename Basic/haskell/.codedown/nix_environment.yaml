@@ -4,9 +4,10 @@ channels:
   src:
     owner: codedownio
     repo: codedown-languages
-    rev: ae6044046a74b85966a8b35c1024b1571db5832d
-    sha256: 1hdjz8bk4mpd14qn8wybmjnvp8fg2v9raravi14va9svk2xwh6m2
+    rev: f9f10e6d12bf8b64d7f035d7e2ce82642f613c8a
+    sha256: 04ngj88y9ynwvqsxiln1clsyng00566k1mzqvrpvdswm9h86csxx
     tag: fetch_from_github
+    timestamp: 2024-05-26T06:12:16Z
 - name: nixpkgs
   src:
     owner: NixOS
@@ -14,20 +15,23 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: 1bf7d3e7d2aaa667365fb3bc8673760ffbaca7bb
-    sha256: 2xE31a0G1jGbK5u4CKK8AkyJtB37XQkh6lEW0J518YQ=
+    rev: 0c007b36981bdbd69ccf0c7df30a174e63660667
+    sha256: 0qsgcq4rfm5qpq011mxkxljf4qraqmy0x9603rwlw8ca786qp965
     tag: fetch_from_github
+    timestamp: 2024-05-26T23:52:43Z
 kernels:
-- name: haskell-ghc90
+- name: haskell-ghc96
   packages: []
   channel: codedown
   meta:
     display_name: Haskell
-    description: An advanced, purely functional programming language (GHC 9.0.2)
+    description: An advanced, purely functional programming language (GHC 9.6.4)
     icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
+    language_server_names:
+    - haskell-language-server
     modes:
       attrs:
-      - haskell-ghc90
+      - haskell-ghc96
       - haskell
       code_mirror_mode: haskell
       extensions:
@@ -38,9 +42,14 @@ kernels:
       title: Enable haskell-language-server
       type: boolean
     - defaultValue: false
-      description: Print verbose debug output.
+      description: Print debug output for the notebook language server.
       target: lsp.haskell-language-server.debug
       title: 'Haskell-language-server: enable debug output'
+      type: boolean
+    - defaultValue: false
+      description: Print verbose debug output; intended for developers.
+      target: lsp.haskell-language-server.super-debug
+      title: 'Haskell-language-server: enable verbose debug output'
       type: boolean
     - defaultValue: false
       description: Show hlint warnings as part of Jupyter kernel output. Normally
@@ -50,21 +59,21 @@ kernels:
       type: boolean
   modes:
     attrs:
-    - haskell-ghc90
+    - haskell-ghc96
     - haskell
     code_mirror_mode: haskell
     extensions:
     - hs
-  settings:
-    enableHlintOutput: false
-    lsp.haskell-language-server.debug: false
-    lsp.haskell-language-server.enable: true
+  settings: {}
 other_packages:
 - attr: shells.zsh
   channel: codedown
   meta:
+    display_name: ZSH 5.9
+    category: Shells
     description: The Z shell
     homepage: https://www.zsh.org/
+    icon: /nix/store/7j21ks0fgsx1vbpigkc044i4ahbr7s9p-default_icon_64x64.png
     maintainers:
     - name: Pascal Wittmann
       email: mail@pascal-wittmann.de
@@ -79,6 +88,8 @@ other_packages:
 - attr: spellchecker
   channel: codedown
   meta:
+    category: Language servers
     description: Spell checker
     homepage: https://hunspell.sourceforge.net
+    icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
     maintainers: []
