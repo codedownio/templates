@@ -4,10 +4,10 @@ channels:
   src:
     owner: codedownio
     repo: codedown-languages
-    rev: f9f10e6d12bf8b64d7f035d7e2ce82642f613c8a
-    sha256: 04ngj88y9ynwvqsxiln1clsyng00566k1mzqvrpvdswm9h86csxx
+    rev: f6eb3597101e5156437bb27150dee20f2e5df160
+    sha256: 083rhazpvpl55ahgf2c8ximnbczfcqixn8p2sljwq9w40kq69559
     tag: fetch_from_github
-    timestamp: 2024-05-26T06:12:16Z
+    timestamp: 2024-05-31T10:47:08Z
 - name: nixpkgs
   src:
     owner: NixOS
@@ -15,10 +15,10 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: 0c007b36981bdbd69ccf0c7df30a174e63660667
-    sha256: 0qsgcq4rfm5qpq011mxkxljf4qraqmy0x9603rwlw8ca786qp965
+    rev: 34cd4df4fbbaf4a1eddbc205e59bcae43ada9d46
+    sha256: 12iy27qq24ayh596mpkqjaj75w91hncb24pxszc72hm0gh3hdf26
     tag: fetch_from_github
-    timestamp: 2024-05-26T23:52:43Z
+    timestamp: 2024-05-31T10:45:06Z
 kernels:
 - name: python3
   packages:
