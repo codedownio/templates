@@ -15,10 +15,10 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: 34cd4df4fbbaf4a1eddbc205e59bcae43ada9d46
-    sha256: 12iy27qq24ayh596mpkqjaj75w91hncb24pxszc72hm0gh3hdf26
+    rev: a7943febf841136fd5d9b790cd54126f12708d4a
+    sha256: 1r5kanjjlhkgwy1pzgj8as8ay91z5iw55jlcphqjzyjh1s212maz
     tag: fetch_from_github
-    timestamp: 2024-05-31T10:45:06Z
+    timestamp: 2024-06-01T09:49:35Z
 kernels: []
 other_packages:
 - attr: shells.zsh
