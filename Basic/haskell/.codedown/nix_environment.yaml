@@ -4,10 +4,10 @@ channels:
   src:
     owner: codedownio
     repo: codedown-languages
-    rev: f6eb3597101e5156437bb27150dee20f2e5df160
-    sha256: 083rhazpvpl55ahgf2c8ximnbczfcqixn8p2sljwq9w40kq69559
+    rev: 42521df9795d0b059e356523b3980ac7f8bea079
+    sha256: 0k6rjxgybjmjmw64fjam4ap3lfxdg9nssv1sp68hf5vv01ijq589
     tag: fetch_from_github
-    timestamp: 2024-05-31T10:47:08Z
+    timestamp: 2024-06-04T12:46:12Z
 - name: nixpkgs
   src:
     owner: NixOS
@@ -15,15 +15,16 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: a7943febf841136fd5d9b790cd54126f12708d4a
-    sha256: 1r5kanjjlhkgwy1pzgj8as8ay91z5iw55jlcphqjzyjh1s212maz
+    rev: 4fad892a8f64635a55423e4acfefeefb6caf4d0d
+    sha256: 1valyx3aff2fv0sqcbhdbixp5z5ii7gqxqda4n3m38wdxn3fbg9y
     tag: fetch_from_github
-    timestamp: 2024-06-01T09:49:35Z
+    timestamp: 2024-06-03T15:35:50Z
 kernels:
 - name: haskell-ghc96
   packages: []
   channel: codedown
   meta:
+    name: haskell-ghc96
     display_name: Haskell
     description: An advanced, purely functional programming language (GHC 9.6.4)
     icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
@@ -62,6 +63,7 @@ other_packages:
 - attr: shells.zsh
   channel: codedown
   meta:
+    name: zsh-5.9
     display_name: ZSH 5.9
     category: Shells
     description: The Z shell
@@ -81,6 +83,7 @@ other_packages:
 - attr: spellchecker
   channel: codedown
   meta:
+    name: hunspell-1.7.2
     category: Language servers
     description: Spell checker
     homepage: https://hunspell.sourceforge.net
