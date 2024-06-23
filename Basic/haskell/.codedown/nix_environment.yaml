@@ -4,10 +4,10 @@ channels:
   src:
     owner: codedownio
     repo: codedown-languages
-    rev: 42521df9795d0b059e356523b3980ac7f8bea079
-    sha256: 0k6rjxgybjmjmw64fjam4ap3lfxdg9nssv1sp68hf5vv01ijq589
+    rev: 1a0530ac3c03827cddc60e1ee5b82df81602964d
+    sha256: 1yla7baw3gll3hxzsppac9s4734wkzdn40i1w00hb51z7r88c4hi
     tag: fetch_from_github
-    timestamp: 2024-06-04T12:46:12Z
+    timestamp: 2024-06-23T22:53:56Z
 - name: nixpkgs
   src:
     owner: NixOS
@@ -15,10 +15,10 @@ channels:
       contents: release-23.11
       tag: branch
     repo: nixpkgs
-    rev: 4fad892a8f64635a55423e4acfefeefb6caf4d0d
-    sha256: 1valyx3aff2fv0sqcbhdbixp5z5ii7gqxqda4n3m38wdxn3fbg9y
+    rev: 74b529ef56db2bc5ac41b40dca2e57e222964e3a
+    sha256: 04pha3jgdfncwqv68pkkhwlr37jz8gf1v43w2m613va6j44c4swr
     tag: fetch_from_github
-    timestamp: 2024-06-03T15:35:50Z
+    timestamp: 2024-06-23T16:30:47Z
 kernels:
 - name: haskell-ghc96
   packages: []
@@ -88,4 +88,6 @@ other_packages:
     description: Spell checker
     homepage: https://hunspell.sourceforge.net
     icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
+    language_server_names:
+    - spellchecker
     maintainers: []
