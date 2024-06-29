@@ -1,24 +1,24 @@
 channels:
 - name: codedown
-  special: true
   src:
+    tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
     rev: 1a0530ac3c03827cddc60e1ee5b82df81602964d
-    sha256: 1yla7baw3gll3hxzsppac9s4734wkzdn40i1w00hb51z7r88c4hi
-    tag: fetch_from_github
+    hash: sha256-ERKGUD4/lAUB4CECYtufnIxDdGLqXv07HJS+wdU6ivo=
     timestamp: 2024-06-23T22:53:56Z
+  special: true
 - name: nixpkgs
   src:
-    owner: NixOS
-    ref:
-      contents: release-23.11
-      tag: branch
-    repo: nixpkgs
-    rev: 74b529ef56db2bc5ac41b40dca2e57e222964e3a
-    sha256: 04pha3jgdfncwqv68pkkhwlr37jz8gf1v43w2m613va6j44c4swr
     tag: fetch_from_github
-    timestamp: 2024-06-23T16:30:47Z
+    owner: NixOS
+    repo: nixpkgs
+    rev: 86bcf722477fc9030e0987df2f84fc35a6dd9fb3
+    hash: sha256-BCvIM81+dlMG9E2NhYWAvEmrcbV7jvzGUTeq89ZMXG0=
+    timestamp: 2024-06-28T16:03:23Z
+    ref:
+      tag: branch
+      contents: release-23.11
 kernels:
 - name: haskell-ghc96
   packages: []
