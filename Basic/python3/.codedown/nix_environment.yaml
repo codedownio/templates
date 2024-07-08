@@ -1,24 +1,24 @@
 channels:
 - name: codedown
+  special: true
   src:
-    tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 1a0530ac3c03827cddc60e1ee5b82df81602964d
-    hash: sha256-ERKGUD4/lAUB4CECYtufnIxDdGLqXv07HJS+wdU6ivo=
-    timestamp: 2024-06-23T22:53:56Z
-  special: true
+    rev: 4eddf4cc18babb90ea07ced61fca590b66d5e924
+    sha256: 0cpf7a25s2ymyp0ch333613i008av6nswrdrw9acx13i74wlqwdk
+    tag: fetch_from_github
+    timestamp: 2024-07-08T01:38:11Z
 - name: nixpkgs
   src:
-    tag: fetch_from_github
     owner: NixOS
-    repo: nixpkgs
-    rev: 86bcf722477fc9030e0987df2f84fc35a6dd9fb3
-    hash: sha256-BCvIM81+dlMG9E2NhYWAvEmrcbV7jvzGUTeq89ZMXG0=
-    timestamp: 2024-06-28T16:03:23Z
     ref:
-      tag: branch
       contents: release-23.11
+      tag: branch
+    repo: nixpkgs
+    rev: 7144d6241f02d171d25fba3edeaf15e0f2592105
+    sha256: 1lm7rkcbr7gg5zp62bga8iqyhg5hsvcly95hq0p3mcv7zq8n3wc2
+    tag: fetch_from_github
+    timestamp: 2024-07-02T21:51:12Z
 kernels:
 - name: python3
   packages:
