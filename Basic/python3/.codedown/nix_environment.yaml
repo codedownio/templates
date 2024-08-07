@@ -4,18 +4,18 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 4eddf4cc18babb90ea07ced61fca590b66d5e924
-    hash: sha256-s3FMOTlxhM5U4rllrq3ZCgEQRzBjDMjA9dULXYQ67jI=
-    timestamp: 2024-07-08T01:38:11Z
+    rev: aa0c7e9df2e78173e41c9ade31aa1f8298594f97
+    hash: sha256-HwSBWzS3mvVAzpOfKaiMY7Rh3Mk75LKcn8Ay8mVbN9Y=
+    timestamp: 2024-08-07T10:26:45Z
   special: true
 - name: nixpkgs
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 7144d6241f02d171d25fba3edeaf15e0f2592105
-    hash: sha256-gvFhEf5nszouwLAkT9nWsDzocUTqLWHuL++dvNjMp9I=
-    timestamp: 2024-07-02T21:51:12Z
+    rev: 205fd4226592cc83fd4c0885a3e4c9c400efabb5
+    hash: sha256-zwVvxrdIzralnSbcpghA92tWu2DV2lwv89xZc8MTrbg=
+    timestamp: 2024-07-09T14:26:38Z
     ref:
       tag: branch
       contents: release-23.11
@@ -24,8 +24,8 @@ kernels:
   packages:
   - name: matplotlib
     meta:
-      name: python3.11-matplotlib-3.8.0
-      changelog: https://github.com/matplotlib/matplotlib/releases/tag/v3.8.0
+      name: python3.11-matplotlib-3.8.4
+      changelog: https://github.com/matplotlib/matplotlib/releases/tag/v3.8.4
       description: Python plotting library, making publication quality plots
       homepage: https://matplotlib.org/
       maintainers:
@@ -37,22 +37,17 @@ kernels:
         email: veprbl@gmail.com
         github: veprbl
         githubId: 245573
-      version: 3.8.0
+      version: 3.8.4
   channel: codedown
   meta:
-    name: python3-3.11.8
-    display_name: Python 3.11.8
-    changelog: https://docs.python.org/release/3.11.8/whatsnew/changelog.html
+    name: python3-3.11.9
+    display_name: Python 3.11.9
+    changelog: https://docs.python.org/release/3.11.9/whatsnew/changelog.html
     description: A high-level dynamically-typed programming language
     homepage: https://www.python.org
     icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
     language_server_names:
     - jedi
-    maintainers:
-    - name: Frederik Rietdijk
-      email: fridh@fridh.nl
-      github: FRidh
-      githubId: 2129135
     modes:
       attrs:
       - python3
@@ -128,8 +123,8 @@ kernels:
   packages: []
   channel: codedown
   meta:
-    name: bash-5.2-p15
-    display_name: Bash 5.2
+    name: bash-5.2p26
+    display_name: Bash 5.2p26
     description: GNU Bourne-Again Shell, the de facto standard shell on Linux
     homepage: https://www.gnu.org/software/bash/
     icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png

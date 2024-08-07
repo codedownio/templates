@@ -4,18 +4,18 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 4eddf4cc18babb90ea07ced61fca590b66d5e924
-    hash: sha256-s3FMOTlxhM5U4rllrq3ZCgEQRzBjDMjA9dULXYQ67jI=
-    timestamp: 2024-07-08T01:38:11Z
+    rev: aa0c7e9df2e78173e41c9ade31aa1f8298594f97
+    hash: sha256-HwSBWzS3mvVAzpOfKaiMY7Rh3Mk75LKcn8Ay8mVbN9Y=
+    timestamp: 2024-08-07T10:26:45Z
   special: true
 - name: nixpkgs
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 7144d6241f02d171d25fba3edeaf15e0f2592105
-    hash: sha256-gvFhEf5nszouwLAkT9nWsDzocUTqLWHuL++dvNjMp9I=
-    timestamp: 2024-07-02T21:51:12Z
+    rev: 205fd4226592cc83fd4c0885a3e4c9c400efabb5
+    hash: sha256-zwVvxrdIzralnSbcpghA92tWu2DV2lwv89xZc8MTrbg=
+    timestamp: 2024-07-09T14:26:38Z
     ref:
       tag: branch
       contents: release-23.11
