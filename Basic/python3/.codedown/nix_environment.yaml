@@ -1,20 +1,332 @@
 channels:
 - name: codedown
+  packages:
+  - name: kernels.python3
+    packages:
+    - name: matplotlib
+      packages: []
+      meta:
+        name: python3.11-matplotlib-3.8.4
+        changelog: https://github.com/matplotlib/matplotlib/releases/tag/v3.8.4
+        description: Python plotting library, making publication quality plots
+        homepage: https://matplotlib.org/
+        maintainers:
+        - name: Jason O'Conal
+          email: jason@oconal.id.au
+          github: lovek323
+          githubId: 265084
+        - name: Dmitry Kalinkin
+          email: veprbl@gmail.com
+          github: veprbl
+          githubId: 245573
+        version: 3.8.4
+      settings: null
+    meta:
+      name: python3-3.11.9
+      display_name: Python 3.11.9
+      changelog: https://docs.python.org/release/3.11.9/whatsnew/changelog.html
+      description: A high-level dynamically-typed programming language
+      homepage: https://www.python.org
+      icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
+      language_server_names:
+      - jedi
+      modes:
+        attrs:
+        - python
+        code_mirror_mode: python
+        extensions:
+        - py
+      settings_schema:
+      - defaultValue: '["python"]'
+        loc:
+        - kernels
+        - python3
+        - attrs
+        target: kernels.python3.attrs
+        type:
+          tag: list
+          value: string
+      - defaultValue: 'false'
+        loc:
+        - kernels
+        - python3
+        - enable
+        target: kernels.python3.enable
+        type: boolean
+      - defaultValue: '["py"]'
+        loc:
+        - kernels
+        - python3
+        - extensions
+        target: kernels.python3.extensions
+        type:
+          tag: list
+          value: string
+      - defaultValue: '[]'
+        loc:
+        - kernels
+        - python3
+        - packages
+        target: kernels.python3.packages
+        type:
+          tag: list
+          value:
+            tag: either
+            left: string
+            right:
+              tag: attrs
+      - defaultValue: '"python3"'
+        loc:
+        - kernels
+        - python3
+        - python3Package
+        target: kernels.python3.python3Package
+        type:
+          tag: enum
+          values:
+          - python3
+          - python3
+          - python310
+          - python311
+          - python312
+          - python313
+          - python39
+      - defaultValue: 'true'
+        description: Enable the variable inspector
+        loc:
+        - kernels
+        - python3
+        - settings
+        - enableVariableInspector
+        target: kernels.python3.settings.enableVariableInspector
+        type: boolean
+      - defaultValue: 'false'
+        description: Enable Flake8 language server
+        loc:
+        - kernels
+        - python3
+        - settings
+        - lsp
+        - flake8
+        - enable
+        target: kernels.python3.settings.lsp.flake8.enable
+        type: boolean
+      - defaultValue: 'true'
+        description: Enable Jedi language server
+        loc:
+        - kernels
+        - python3
+        - settings
+        - lsp
+        - jedi
+        - enable
+        target: kernels.python3.settings.lsp.jedi.enable
+        type: boolean
+      - defaultValue: 'false'
+        description: Enable Microsoft Python language server
+        loc:
+        - kernels
+        - python3
+        - settings
+        - lsp
+        - microsoft
+        - enable
+        target: kernels.python3.settings.lsp.microsoft.enable
+        type: boolean
+      - defaultValue: 'false'
+        description: Enable pycodestyle language server
+        loc:
+        - kernels
+        - python3
+        - settings
+        - lsp
+        - pycodestyle
+        - enable
+        target: kernels.python3.settings.lsp.pycodestyle.enable
+        type: boolean
+      - defaultValue: 'false'
+        description: Enable Pylint language server
+        loc:
+        - kernels
+        - python3
+        - settings
+        - lsp
+        - pylint
+        - enable
+        target: kernels.python3.settings.lsp.pylint.enable
+        type: boolean
+      - defaultValue: 'false'
+        description: Enable Pyright language server
+        loc:
+        - kernels
+        - python3
+        - settings
+        - lsp
+        - pyright
+        - enable
+        target: kernels.python3.settings.lsp.pyright.enable
+        type: boolean
+      - defaultValue: 'false'
+        description: Enable python-language-server language server
+        loc:
+        - kernels
+        - python3
+        - settings
+        - lsp
+        - python-language-server
+        - enable
+        target: kernels.python3.settings.lsp.python-language-server.enable
+        type: boolean
+      - defaultValue: 'false'
+        description: Enable python-lsp-server language server
+        loc:
+        - kernels
+        - python3
+        - settings
+        - lsp
+        - python-lsp-server
+        - enable
+        target: kernels.python3.settings.lsp.python-lsp-server.enable
+        type: boolean
+      - defaultValue: 'false'
+        description: Permit user site-packages by skipping setting the PYTHONNOUSERSITE
+          variable
+        loc:
+        - kernels
+        - python3
+        - settings
+        - permitUserSite
+        target: kernels.python3.settings.permitUserSite
+        type: boolean
+      spdx_id: Python-2.0
+    settings:
+      enableVariableInspector: true
+      lsp:
+        flake8:
+          enable: false
+        jedi:
+          enable: true
+        microsoft:
+          enable: false
+        pycodestyle:
+          enable: false
+        pylint:
+          enable: false
+        pyright:
+          enable: false
+        python-language-server:
+          enable: false
+        python-lsp-server:
+          enable: false
+      permitUserSite: false
+  - name: kernels.bash
+    packages: []
+    meta:
+      name: bash-5.2p26
+      display_name: Bash 5.2p26
+      description: GNU Bourne-Again Shell, the de facto standard shell on Linux
+      homepage: https://www.gnu.org/software/bash/
+      icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
+      language_server_names:
+      - bash-language-server
+      maintainers:
+      - name: Will Dietz
+        email: w@wdtz.org
+        github: dtzWill
+        githubId: 817330
+        keys:
+        - fingerprint: 389A 78CB CD88 5E0C 4701  DEB9 FD42 C7D0 D414 94C8
+      modes:
+        attrs:
+        - bash
+        code_mirror_mode: shell
+        extensions:
+        - sh
+        - bash
+      settings_schema:
+      - defaultValue: '["bash"]'
+        loc:
+        - kernels
+        - bash
+        - attrs
+        target: kernels.bash.attrs
+        type:
+          tag: list
+          value: string
+      - defaultValue: 'false'
+        loc:
+        - kernels
+        - bash
+        - enable
+        target: kernels.bash.enable
+        type: boolean
+      - defaultValue: '["sh","bash"]'
+        loc:
+        - kernels
+        - bash
+        - extensions
+        target: kernels.bash.extensions
+        type:
+          tag: list
+          value: string
+      - defaultValue: 'true'
+        description: Enable Bash language server
+        loc:
+        - kernels
+        - bash
+        - settings
+        - lsp
+        - bash-language-server
+        - enable
+        target: kernels.bash.settings.lsp.bash-language-server.enable
+        type: boolean
+      spdx_id: GPL-3.0-or-later
+    settings:
+      lsp:
+        bash-language-server:
+          enable: true
+  - name: shells.zsh
+    packages: []
+    meta:
+      name: zsh-5.9
+      display_name: ZSH 5.9
+      description: The Z shell
+      homepage: https://www.zsh.org/
+      icon: /nix/store/7j21ks0fgsx1vbpigkc044i4ahbr7s9p-default_icon_64x64.png
+      maintainers:
+      - name: Pascal Wittmann
+        email: mail@pascal-wittmann.de
+        github: pSub
+        githubId: 83842
+      - name: Artturi N
+        email: artturin@artturin.com
+        github: Artturin
+        githubId: 56650223
+        matrix: '@artturin:matrix.org'
+      version: '5.9'
+    settings: {}
+  - name: language-servers.spellchecker
+    packages: []
+    meta:
+      name: hunspell-1.7.2
+      category: Language servers
+      description: Spell checker
+      homepage: https://hunspell.sourceforge.net
+      icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
+      language_server_names:
+      - spellchecker
+      maintainers: []
+    settings: {}
   src:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: aa0c7e9df2e78173e41c9ade31aa1f8298594f97
-    hash: sha256-HwSBWzS3mvVAzpOfKaiMY7Rh3Mk75LKcn8Ay8mVbN9Y=
-    timestamp: 2024-08-07T10:26:45Z
+    rev: 8bc2b0b669fb48f666bd2a807027e82497095c5a
+    hash: sha256-aX7yscnKwCR4KDSZmHRPFcM2+QxTvCVJAwoUB3q+X2c=
+    timestamp: 2024-09-20T11:48:18Z
   special: true
-  packages:
-  - name: kernels.python3
-    packages: ["matplotlib"]
-  - name: kernels.bash
-  - name: shell.zsh
-  - name: spellchecker
 - name: nixpkgs
+  packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
@@ -25,4 +337,3 @@ channels:
     ref:
       tag: branch
       contents: release-23.11
-    packages: []

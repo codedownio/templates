@@ -1,18 +1,91 @@
 channels:
 - name: codedown
+  packages:
+  - name: kernels.haskell
+    packages: []
+    meta:
+      name: haskell-ghc92
+      display_name: Haskell
+      description: An advanced, purely functional programming language (GHC 9.2.8)
+      icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
+      language_server_names:
+      - haskell-language-server
+      modes:
+        attrs:
+        - haskell
+        code_mirror_mode: haskell
+        extensions:
+        - hs
+      settings_schema:
+      - defaultValue: true
+        target: lsp.haskell-language-server.enable
+        title: Enable haskell-language-server
+        type: boolean
+      - defaultValue: false
+        description: Print debug output for the notebook language server.
+        target: lsp.haskell-language-server.debug
+        title: 'Haskell-language-server: enable debug output'
+        type: boolean
+      - defaultValue: false
+        description: Print verbose debug output; intended for developers.
+        target: lsp.haskell-language-server.super-debug
+        title: 'Haskell-language-server: enable verbose debug output'
+        type: boolean
+      - defaultValue: false
+        description: Show hlint warnings as part of Jupyter kernel output. Normally
+          you don't want this because it is provided by haskell-language-server.
+        target: enableHlintOutput
+        title: Enable hlint warnings in code output.
+        type: boolean
+    settings:
+      enableHlintOutput: false
+      lsp:
+        haskell-language-server:
+          debug: false
+          enable: true
+          super-debug: false
+  - name: shells.zsh
+    packages: []
+    meta:
+      name: zsh-5.9
+      display_name: ZSH 5.9
+      description: The Z shell
+      homepage: https://www.zsh.org/
+      icon: /nix/store/7j21ks0fgsx1vbpigkc044i4ahbr7s9p-default_icon_64x64.png
+      maintainers:
+      - name: Pascal Wittmann
+        email: mail@pascal-wittmann.de
+        github: pSub
+        githubId: 83842
+      - name: Artturi N
+        email: artturin@artturin.com
+        github: Artturin
+        githubId: 56650223
+        matrix: '@artturin:matrix.org'
+      version: '5.9'
+    settings: {}
+  - name: language-servers.spellchecker
+    packages: []
+    meta:
+      name: hunspell-1.7.2
+      category: Language servers
+      description: Spell checker
+      homepage: https://hunspell.sourceforge.net
+      icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
+      language_server_names:
+      - spellchecker
+      maintainers: []
+    settings: {}
   src:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: aa0c7e9df2e78173e41c9ade31aa1f8298594f97
-    hash: sha256-HwSBWzS3mvVAzpOfKaiMY7Rh3Mk75LKcn8Ay8mVbN9Y=
-    timestamp: 2024-08-07T10:26:45Z
+    rev: 8bc2b0b669fb48f666bd2a807027e82497095c5a
+    hash: sha256-aX7yscnKwCR4KDSZmHRPFcM2+QxTvCVJAwoUB3q+X2c=
+    timestamp: 2024-09-20T11:48:18Z
   special: true
-  packages:
-  - name: kernels.haskell
-  - name: shell.zsh
-  - name: spellchecker
 - name: nixpkgs
+  packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
@@ -23,4 +96,3 @@ channels:
     ref:
       tag: branch
       contents: release-23.11
-    packages: []
