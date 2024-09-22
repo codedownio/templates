@@ -26,6 +26,7 @@ channels:
       display_name: Python 3.11.9
       changelog: https://docs.python.org/release/3.11.9/whatsnew/changelog.html
       description: A high-level dynamically-typed programming language
+      has_packages: true
       homepage: https://www.python.org
       icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
       language_server_names:
@@ -225,6 +226,7 @@ channels:
       name: bash-5.2p26
       display_name: Bash 5.2p26
       description: GNU Bourne-Again Shell, the de facto standard shell on Linux
+      has_packages: false
       homepage: https://www.gnu.org/software/bash/
       icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
       language_server_names:
@@ -322,9 +324,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 8a1d0c2019c995f2c396a19b81e5947c1013395c
-    hash: sha256-4AKb+uWGenED7ow6mgG6w8OQb5kGfhy05uAyc9USjMo=
-    timestamp: 2024-09-22T01:36:37Z
+    rev: b828e3ecdb1d56704f2652d96a8b920482ad3f78
+    hash: sha256-aXe12hSAyuGV6Al7PmOIAWbsx0j+S4/UJxx0ClCZokA=
+    timestamp: 2024-09-22T08:38:36Z
   special: true
 - name: nixpkgs
   packages: []

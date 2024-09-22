@@ -7,6 +7,7 @@ channels:
       name: haskell-ghc92
       display_name: Haskell
       description: An advanced, purely functional programming language (GHC 9.2.8)
+      has_packages: true
       icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
       language_server_names:
       - haskell-language-server
@@ -81,9 +82,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 8a1d0c2019c995f2c396a19b81e5947c1013395c
-    hash: sha256-4AKb+uWGenED7ow6mgG6w8OQb5kGfhy05uAyc9USjMo=
-    timestamp: 2024-09-22T01:36:37Z
+    rev: b828e3ecdb1d56704f2652d96a8b920482ad3f78
+    hash: sha256-aXe12hSAyuGV6Al7PmOIAWbsx0j+S4/UJxx0ClCZokA=
+    timestamp: 2024-09-22T08:38:36Z
   special: true
 - name: nixpkgs
   packages: []
