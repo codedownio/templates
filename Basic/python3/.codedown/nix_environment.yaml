@@ -309,6 +309,7 @@ channels:
     packages: []
     meta:
       name: hunspell-1.7.2
+      display_name: Spellchecker 1.1.0
       category: Language servers
       description: Spell checker
       homepage: https://hunspell.sourceforge.net
@@ -321,9 +322,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 8bc2b0b669fb48f666bd2a807027e82497095c5a
-    hash: sha256-aX7yscnKwCR4KDSZmHRPFcM2+QxTvCVJAwoUB3q+X2c=
-    timestamp: 2024-09-20T11:48:18Z
+    rev: 8a1d0c2019c995f2c396a19b81e5947c1013395c
+    hash: sha256-4AKb+uWGenED7ow6mgG6w8OQb5kGfhy05uAyc9USjMo=
+    timestamp: 2024-09-22T01:36:37Z
   special: true
 - name: nixpkgs
   packages: []
