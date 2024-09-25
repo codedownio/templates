@@ -39,7 +39,14 @@ channels:
         title: Enable hlint warnings in code output.
         type: boolean
     settings:
+      packages: []
+      attrs:
+      - haskell
+      enable: true
       enableHlintOutput: false
+      extensions:
+      - hs
+      ghcPackage: ghc92
       lsp:
         haskell-language-server:
           debug: false
@@ -82,9 +89,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: b828e3ecdb1d56704f2652d96a8b920482ad3f78
-    hash: sha256-aXe12hSAyuGV6Al7PmOIAWbsx0j+S4/UJxx0ClCZokA=
-    timestamp: 2024-09-22T08:38:36Z
+    rev: f30464dc0aadfd264b06a6f624db30611a4cb254
+    hash: sha256-ZpJPH9VN8nNBUGioYwLBMrK9q97CtKukie1+AdJFk1Q=
+    timestamp: 2024-09-25T01:01:11Z
   special: true
 - name: nixpkgs
   packages: []
