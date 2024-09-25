@@ -41,9 +41,8 @@ channels:
       - defaultValue: 'false'
         description: Enable Python 3 kernel
         hidden: true
-        loc:
+        target:
         - enable
-        target: kernels.python3.enable
         title: Enable Python 3 kernel
         type: boolean
       - defaultValue: '["python"]'
@@ -51,10 +50,9 @@ channels:
           allowing it to run the code.
         listType:
           type: string
-        loc:
+        target:
         - interface
         - attrs
-        target: kernels.python3.interface.attrs
         title: Notebook attributes
         type: list
       - defaultValue: '["py"]'
@@ -62,93 +60,82 @@ channels:
           you to run the code as if it were a Jupyter cell.
         listType:
           type: string
-        loc:
+        target:
         - interface
         - extensions
-        target: kernels.python3.interface.extensions
         title: File extensions
         type: list
       - defaultValue: 'false'
         description: Enable Flake8 language server
-        loc:
+        target:
         - lsp
         - flake8
         - enable
-        target: kernels.python3.lsp.flake8.enable
         type: boolean
       - defaultValue: 'true'
-        loc:
+        target:
         - lsp
         - jedi
         - enable
-        target: kernels.python3.lsp.jedi.enable
         title: Enable Jedi language server
         type: boolean
       - defaultValue: 'false'
         description: Enable Microsoft Python language server
-        loc:
+        target:
         - lsp
         - microsoft
         - enable
-        target: kernels.python3.lsp.microsoft.enable
         type: boolean
       - defaultValue: 'false'
         description: Enable pycodestyle language server
-        loc:
+        target:
         - lsp
         - pycodestyle
         - enable
-        target: kernels.python3.lsp.pycodestyle.enable
         type: boolean
       - defaultValue: 'false'
         description: Enable Pylint language server
-        loc:
+        target:
         - lsp
         - pylint
         - enable
-        target: kernels.python3.lsp.pylint.enable
         type: boolean
       - defaultValue: 'false'
         description: Enable Pyright language server
-        loc:
+        target:
         - lsp
         - pyright
         - enable
-        target: kernels.python3.lsp.pyright.enable
         type: boolean
       - defaultValue: 'false'
         description: Enable python-language-server language server
-        loc:
+        target:
         - lsp
         - python-language-server
         - enable
-        target: kernels.python3.lsp.python-language-server.enable
         type: boolean
       - defaultValue: 'false'
         description: Enable python-lsp-server language server
-        loc:
+        target:
         - lsp
         - python-lsp-server
         - enable
-        target: kernels.python3.lsp.python-lsp-server.enable
         type: boolean
       - defaultValue: 'true'
         description: This will show a summary of the currently defined variables in
           the UI.
-        loc:
+        target:
         - misc
         - enableVariableInspector
-        target: kernels.python3.misc.enableVariableInspector
         title: Enable the variable inspector
         type: boolean
       - defaultValue: 'false'
         description: Skip setting the PYTHONNOUSERSITE variable. This will allow your
           Python code to import local packages (e.g. from ~/.local/lib). This is useful
           if you want to use pip to install Python packages independently of Nix.
-        loc:
+        target:
         - misc
         - permitUserSite
-        target: kernels.python3.misc.permitUserSite
         title: Permit user site-packages
         type: boolean
       - defaultValue: '[]'
@@ -158,18 +145,15 @@ channels:
           right:
             type: attrs
           type: either
-        loc:
+        target:
         - packages
-        target: kernels.python3.packages
         type: list
       - defaultValue: '"python3"'
-        description: Python 3 version
-        loc:
+        target:
         - python3Package
-        target: kernels.python3.python3Package
+        title: Python 3 version
         type: enum
         values:
-        - python3
         - python3
         - python310
         - python311
@@ -236,31 +220,27 @@ channels:
       - defaultValue: '["bash"]'
         listType:
           type: string
-        loc:
+        target:
         - attrs
-        target: kernels.bash.attrs
         type: list
       - defaultValue: 'false'
         description: Enable Bash kernel
         hidden: true
-        loc:
+        target:
         - enable
-        target: kernels.bash.enable
         type: boolean
       - defaultValue: '["sh","bash"]'
         listType:
           type: string
-        loc:
+        target:
         - extensions
-        target: kernels.bash.extensions
         type: list
       - defaultValue: 'true'
         description: Enable Bash language server
-        loc:
+        target:
         - lsp
         - bash-language-server
         - enable
-        target: kernels.bash.lsp.bash-language-server.enable
         type: boolean
       spdx_id: GPL-3.0-or-later
     settings:
@@ -310,9 +290,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: f30464dc0aadfd264b06a6f624db30611a4cb254
-    hash: sha256-ZpJPH9VN8nNBUGioYwLBMrK9q97CtKukie1+AdJFk1Q=
-    timestamp: 2024-09-25T01:01:11Z
+    rev: 73a8a0c6da17efe73f313e28b26a6ad2b150dfbf
+    hash: sha256-V66mo6E0EI0M2s/+WeuDTrzT0ROMr0xdlijx+VW4gRI=
+    timestamp: 2024-09-25T08:04:26Z
   special: true
 - name: nixpkgs
   packages: []
