@@ -18,40 +18,59 @@ channels:
         extensions:
         - hs
       settings_schema:
-      - defaultValue: true
-        target: lsp.haskell-language-server.enable
-        title: Enable haskell-language-server
-        type: boolean
-      - defaultValue: false
-        description: Print debug output for the notebook language server.
-        target: lsp.haskell-language-server.debug
-        title: 'Haskell-language-server: enable debug output'
-        type: boolean
-      - defaultValue: false
-        description: Print verbose debug output; intended for developers.
-        target: lsp.haskell-language-server.super-debug
-        title: 'Haskell-language-server: enable verbose debug output'
-        type: boolean
-      - defaultValue: false
-        description: Show hlint warnings as part of Jupyter kernel output. Normally
-          you don't want this because it is provided by haskell-language-server.
-        target: enableHlintOutput
-        title: Enable hlint warnings in code output.
-        type: boolean
+        packages:
+          defaultValue: []
+          listType:
+            left:
+              type: string
+            right:
+              type: attrs
+            type: either
+          type: list
+        attrs:
+          defaultValue:
+          - haskell
+          listType:
+            type: string
+          type: list
+        enable:
+          defaultValue: false
+          description: Enable Haskell kernel
+          hidden: true
+          type: boolean
+        enableHlintOutput:
+          defaultValue: false
+          description: Enable hlint warnings in Jupyter kernel output. Normally you
+            don't want this because it is provided by haskell-language-server.
+          type: boolean
+        extensions:
+          defaultValue:
+          - hs
+          listType:
+            type: string
+          type: list
+        ghcPackage:
+          defaultValue: ghc92
+          type: enum
+          values:
+          - ghc92
+          - ghc94
+          - ghc96
+          - ghc98
+        lsp.haskell-language-server.debug:
+          defaultValue: false
+          description: 'Haskell-language-server: enable debug output'
+          type: boolean
+        lsp.haskell-language-server.enable:
+          defaultValue: true
+          description: Enable haskell-language-server
+          type: boolean
+        lsp.haskell-language-server.super-debug:
+          defaultValue: false
+          description: 'Haskell-language-server: enable verbose debug output'
+          type: boolean
     settings:
-      packages: []
-      attrs:
-      - haskell
       enable: true
-      enableHlintOutput: false
-      extensions:
-      - hs
-      ghcPackage: ghc92
-      lsp:
-        haskell-language-server:
-          debug: false
-          enable: true
-          super-debug: false
   - name: shells.zsh
     packages: []
     meta:
@@ -89,9 +108,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 73a8a0c6da17efe73f313e28b26a6ad2b150dfbf
-    hash: sha256-V66mo6E0EI0M2s/+WeuDTrzT0ROMr0xdlijx+VW4gRI=
-    timestamp: 2024-09-25T08:04:26Z
+    rev: 1f1b5741a2a143f3c77260f31fe8b0b6ea8d1dc2
+    hash: sha256-qolQvvvdENLWRpC7Gt++KmqCXzJr3tuJWf2qe8PvzVI=
+    timestamp: 2024-09-25T10:20:03Z
   special: true
 - name: nixpkgs
   packages: []
