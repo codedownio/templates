@@ -116,9 +116,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 6e16d94a30ef2f0d684c2677776b11507a9c53eb
-    hash: sha256-QIWlxaTq/3M9x2DqZtguJQP9ybmLewrTGVSk4hgqxgQ=
-    timestamp: 2024-09-27T03:04:40Z
+    rev: befc446bc5130a8acf6af0617a2fa67f30644b38
+    hash: sha256-YL6l8Ayd9saM+v5qMtGX2j5Z3S+lLzAmATBBJNLsUXU=
+    timestamp: 2024-09-27T13:01:26Z
   special: true
 - name: nixpkgs
   packages: []
