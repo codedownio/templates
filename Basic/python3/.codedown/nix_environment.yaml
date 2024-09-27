@@ -2,25 +2,7 @@ channels:
 - name: codedown
   packages:
   - name: kernels.python3
-    packages:
-    - name: matplotlib
-      packages: []
-      meta:
-        name: python3.11-matplotlib-3.8.4
-        changelog: https://github.com/matplotlib/matplotlib/releases/tag/v3.8.4
-        description: Python plotting library, making publication quality plots
-        homepage: https://matplotlib.org/
-        maintainers:
-        - name: Jason O'Conal
-          email: jason@oconal.id.au
-          github: lovek323
-          githubId: 265084
-        - name: Dmitry Kalinkin
-          email: veprbl@gmail.com
-          github: veprbl
-          githubId: 245573
-        version: 3.8.4
-      settings: null
+    packages: []
     meta:
       name: python3-3.11.9
       display_name: Python 3.11.9
@@ -46,10 +28,10 @@ channels:
             right:
               type: attrs
             type: either
+          title: List of packages
           type: list
         enable:
           defaultValue: false
-          description: Enable Python 3 kernel
           hidden: true
           title: Enable Python 3 kernel
           type: boolean
@@ -73,7 +55,7 @@ channels:
           type: list
         lsp.flake8.enable:
           defaultValue: false
-          description: Enable Flake8 language server
+          title: Enable Flake8 language server
           type: boolean
         lsp.jedi.enable:
           defaultValue: true
@@ -81,27 +63,27 @@ channels:
           type: boolean
         lsp.microsoft.enable:
           defaultValue: false
-          description: Enable Microsoft Python language server
+          title: Enable Microsoft Python language server
           type: boolean
         lsp.pycodestyle.enable:
           defaultValue: false
-          description: Enable pycodestyle language server
+          title: Enable pycodestyle language server
           type: boolean
         lsp.pylint.enable:
           defaultValue: false
-          description: Enable Pylint language server
+          title: Enable Pylint language server
           type: boolean
         lsp.pyright.enable:
           defaultValue: false
-          description: Enable Pyright language server
+          title: Enable Pyright language server
           type: boolean
         lsp.python-language-server.enable:
           defaultValue: false
-          description: Enable python-language-server language server
+          title: Enable python-language-server language server
           type: boolean
         lsp.python-lsp-server.enable:
           defaultValue: false
-          description: Enable python-lsp-server language server
+          title: Enable python-lsp-server language server
           type: boolean
         misc.enableVariableInspector:
           defaultValue: true
@@ -159,27 +141,33 @@ channels:
         - sh
         - bash
       settings_schema:
-        attrs:
-          defaultValue:
-          - bash
-          listType:
-            type: string
-          type: list
         enable:
           defaultValue: false
-          description: Enable Bash kernel
           hidden: true
+          title: Enable Bash kernel
           type: boolean
-        extensions:
+        interface.attrs:
+          defaultValue:
+          - bash
+          description: Notebook cells that have these attributes will match this kernel,
+            allowing it to run the code.
+          listType:
+            type: string
+          title: Notebook attributes
+          type: list
+        interface.extensions:
           defaultValue:
           - sh
           - bash
+          description: Files with these extensions will match against this kernel,
+            allowing you to run the code as if it were a Jupyter cell.
           listType:
             type: string
+          title: File extensions
           type: list
         lsp.bash-language-server.enable:
           defaultValue: true
-          description: Enable Bash language server
+          title: Enable Bash language server
           type: boolean
       spdx_id: GPL-3.0-or-later
     settings:
@@ -221,9 +209,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 1f1b5741a2a143f3c77260f31fe8b0b6ea8d1dc2
-    hash: sha256-qolQvvvdENLWRpC7Gt++KmqCXzJr3tuJWf2qe8PvzVI=
-    timestamp: 2024-09-25T10:20:03Z
+    rev: 6e16d94a30ef2f0d684c2677776b11507a9c53eb
+    hash: sha256-QIWlxaTq/3M9x2DqZtguJQP9ybmLewrTGVSk4hgqxgQ=
+    timestamp: 2024-09-27T03:04:40Z
   special: true
 - name: nixpkgs
   packages: []
