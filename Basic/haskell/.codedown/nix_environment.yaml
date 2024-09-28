@@ -1,6 +1,5 @@
 channels:
-- name: codedown
-  packages:
+- packages:
   - name: kernels.haskell
     packages: []
     meta:
@@ -119,16 +118,14 @@ channels:
     rev: befc446bc5130a8acf6af0617a2fa67f30644b38
     hash: sha256-YL6l8Ayd9saM+v5qMtGX2j5Z3S+lLzAmATBBJNLsUXU=
     timestamp: 2024-09-27T13:01:26Z
-  special: true
-- name: nixpkgs
-  packages: []
+- packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 205fd4226592cc83fd4c0885a3e4c9c400efabb5
-    hash: sha256-zwVvxrdIzralnSbcpghA92tWu2DV2lwv89xZc8MTrbg=
-    timestamp: 2024-07-09T14:26:38Z
+    rev: a9a9e085f155b55e4a6dc49a16572b2c799ba66f
+    hash: sha256-d/65qZtXwVpIwxBTdNuf484Ie58wa5CYK5h+aXsLDoQ=
+    timestamp: 2024-09-27T20:33:33Z
     ref:
       tag: branch
       contents: release-24.05
