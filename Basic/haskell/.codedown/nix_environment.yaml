@@ -131,4 +131,4 @@ channels:
     timestamp: 2024-07-09T14:26:38Z
     ref:
       tag: branch
-      contents: release-23.11
+      contents: release-24.05
