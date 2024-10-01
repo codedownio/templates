@@ -22,11 +22,7 @@ channels:
         packages:
           defaultValue: []
           listType:
-            left:
-              type: string
-            right:
-              type: attrs
-            type: either
+            type: string
           title: List of packages
           type: list
         enable:
@@ -206,17 +202,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: befc446bc5130a8acf6af0617a2fa67f30644b38
-    hash: sha256-YL6l8Ayd9saM+v5qMtGX2j5Z3S+lLzAmATBBJNLsUXU=
-    timestamp: 2024-09-27T13:01:26Z
+    rev: 8722871cd1e539ee3082fbb76d28ac4e7eefb77a
+    hash: sha256-DPsgH0bDuZiOjNha/2g3abANV3vhYXHaE5fBV7ZiJEc=
+    timestamp: 2024-10-01T02:06:38Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: a9a9e085f155b55e4a6dc49a16572b2c799ba66f
-    hash: sha256-d/65qZtXwVpIwxBTdNuf484Ie58wa5CYK5h+aXsLDoQ=
-    timestamp: 2024-09-27T20:33:33Z
+    rev: aa700ed44e34cdd64d432d2efaede2b7d8534e33
+    hash: sha256-Tyg9oxb5sfAd7/HK/FCyCqOLJ1c1yI4QHUjqIUSTAfs=
+    timestamp: 2024-10-01T03:17:02Z
     ref:
       tag: branch
       contents: release-24.05
