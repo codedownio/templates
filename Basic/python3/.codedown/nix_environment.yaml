@@ -186,7 +186,6 @@ channels:
         githubId: 56650223
         matrix: '@artturin:matrix.org'
       version: '5.9'
-    settings: {}
   - name: language-servers.spellchecker
     packages: []
     meta:
@@ -199,22 +198,24 @@ channels:
       language_server_names:
       - spellchecker
       maintainers: []
-    settings: {}
   src:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: e37022e9f827285827bc898efb7c7baf59fa20c3
-    hash: sha256-lQpOpvAVn713XgYv0li/IfdJ+Dqij18tDDaENO3AsK0=
-    timestamp: 2024-10-02T00:10:55Z
+    rev: ea7ebb0afb94e5111081c3cef5d5e9d904a83130
+    hash: sha256-NJCljdocEyNjS32HKUZdg1oHLtqfY9ZMr1lUw5st8Fo=
+    timestamp: 2024-10-02T11:30:09Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 24f1a65397b6c1c7c71733f2e68f3ad7b8e6c139
-    hash: sha256-cdf04ri2Wjcpc38qfQfYvciyLKpjodcMbFkYJ0mLjpg=
-    timestamp: 2024-10-02T04:18:52Z
+    rev: e842e646b1309fbbf3f77ff32a4fa1697b6d79fd
+    hash: sha256-8va/C1vLD7SbeAkHGvPu/KBpN+hDYLqbaB+ciHYeBzU=
+    timestamp: 2024-10-06T13:26:17Z
     ref:
       tag: branch
       contents: release-24.05
+settings:
+  default_kernel: $.channels[0].packages[0]
+  default_terminal: $.channels[0].packages[2]
