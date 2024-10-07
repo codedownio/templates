@@ -1,5 +1,62 @@
 channels:
 - packages:
+  - name: kernels.bash
+    packages: []
+    meta:
+      name: bash-5.2p26
+      display_name: Bash 5.2p26
+      description: GNU Bourne-Again Shell, the de facto standard shell on Linux
+      has_packages: false
+      homepage: https://www.gnu.org/software/bash/
+      icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
+      language_server_names:
+      - bash-language-server
+      maintainers:
+      - name: Will Dietz
+        email: w@wdtz.org
+        github: dtzWill
+        githubId: 817330
+        keys:
+        - fingerprint: 389A 78CB CD88 5E0C 4701  DEB9 FD42 C7D0 D414 94C8
+      modes:
+        attrs:
+        - bash
+        code_mirror_mode: shell
+        extensions:
+        - sh
+        - bash
+      settings_schema:
+        enable:
+          defaultValue: false
+          hidden: true
+          title: Enable Bash kernel
+          type: boolean
+        interface.attrs:
+          defaultValue:
+          - bash
+          description: Notebook cells that have these attributes will match this kernel,
+            allowing it to run the code.
+          listType:
+            type: string
+          title: Notebook attributes
+          type: list
+        interface.extensions:
+          defaultValue:
+          - sh
+          - bash
+          description: Files with these extensions will match against this kernel,
+            allowing you to run the code as if it were a Jupyter cell.
+          listType:
+            type: string
+          title: File extensions
+          type: list
+        lsp.bash-language-server.enable:
+          defaultValue: true
+          title: Enable Bash language server
+          type: boolean
+      spdx_id: GPL-3.0-or-later
+    settings:
+      enable: true
   - name: kernels.python3
     packages: []
     meta:
@@ -110,63 +167,18 @@ channels:
       spdx_id: Python-2.0
     settings:
       enable: true
-  - name: kernels.bash
+  - name: language-servers.spellchecker
     packages: []
     meta:
-      name: bash-5.2p26
-      display_name: Bash 5.2p26
-      description: GNU Bourne-Again Shell, the de facto standard shell on Linux
-      has_packages: false
-      homepage: https://www.gnu.org/software/bash/
-      icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
+      name: hunspell-1.7.2
+      display_name: Spellchecker 1.1.0
+      category: Language servers
+      description: Spell checker
+      homepage: https://hunspell.sourceforge.net
+      icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
       language_server_names:
-      - bash-language-server
-      maintainers:
-      - name: Will Dietz
-        email: w@wdtz.org
-        github: dtzWill
-        githubId: 817330
-        keys:
-        - fingerprint: 389A 78CB CD88 5E0C 4701  DEB9 FD42 C7D0 D414 94C8
-      modes:
-        attrs:
-        - bash
-        code_mirror_mode: shell
-        extensions:
-        - sh
-        - bash
-      settings_schema:
-        enable:
-          defaultValue: false
-          hidden: true
-          title: Enable Bash kernel
-          type: boolean
-        interface.attrs:
-          defaultValue:
-          - bash
-          description: Notebook cells that have these attributes will match this kernel,
-            allowing it to run the code.
-          listType:
-            type: string
-          title: Notebook attributes
-          type: list
-        interface.extensions:
-          defaultValue:
-          - sh
-          - bash
-          description: Files with these extensions will match against this kernel,
-            allowing you to run the code as if it were a Jupyter cell.
-          listType:
-            type: string
-          title: File extensions
-          type: list
-        lsp.bash-language-server.enable:
-          defaultValue: true
-          title: Enable Bash language server
-          type: boolean
-      spdx_id: GPL-3.0-or-later
-    settings:
-      enable: true
+      - spellchecker
+      maintainers: []
   - name: shells.zsh
     packages: []
     meta:
@@ -186,18 +198,6 @@ channels:
         githubId: 56650223
         matrix: '@artturin:matrix.org'
       version: '5.9'
-  - name: language-servers.spellchecker
-    packages: []
-    meta:
-      name: hunspell-1.7.2
-      display_name: Spellchecker 1.1.0
-      category: Language servers
-      description: Spell checker
-      homepage: https://hunspell.sourceforge.net
-      icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
-      language_server_names:
-      - spellchecker
-      maintainers: []
   src:
     tag: fetch_from_github
     owner: codedownio
@@ -210,12 +210,12 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: e842e646b1309fbbf3f77ff32a4fa1697b6d79fd
-    hash: sha256-8va/C1vLD7SbeAkHGvPu/KBpN+hDYLqbaB+ciHYeBzU=
-    timestamp: 2024-10-06T13:26:17Z
+    rev: 90fe4c0103687f9c6124b783762deee2561d335a
+    hash: sha256-2bFI1yEt5aPQ03RJjO5Zu+gDp5Glp8K7eAGdHHHjoBo=
+    timestamp: 2024-10-07T02:50:03Z
     ref:
       tag: branch
       contents: release-24.05
 settings:
   default_kernel: $.channels[0].packages[0]
-  default_terminal: $.channels[0].packages[2]
+  default_terminal: $.channels[0].packages[3]

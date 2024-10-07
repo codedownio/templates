@@ -74,6 +74,18 @@ channels:
           type: boolean
     settings:
       enable: true
+  - name: language-servers.spellchecker
+    packages: []
+    meta:
+      name: hunspell-1.7.2
+      display_name: Spellchecker 1.1.0
+      category: Language servers
+      description: Spell checker
+      homepage: https://hunspell.sourceforge.net
+      icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
+      language_server_names:
+      - spellchecker
+      maintainers: []
   - name: shells.zsh
     packages: []
     meta:
@@ -93,18 +105,6 @@ channels:
         githubId: 56650223
         matrix: '@artturin:matrix.org'
       version: '5.9'
-  - name: language-servers.spellchecker
-    packages: []
-    meta:
-      name: hunspell-1.7.2
-      display_name: Spellchecker 1.1.0
-      category: Language servers
-      description: Spell checker
-      homepage: https://hunspell.sourceforge.net
-      icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
-      language_server_names:
-      - spellchecker
-      maintainers: []
   src:
     tag: fetch_from_github
     owner: codedownio
@@ -117,12 +117,12 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: e842e646b1309fbbf3f77ff32a4fa1697b6d79fd
-    hash: sha256-8va/C1vLD7SbeAkHGvPu/KBpN+hDYLqbaB+ciHYeBzU=
-    timestamp: 2024-10-06T13:26:17Z
+    rev: 90fe4c0103687f9c6124b783762deee2561d335a
+    hash: sha256-2bFI1yEt5aPQ03RJjO5Zu+gDp5Glp8K7eAGdHHHjoBo=
+    timestamp: 2024-10-07T02:50:03Z
     ref:
       tag: branch
       contents: release-24.05
 settings:
   default_kernel: $.channels[0].packages[0]
-  default_terminal: $.channels[0].packages[1]
+  default_terminal: $.channels[0].packages[2]
