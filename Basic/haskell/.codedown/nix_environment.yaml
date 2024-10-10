@@ -93,7 +93,8 @@ channels:
       display_name: ZSH 5.9
       description: The Z shell
       homepage: https://www.zsh.org/
-      icon: /nix/store/7j21ks0fgsx1vbpigkc044i4ahbr7s9p-default_icon_64x64.png
+      icon: /nix/store/gydnh1sz8dlxqhykd10k9dn858xpwm4p-zsh.svg
+      main_program: zsh-with-theme
       maintainers:
       - name: Pascal Wittmann
         email: mail@pascal-wittmann.de
@@ -109,17 +110,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: ea7ebb0afb94e5111081c3cef5d5e9d904a83130
-    hash: sha256-NJCljdocEyNjS32HKUZdg1oHLtqfY9ZMr1lUw5st8Fo=
-    timestamp: 2024-10-02T11:30:09Z
+    rev: 42d326b863c0b8c557753d26f8dfa572d4e576ce
+    hash: sha256-UZHqrtOAIYJCIUO2r0LPnRz/9tzzcZzN3h7PL4JSR74=
+    timestamp: 2024-10-10T10:08:01Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 90fe4c0103687f9c6124b783762deee2561d335a
-    hash: sha256-2bFI1yEt5aPQ03RJjO5Zu+gDp5Glp8K7eAGdHHHjoBo=
-    timestamp: 2024-10-07T02:50:03Z
+    rev: 1365af737ea6d7c1d8d764fc56aaa431e82f6ab1
+    hash: sha256-RVnFbNhu5/WYRJ9eHAT44T0gDEK5UOea3HF5ACKn/80=
+    timestamp: 2024-10-10T12:21:28Z
     ref:
       tag: branch
       contents: release-24.05
