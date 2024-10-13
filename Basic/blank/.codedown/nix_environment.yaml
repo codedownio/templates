@@ -19,7 +19,7 @@ channels:
       display_name: ZSH 5.9
       description: The Z shell
       homepage: https://www.zsh.org/
-      icon: /nix/store/gydnh1sz8dlxqhykd10k9dn858xpwm4p-zsh.svg
+      icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
       main_program: zsh-with-theme
       maintainers:
       - name: Pascal Wittmann
@@ -36,19 +36,21 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 42d326b863c0b8c557753d26f8dfa572d4e576ce
-    hash: sha256-UZHqrtOAIYJCIUO2r0LPnRz/9tzzcZzN3h7PL4JSR74=
-    timestamp: 2024-10-10T10:08:01Z
+    rev: 45e2171b04296b3d5ba384e3cf580c50496956b8
+    hash: sha256-OznQtzjzkW3lHXERZx7R0Al/BDR6oQq2AZPTbBQU5zQ=
+    timestamp: 2024-10-13T09:26:19Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 1365af737ea6d7c1d8d764fc56aaa431e82f6ab1
-    hash: sha256-RVnFbNhu5/WYRJ9eHAT44T0gDEK5UOea3HF5ACKn/80=
-    timestamp: 2024-10-10T12:21:28Z
+    rev: a72deab55722df5d3453dbc716134d30043ebf9e
+    hash: sha256-pEAOq7Dbl7DYfRmEt+WMBj2FMlRue2+T+4OJDcqhRd4=
+    timestamp: 2024-10-13T08:46:45Z
     ref:
       tag: branch
       contents: release-24.05
 settings:
-  default_terminal: $.channels[0].packages[1]
+  quick_program1: $.channels[0].packages[1]
+  quick_program2: $.channels[0].packages[1]
+  quick_program3: $.channels[0].packages[1]
