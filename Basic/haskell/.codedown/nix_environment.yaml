@@ -94,7 +94,6 @@ channels:
       description: The Z shell
       homepage: https://www.zsh.org/
       icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
-      main_program: zsh-with-theme
       maintainers:
       - name: Pascal Wittmann
         email: mail@pascal-wittmann.de
@@ -110,22 +109,19 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 45e2171b04296b3d5ba384e3cf580c50496956b8
-    hash: sha256-OznQtzjzkW3lHXERZx7R0Al/BDR6oQq2AZPTbBQU5zQ=
-    timestamp: 2024-10-13T09:26:19Z
+    rev: e7ea7602b21bd404146e68fa1f14119cb4b7f0ea
+    hash: sha256-9uSiH+j2ds2ZSCpNwI7CAYeEyK7Et25KbbIJwTNNFsk=
+    timestamp: 2024-10-17T00:55:49Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: a72deab55722df5d3453dbc716134d30043ebf9e
-    hash: sha256-pEAOq7Dbl7DYfRmEt+WMBj2FMlRue2+T+4OJDcqhRd4=
-    timestamp: 2024-10-13T08:46:45Z
+    rev: 84c2b044c021d61a36ef6f7dc451f4e57e750d53
+    hash: sha256-oeFwnIqeerefKg1xdRd6XVWjWouwgjSp1rFGCWPZbiU=
+    timestamp: 2024-10-16T23:26:48Z
     ref:
       tag: branch
       contents: release-24.05
 settings:
   default_kernel: $.channels[0].packages[0]
-  quick_program1: $.channels[0].packages[2]
-  quick_program2: $.channels[0].packages[2]
-  quick_program3: $.channels[0].packages[2]
