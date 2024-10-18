@@ -94,6 +94,7 @@ channels:
       description: The Z shell
       homepage: https://www.zsh.org/
       icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
+      main_program: zsh-with-theme
       maintainers:
       - name: Pascal Wittmann
         email: mail@pascal-wittmann.de
@@ -109,9 +110,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 2365ff6a65a8b9fa0e699bf5770c38dab5be612c
-    hash: sha256-ST5N6YNc/e1M3p3wJwOgsxkqENij7qUehYkVp3FJ45M=
-    timestamp: 2024-10-18T10:52:00Z
+    rev: bb43e7e5446dcf5cc9deaa5355fff8db8f9b4d02
+    hash: sha256-dwfHAlULs6Fvv9xzmRxv3sD2PQPypHqTeBfTyIIdykM=
+    timestamp: 2024-10-18T11:51:12Z
 - packages: []
   src:
     tag: fetch_from_github
