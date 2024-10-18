@@ -12,6 +12,17 @@ channels:
       language_server_names:
       - spellchecker
       maintainers: []
+      settings_schema:
+        outputs:
+          defaultValue:
+          - out
+          description: Package outputs to include.
+          listType:
+            type: enum
+            values:
+            - out
+          title: Outputs
+          type: list
   - name: shells.zsh
     packages: []
     meta:
@@ -30,22 +41,33 @@ channels:
         github: Artturin
         githubId: 56650223
         matrix: '@artturin:matrix.org'
+      settings_schema:
+        outputs:
+          defaultValue:
+          - out
+          description: Package outputs to include.
+          listType:
+            type: enum
+            values:
+            - out
+          title: Outputs
+          type: list
       version: '5.9'
   src:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: e7ea7602b21bd404146e68fa1f14119cb4b7f0ea
-    hash: sha256-9uSiH+j2ds2ZSCpNwI7CAYeEyK7Et25KbbIJwTNNFsk=
-    timestamp: 2024-10-17T00:55:49Z
+    rev: b6ccbf76ddf3b63736f98661e54142577167bc1e
+    hash: sha256-a60fN0EmcT2GaLREClMJO0hXglOJ6r4GcHy7tIB1kCg=
+    timestamp: 2024-10-17T17:07:35Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 84c2b044c021d61a36ef6f7dc451f4e57e750d53
-    hash: sha256-oeFwnIqeerefKg1xdRd6XVWjWouwgjSp1rFGCWPZbiU=
-    timestamp: 2024-10-16T23:26:48Z
+    rev: 4eb33fe664af7b41a4c446f87d20c9a0a6321fa3
+    hash: sha256-LDiPhQ3l+fBjRATNtnuDZsBS7hqoBtPkKBkhpoBHv3I=
+    timestamp: 2024-10-17T16:14:33Z
     ref:
       tag: branch
       contents: release-24.05
