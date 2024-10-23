@@ -217,9 +217,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 4f7abb603f21c0a03bc988d7e28c25d9b2850d09
-    hash: sha256-51ghDOGBna/ag3f6+YculuBAwKiB26CE3ZEHo6JMSW4=
-    timestamp: 2024-10-23T09:30:20Z
+    rev: 9b6a7fead5341cf7bbd4db5bf7b0750590702233
+    hash: sha256-9LL4aUQJayTdBJ+ElWk+r4LQNyPLulTmKLH7oZvV7Ac=
+    timestamp: 2024-10-23T11:47:53Z
 - packages: []
   src:
     tag: fetch_from_github
