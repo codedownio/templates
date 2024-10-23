@@ -19,6 +19,7 @@ channels:
       settings_schema:
         packages:
           defaultValue: []
+          hidden: true
           listType:
             type: string
           title: List of packages
@@ -110,17 +111,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 1f47a0710bfe94273c060452d753e19a94f6975d
-    hash: sha256-rgW9obUQkutJ5mLEs44Bv7uRiTrqmORa50T/rs4vcH0=
-    timestamp: 2024-10-18T13:35:42Z
+    rev: 4f7abb603f21c0a03bc988d7e28c25d9b2850d09
+    hash: sha256-51ghDOGBna/ag3f6+YculuBAwKiB26CE3ZEHo6JMSW4=
+    timestamp: 2024-10-23T09:30:20Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 4a3f2d3195b60d07530574988df92e049372c10e
-    hash: sha256-VgcLDu4igNT0eYua6OAl9pWCI0cYXhDbR+pWP44tte0=
-    timestamp: 2024-10-18T09:09:18Z
+    rev: f885d67e3dbd2afe0c779a9f763ddf7a4b603d97
+    hash: sha256-XAnP0mq9JdMEwEcwATPV7rPp1+ORV8G4rCX6GplYfDA=
+    timestamp: 2024-10-23T09:26:57Z
     ref:
       tag: branch
       contents: release-24.05
