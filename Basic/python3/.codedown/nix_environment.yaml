@@ -3,8 +3,8 @@ channels:
   - name: kernels.bash
     packages: []
     meta:
-      name: bash-5.2p26
-      display_name: Bash 5.2p26
+      name: bash-5.2p37
+      display_name: Bash 5.2p37
       description: GNU Bourne-Again Shell, the de facto standard shell on Linux
       has_packages: false
       homepage: https://www.gnu.org/software/bash/
@@ -12,13 +12,7 @@ channels:
       language_server_names:
       - bash-language-server
       main_program: bash
-      maintainers:
-      - name: Will Dietz
-        email: w@wdtz.org
-        github: dtzWill
-        githubId: 817330
-        keys:
-        - fingerprint: 389A 78CB CD88 5E0C 4701  DEB9 FD42 C7D0 D414 94C8
+      maintainers: []
       modes:
         attrs:
         - bash
@@ -61,16 +55,28 @@ channels:
   - name: kernels.python3
     packages: []
     meta:
-      name: python3-3.11.9
-      display_name: Python 3.11.9
-      changelog: https://docs.python.org/release/3.11.9/whatsnew/changelog.html
-      description: A high-level dynamically-typed programming language
+      name: python3-3.12.8
+      display_name: Python 3.12.8
+      changelog: https://docs.python.org/release/3.12.8/whatsnew/changelog.html
+      description: High-level dynamically-typed programming language
       has_packages: true
       homepage: https://www.python.org
       icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
       language_server_names:
       - jedi
-      main_program: python3.11
+      main_program: python3.12
+      maintainers:
+      - name: Martin Weinelt
+        email: hexa@darmstadt.ccc.de
+        github: mweinelt
+        githubId: 131599
+        matrix: '@hexa:lossy.network'
+      - name: Tomoya Otabi
+        email: nixpkgs@natsukium.com
+        github: natsukium
+        githubId: 25083790
+        keys:
+        - fingerprint: 3D14 6004 004C F882 D519  6CD4 9EA4 5A31 DB99 4C53
       modes:
         attrs:
         - python3
@@ -176,8 +182,6 @@ channels:
           - python310
           - python311
           - python312
-          - python313
-          - python39
       spdx_id: Python-2.0
     settings:
       enable: true
@@ -198,7 +202,7 @@ channels:
     meta:
       name: zsh-5.9
       display_name: ZSH 5.9
-      description: The Z shell
+      description: Z shell
       homepage: https://www.zsh.org/
       icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
       main_program: zsh-with-theme
@@ -217,17 +221,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 370fce742e9629ff9cb8ae469b77635e14bc22fc
-    hash: sha256-8M1WslpxDWr1hfL4Dyki8fISZJjt8O0vnD3sqR/ujj4=
-    timestamp: 2024-12-22T19:27:48Z
+    rev: 5fd1e6b155bba4ec317b0673d28c6c39ba1bc022
+    hash: sha256-s7xUTR9JJTblFtqC3bWaWJ6WZA84U9jnJtafbYE7Q94=
+    timestamp: 2025-03-05T12:52:09Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 1336d52fb59d342630010ac7e7abe3d7a60a9157
-    hash: sha256-Gf58jixbZifEDfbaA1pc1PBZgkqdjTAHtuHF2iO8/A8=
-    timestamp: 2024-12-22T18:16:40Z
+    rev: 0da3c44a9460a26d2025ec3ed2ec60a895eb1114
+    hash: sha256-YLbzcBtYo1/FEzFsB3AnM16qFc6fWPMIoOuSoDwvg9g=
+    timestamp: 2024-12-31T13:21:32Z
     ref:
       tag: branch
       contents: release-24.05

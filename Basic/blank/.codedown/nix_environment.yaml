@@ -17,7 +17,7 @@ channels:
     meta:
       name: zsh-5.9
       display_name: ZSH 5.9
-      description: The Z shell
+      description: Z shell
       homepage: https://www.zsh.org/
       icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
       main_program: zsh-with-theme
@@ -36,17 +36,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 370fce742e9629ff9cb8ae469b77635e14bc22fc
-    hash: sha256-8M1WslpxDWr1hfL4Dyki8fISZJjt8O0vnD3sqR/ujj4=
-    timestamp: 2024-12-22T19:27:48Z
+    rev: 5fd1e6b155bba4ec317b0673d28c6c39ba1bc022
+    hash: sha256-s7xUTR9JJTblFtqC3bWaWJ6WZA84U9jnJtafbYE7Q94=
+    timestamp: 2025-03-05T12:52:09Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 1336d52fb59d342630010ac7e7abe3d7a60a9157
-    hash: sha256-Gf58jixbZifEDfbaA1pc1PBZgkqdjTAHtuHF2iO8/A8=
-    timestamp: 2024-12-22T18:16:40Z
+    rev: 0da3c44a9460a26d2025ec3ed2ec60a895eb1114
+    hash: sha256-YLbzcBtYo1/FEzFsB3AnM16qFc6fWPMIoOuSoDwvg9g=
+    timestamp: 2024-12-31T13:21:32Z
     ref:
       tag: branch
       contents: release-24.05
