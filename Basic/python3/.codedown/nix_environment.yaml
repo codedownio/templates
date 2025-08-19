@@ -182,6 +182,8 @@ channels:
           - python310
           - python311
           - python312
+          - python313
+          - python314
       spdx_id: Python-2.0
     settings:
       enable: true
@@ -221,17 +223,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 423e3e760d09ce7facf6f102ba391246ffd4054d
-    hash: sha256-9pLP8319bgRMc1MR9xaCovm6cqlc5cFG8Ht9rTEByjE=
-    timestamp: 2025-07-22T09:12:15Z
+    rev: 84fac06f7d0e41396ec449960f73c66880bdf3ec
+    hash: sha256-/w+OZ2cQqZTcPOGbG7YU9Ig3JENxjRSNJaLU3i25R8g=
+    timestamp: 2025-08-15T02:10:53Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 1b865b33200f05bf6126a717a817aded4560d425
-    hash: sha256-RuxvtK8X8s8zuOhCsJF3g3nSHiOrKwiBPWm9kyeUjl0=
-    timestamp: 2025-07-22T22:15:35Z
+    rev: 6cb66fb7a9321a4d1cf6cdaba98081606019a34a
+    hash: sha256-4f5EKzjJ02IWUSOGT5d0zMpAJLt86z3UVLBxW+jOk2I=
+    timestamp: 2025-08-18T20:50:17Z
     ref:
       tag: branch
       contents: release-25.05
