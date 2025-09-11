@@ -3,12 +3,14 @@ channels:
   - name: kernels.bash
     packages: []
     meta:
-      name: bash-5.2p37
+      name: bash-interactive-5.2p37
       display_name: Bash 5.2p37
-      description: GNU Bourne-Again Shell, the de facto standard shell on Linux
+      description: GNU Bourne-Again Shell, the de facto standard shell on Linux (for
+        interactive use)
       has_packages: false
       homepage: https://www.gnu.org/software/bash/
       icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
+      icon_svg: /nix/store/l98gz72bp8f25r0415hccbjh64qq0am1-gnubash.svg
       language_server_names:
       - bash-language-server
       main_program: bash
@@ -55,13 +57,14 @@ channels:
   - name: kernels.python3
     packages: []
     meta:
-      name: python3-3.12.8
-      display_name: Python 3.12.8
-      changelog: https://docs.python.org/release/3.12.8/whatsnew/changelog.html
+      name: python3-3.12.11
+      display_name: Python 3.12.11
+      changelog: https://docs.python.org/release/3.12.11/whatsnew/changelog.html
       description: High-level dynamically-typed programming language
       has_packages: true
       homepage: https://www.python.org
       icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
+      icon_svg: /nix/store/73idfzfr23iyhlyrk505hf5ii3f8fgp4-python.svg
       language_server_names:
       - jedi
       main_program: python3.12
@@ -179,11 +182,9 @@ channels:
           type: enum
           values:
           - python3
-          - python310
           - python311
           - python312
           - python313
-          - python314
       spdx_id: Python-2.0
     settings:
       enable: true
@@ -193,12 +194,19 @@ channels:
       name: hunspell-1.7.2
       display_name: Spellchecker 1.1.0
       category: Language servers
+      changelog: https://github.com/hunspell/hunspell/releases/tag/v1.7.2
       description: Spell checker
-      homepage: https://hunspell.sourceforge.net
+      homepage: http://hunspell.github.io/
       icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
       language_server_names:
       - spellchecker
-      maintainers: []
+      main_program: hunspell
+      maintainers:
+      - name: Seth Flynn
+        email: getchoo@tuta.io
+        github: getchoo
+        githubId: 48872998
+        matrix: '@getchoo:matrix.org'
   - name: shells.zsh
     packages: []
     meta:
@@ -223,17 +231,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 84fac06f7d0e41396ec449960f73c66880bdf3ec
-    hash: sha256-/w+OZ2cQqZTcPOGbG7YU9Ig3JENxjRSNJaLU3i25R8g=
-    timestamp: 2025-08-15T02:10:53Z
+    rev: 533301d281af7fc4e231d7dc1c2ccc2eee4915c5
+    hash: sha256-zwQjNkWGDB3SJ/9MYO4Lz9LxD5/+OeB8dnSK6FdTTpw=
+    timestamp: 2025-09-11T08:00:50Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 6cb66fb7a9321a4d1cf6cdaba98081606019a34a
-    hash: sha256-4f5EKzjJ02IWUSOGT5d0zMpAJLt86z3UVLBxW+jOk2I=
-    timestamp: 2025-08-18T20:50:17Z
+    rev: df466d44c6ebe2c4d97f2c0b0cca8f1218d5a4ca
+    hash: sha256-DtvWyO+o6aZ8njPC7wjWVlqi9A4+dPYWu0tEpFacBo8=
+    timestamp: 2025-09-11T04:53:05Z
     ref:
       tag: branch
       contents: release-25.05
