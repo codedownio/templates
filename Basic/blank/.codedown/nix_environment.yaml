@@ -10,6 +10,7 @@ channels:
       description: Spell checker
       homepage: http://hunspell.github.io/
       icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
+      icon_monochrome: /nix/store/fgg1fxac13xjhlzzak131dgr8l76wnvb-pen-alt.svg
       language_server_names:
       - spellchecker
       main_program: hunspell
@@ -27,6 +28,7 @@ channels:
       description: Z shell
       homepage: https://www.zsh.org/
       icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
+      icon_monochrome: /nix/store/pxi818izs009a3qrd0k7szw7pkchq3h6-zsh-monochrome.svg
       main_program: zsh-with-theme
       maintainers:
       - name: Pascal Wittmann
@@ -43,17 +45,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 533301d281af7fc4e231d7dc1c2ccc2eee4915c5
-    hash: sha256-zwQjNkWGDB3SJ/9MYO4Lz9LxD5/+OeB8dnSK6FdTTpw=
-    timestamp: 2025-09-11T08:00:50Z
+    rev: 20b1c636f2b364f01970014e9b6f76bc11c50780
+    hash: sha256-U3Uaxgn21Nqcz2Fe62zpof+VRpq0oqtbLzaMVeFqkM0=
+    timestamp: 2025-09-17T08:20:21Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: df466d44c6ebe2c4d97f2c0b0cca8f1218d5a4ca
-    hash: sha256-DtvWyO+o6aZ8njPC7wjWVlqi9A4+dPYWu0tEpFacBo8=
-    timestamp: 2025-09-11T04:53:05Z
+    rev: 5e6e5ea38b0bdf4917c0b80b7b93ad790d5299a3
+    hash: sha256-gfGYEh8U1iduHOmiZn2o1jscvQ14Pn0ATkzRcdDdzp8=
+    timestamp: 2025-09-17T09:05:17Z
     ref:
       tag: branch
       contents: release-25.05
