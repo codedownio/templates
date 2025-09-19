@@ -64,7 +64,7 @@ channels:
       has_packages: true
       homepage: https://www.python.org
       icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
-      icon_monochrome: /nix/store/z4260bxfzh99cp401nj7yivd9839mhip-python-monochrome.svg
+      icon_monochrome: /nix/store/zbz9j0c7599a3bawv6ml1zg77hp8b0vz-python-monochrome.svg
       language_server_names:
       - jedi
       main_program: python3.12
@@ -233,17 +233,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 20b1c636f2b364f01970014e9b6f76bc11c50780
-    hash: sha256-U3Uaxgn21Nqcz2Fe62zpof+VRpq0oqtbLzaMVeFqkM0=
-    timestamp: 2025-09-17T08:20:21Z
+    rev: 2648d2505abeda1cbffbce49e5b0f2c2ed101f54
+    hash: sha256-/YOjv8xDMa1BKLutxo5zuD9jw2qpvc7HYVOHM9thvG8=
+    timestamp: 2025-09-18T21:51:04Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 5e6e5ea38b0bdf4917c0b80b7b93ad790d5299a3
-    hash: sha256-gfGYEh8U1iduHOmiZn2o1jscvQ14Pn0ATkzRcdDdzp8=
-    timestamp: 2025-09-17T09:05:17Z
+    rev: 660ccb4ded7a6a715a79fdee58f064e8beecb65a
+    hash: sha256-OGnmMaDFlg/6TcF/MUns9WGGGKXgbZi+kIT2xrWP0zM=
+    timestamp: 2025-09-18T22:41:53Z
     ref:
       tag: branch
       contents: release-25.05
