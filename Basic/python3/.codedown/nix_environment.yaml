@@ -3,8 +3,8 @@ channels:
   - name: kernels.bash
     packages: []
     meta:
-      name: bash-interactive-5.2p37
-      display_name: Bash 5.2p37
+      name: bash-interactive-5.3p3
+      display_name: Bash 5.3p3
       description: GNU Bourne-Again Shell, the de facto standard shell on Linux (for
         interactive use)
       has_packages: false
@@ -208,6 +208,10 @@ channels:
         github: getchoo
         githubId: 48872998
         matrix: '@getchoo:matrix.org'
+      - name: Ross Smyth
+        github: RossSmyth
+        githubId: 18294397
+        matrix: '@rosssmyth:matrix.org'
   - name: shells.zsh
     packages: []
     meta:
@@ -233,17 +237,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 2648d2505abeda1cbffbce49e5b0f2c2ed101f54
-    hash: sha256-/YOjv8xDMa1BKLutxo5zuD9jw2qpvc7HYVOHM9thvG8=
-    timestamp: 2025-09-18T21:51:04Z
+    rev: 099c951506c3dcbc53585f443ecfbff918ba62ca
+    hash: sha256-ulrYafgZtwx980j2g+LRTdnAGnEok1Pvtt8l2KO/Fn0=
+    timestamp: 2025-10-28T10:06:36Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 660ccb4ded7a6a715a79fdee58f064e8beecb65a
-    hash: sha256-OGnmMaDFlg/6TcF/MUns9WGGGKXgbZi+kIT2xrWP0zM=
-    timestamp: 2025-09-18T22:41:53Z
+    rev: 75391e65be4b032e05121b3206cf8ccf73bacda4
+    hash: sha256-8s4IFAKxG7QAZioOmGYWlLcIAniCHbXNgROVuNz6ATU=
+    timestamp: 2025-10-31T06:44:31Z
     ref:
       tag: branch
       contents: release-25.05
