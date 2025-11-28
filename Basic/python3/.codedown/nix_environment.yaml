@@ -237,17 +237,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: a7f1b7b82b01743e0912b90390301f01e191cb54
-    hash: sha256-PARAb99GkoQyGDMzwCeW6ZxN1EegGBHaBNQ5/kpTuSY=
-    timestamp: 2025-10-31T09:03:35Z
+    rev: 778ed6c130066caeafed315bdb0869a55cd0d5a5
+    hash: sha256-rZ1CSP5KGDegIsxUEesBA0nrSKBl8UDYnm8Y3oVI3Wo=
+    timestamp: 2025-11-24T21:42:26Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 886aa1c255387dcedf6c79da3f5b547bde6770e2
-    hash: sha256-2rWRlLa0prftmsbEoKZq7PrY+T3Y4s6syXL/msboeZ4=
-    timestamp: 2025-10-31T08:57:07Z
+    rev: cce0a9fb4f22aa6fc23b934b12209357e2790f0d
+    hash: sha256-Ln7j/YrMPrPeYMSTFUeuwwYezNRm7ZT7YkxNIg2NQBs=
+    timestamp: 2025-11-27T08:20:34Z
     ref:
       tag: branch
       contents: release-25.05
