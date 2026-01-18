@@ -81,7 +81,7 @@ channels:
     packages: []
     meta:
       name: hunspell-1.7.2
-      display_name: Spellchecker 1.1.0
+      display_name: Spellchecker 0.6.2
       category: Language servers
       changelog: https://github.com/hunspell/hunspell/releases/tag/v1.7.2
       description: Spell checker
@@ -126,17 +126,17 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 07292c5086484499378d1ad447c8e6a6e4c671fc
-    hash: sha256-ZKzVAufQKm0QFLW3qDYKUhU3uoIZt15xpEYGQ+54uEU=
-    timestamp: 2026-01-10T00:22:11Z
+    rev: 332452f595f594850198e0679177d3ae54ab5c5f
+    hash: sha256-MGDWUNV+osfGxawkshCzwkVf3pj3VWCRjJfE6hS7L80=
+    timestamp: 2026-01-18T00:39:35Z
 - packages: []
   src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 133716eec7858efaeb830734a081af209c5df6a9
-    hash: sha256-YVGOT0DrH5IufnLqTHIOzccPwmYf5lpqi6mXulIQOQA=
-    timestamp: 2026-01-12T21:39:54Z
+    rev: 70c09395689ff758e6ae06ce77497ab0eb65b9cd
+    hash: sha256-IevXFODGzX6E+24BBoJds8iVwa+NX2JT2jCDDtBZY5A=
+    timestamp: 2026-01-18T00:09:46Z
     ref:
       tag: branch
       contents: release-25.11
