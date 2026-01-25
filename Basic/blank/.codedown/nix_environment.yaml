@@ -1,59 +1,15 @@
 channels:
-- packages:
-  - name: language-servers.spellchecker
-    packages: []
-    meta:
-      name: hunspell-1.7.2
-      display_name: Spellchecker 0.6.2
-      category: Language servers
-      changelog: https://github.com/hunspell/hunspell/releases/tag/v1.7.2
-      description: Spell checker
-      homepage: http://hunspell.github.io/
-      icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
-      icon_monochrome: /nix/store/fgg1fxac13xjhlzzak131dgr8l76wnvb-pen-alt.svg
-      language_server_names:
-      - spellchecker
-      main_program: hunspell
-      maintainers:
-      - name: Seth Flynn
-        email: getchoo@tuta.io
-        github: getchoo
-        githubId: 48872998
-        matrix: '@getchoo:matrix.org'
-      - name: Ross Smyth
-        github: RossSmyth
-        githubId: 18294397
-        matrix: '@rosssmyth:matrix.org'
-  - name: shells.zsh
-    packages: []
-    meta:
-      name: zsh-5.9
-      display_name: ZSH 5.9
-      description: Z shell
-      homepage: https://www.zsh.org/
-      icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
-      icon_monochrome: /nix/store/pxi818izs009a3qrd0k7szw7pkchq3h6-zsh-monochrome.svg
-      main_program: zsh-with-theme
-      maintainers:
-      - name: Pascal Wittmann
-        email: mail@pascal-wittmann.de
-        github: pSub
-        githubId: 83842
-      - name: Artturi N
-        email: artturin@artturin.com
-        github: Artturin
-        githubId: 56650223
-        matrix: '@artturin:matrix.org'
-      version: '5.9'
-  src:
+- src:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
     rev: 332452f595f594850198e0679177d3ae54ab5c5f
     hash: sha256-MGDWUNV+osfGxawkshCzwkVf3pj3VWCRjJfE6hS7L80=
     timestamp: 2026-01-18T00:39:35Z
-- packages: []
-  src:
+  packages:
+  - name: language-servers.spellchecker
+  - name: shells.zsh
+- src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
@@ -63,3 +19,4 @@ channels:
     ref:
       tag: branch
       contents: release-25.11
+  packages: []

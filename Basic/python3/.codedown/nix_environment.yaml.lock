@@ -1,0 +1,251 @@
+channels:
+- src:
+    tag: fetch_from_github
+    owner: codedownio
+    repo: codedown-languages
+    rev: 332452f595f594850198e0679177d3ae54ab5c5f
+    hash: sha256-MGDWUNV+osfGxawkshCzwkVf3pj3VWCRjJfE6hS7L80=
+    timestamp: 2026-01-18T00:39:35Z
+  packages:
+  - name: kernels.bash
+    settings:
+      enable: true
+    meta:
+      name: bash-interactive-5.3p3
+      description: GNU Bourne-Again Shell, the de facto standard shell on Linux (for
+        interactive use)
+      display_name: Bash 5.3p3
+      has_packages: false
+      homepage: https://www.gnu.org/software/bash/
+      icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
+      icon_monochrome: /nix/store/ng96n3w7syc2iazlgx9c920c43k0pkwm-gnubash-monochrome.svg
+      language_server_names:
+      - bash-language-server
+      main_program: bash
+      maintainers: []
+      modes:
+        attrs:
+        - bash
+        code_mirror_mode: shell
+        extensions:
+        - sh
+        - bash
+      settings_schema:
+        enable:
+          defaultValue: false
+          hidden: true
+          title: Enable Bash kernel
+          type: boolean
+        interface.attrs:
+          defaultValue:
+          - bash
+          description: Notebook cells that have these attributes will match this kernel,
+            allowing it to run the code.
+          listType:
+            type: string
+          title: Notebook attributes
+          type: list
+        interface.extensions:
+          defaultValue:
+          - sh
+          - bash
+          description: Files with these extensions will match against this kernel,
+            allowing you to run the code as if it were a Jupyter cell.
+          listType:
+            type: string
+          title: File extensions
+          type: list
+        lsp.bash-language-server.enable:
+          defaultValue: true
+          title: Enable Bash language server
+          type: boolean
+      spdx_id: GPL-3.0-or-later
+  - name: kernels.python3
+    settings:
+      enable: true
+    meta:
+      name: python3-3.12.11
+      changelog: https://docs.python.org/release/3.12.11/whatsnew/changelog.html
+      description: High-level dynamically-typed programming language
+      display_name: Python 3.12.11
+      has_packages: true
+      homepage: https://www.python.org
+      icon: /nix/store/1ffcsg6qq21d4m2mfz9yqz0ypi93m0hq-python-logo-64x64.png
+      icon_monochrome: /nix/store/zbz9j0c7599a3bawv6ml1zg77hp8b0vz-python-monochrome.svg
+      language_server_names:
+      - jedi
+      main_program: python3.12
+      maintainers:
+      - name: Martin Weinelt
+        email: hexa@darmstadt.ccc.de
+        github: mweinelt
+        githubId: 131599
+        matrix: '@hexa:lossy.network'
+      - name: Tomoya Otabi
+        email: nixpkgs@natsukium.com
+        github: natsukium
+        githubId: 25083790
+        keys:
+        - fingerprint: 3D14 6004 004C F882 D519  6CD4 9EA4 5A31 DB99 4C53
+      modes:
+        attrs:
+        - python3
+        - python
+        code_mirror_mode: python
+        extensions:
+        - py
+      settings_schema:
+        packages:
+          defaultValue: []
+          hidden: true
+          listType:
+            left:
+              type: string
+            right:
+              keys:
+                name:
+                  type: string
+                outputs:
+                  listType:
+                    type: string
+                  type: list
+              type: submodule
+            type: either
+          title: List of packages
+          type: list
+        enable:
+          defaultValue: false
+          hidden: true
+          title: Enable Python 3 kernel
+          type: boolean
+        interface.attrs:
+          defaultValue:
+          - python3
+          - python
+          description: Notebook cells that have these attributes will match this kernel,
+            allowing it to run the code.
+          listType:
+            type: string
+          title: Notebook attributes
+          type: list
+        interface.extensions:
+          defaultValue:
+          - py
+          description: Files with these extensions will match against this kernel,
+            allowing you to run the code as if it were a Jupyter cell.
+          listType:
+            type: string
+          title: File extensions
+          type: list
+        lsp.flake8.enable:
+          defaultValue: false
+          title: Enable Flake8 language server
+          type: boolean
+        lsp.jedi.enable:
+          defaultValue: true
+          title: Enable Jedi language server
+          type: boolean
+        lsp.microsoft.enable:
+          defaultValue: false
+          title: Enable Microsoft Python language server
+          type: boolean
+        lsp.pycodestyle.enable:
+          defaultValue: false
+          title: Enable pycodestyle language server
+          type: boolean
+        lsp.pylint.enable:
+          defaultValue: false
+          title: Enable Pylint language server
+          type: boolean
+        lsp.pyright.enable:
+          defaultValue: false
+          title: Enable Pyright language server
+          type: boolean
+        lsp.python-language-server.enable:
+          defaultValue: false
+          title: Enable python-language-server language server
+          type: boolean
+        lsp.python-lsp-server.enable:
+          defaultValue: false
+          title: Enable python-lsp-server language server
+          type: boolean
+        misc.enableVariableInspector:
+          defaultValue: true
+          description: This will show a summary of the currently defined variables
+            in the UI.
+          title: Enable the variable inspector
+          type: boolean
+        misc.permitUserSite:
+          defaultValue: false
+          description: Skip setting the PYTHONNOUSERSITE variable. This will allow
+            your Python code to import local packages (e.g. from ~/.local/lib). This
+            is useful if you want to use pip to install Python packages independently
+            of Nix.
+          title: Permit user site-packages
+          type: boolean
+        python3Package:
+          defaultValue: python3
+          title: Python 3 version
+          type: enum
+          values:
+          - python3
+          - python311
+          - python312
+          - python313
+      spdx_id: Python-2.0
+  - name: language-servers.spellchecker
+    meta:
+      name: hunspell-1.7.2
+      category: Language servers
+      changelog: https://github.com/hunspell/hunspell/releases/tag/v1.7.2
+      description: Spell checker
+      display_name: Spellchecker 0.6.2
+      homepage: http://hunspell.github.io/
+      icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
+      icon_monochrome: /nix/store/fgg1fxac13xjhlzzak131dgr8l76wnvb-pen-alt.svg
+      language_server_names:
+      - spellchecker
+      main_program: hunspell
+      maintainers:
+      - name: Seth Flynn
+        email: getchoo@tuta.io
+        github: getchoo
+        githubId: 48872998
+        matrix: '@getchoo:matrix.org'
+      - name: Ross Smyth
+        github: RossSmyth
+        githubId: 18294397
+        matrix: '@rosssmyth:matrix.org'
+  - name: shells.zsh
+    meta:
+      name: zsh-5.9
+      description: Z shell
+      display_name: ZSH 5.9
+      homepage: https://www.zsh.org/
+      icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
+      icon_monochrome: /nix/store/pxi818izs009a3qrd0k7szw7pkchq3h6-zsh-monochrome.svg
+      main_program: zsh-with-theme
+      maintainers:
+      - name: Pascal Wittmann
+        email: mail@pascal-wittmann.de
+        github: pSub
+        githubId: 83842
+      - name: Artturi N
+        email: artturin@artturin.com
+        github: Artturin
+        githubId: 56650223
+        matrix: '@artturin:matrix.org'
+      version: '5.9'
+- src:
+    tag: fetch_from_github
+    owner: NixOS
+    repo: nixpkgs
+    rev: 70c09395689ff758e6ae06ce77497ab0eb65b9cd
+    hash: sha256-IevXFODGzX6E+24BBoJds8iVwa+NX2JT2jCDDtBZY5A=
+    timestamp: 2026-01-18T00:09:46Z
+    ref:
+      tag: branch
+      contents: release-25.11
+  packages: []
+settings:
+  default_kernel: $.channels[0].packages[0]

@@ -1,0 +1,141 @@
+channels:
+- src:
+    tag: fetch_from_github
+    owner: codedownio
+    repo: codedown-languages
+    rev: 332452f595f594850198e0679177d3ae54ab5c5f
+    hash: sha256-MGDWUNV+osfGxawkshCzwkVf3pj3VWCRjJfE6hS7L80=
+    timestamp: 2026-01-18T00:39:35Z
+  packages:
+  - name: kernels.haskell
+    settings:
+      enable: true
+    meta:
+      name: haskell-ghc910
+      description: An advanced, purely functional programming language (GHC 9.10.3)
+      display_name: Haskell
+      has_packages: true
+      icon: /nix/store/48djih8q69y4pj097mx75rqwlh4y2rzz-haskell-logo-64x64.png
+      icon_monochrome: /nix/store/i8f49r2bx27n2wgw8q40h8j7s7vlgvkp-haskell-monochrome.svg
+      language_server_names:
+      - haskell-language-server
+      modes:
+        attrs:
+        - haskell
+        code_mirror_mode: haskell
+        extensions:
+        - hs
+      settings_schema:
+        packages:
+          defaultValue: []
+          hidden: true
+          listType:
+            type: string
+          title: List of packages
+          type: list
+        enable:
+          defaultValue: false
+          hidden: true
+          title: Enable Haskell kernel
+          type: boolean
+        enableHlintOutput:
+          defaultValue: false
+          title: Enable hlint warnings in Jupyter kernel output. Normally you don't
+            want this because it is provided by haskell-language-server.
+          type: boolean
+        ghcPackage:
+          defaultValue: ghc910
+          title: GHC version
+          type: enum
+          values:
+          - ghc94
+          - ghc96
+          - ghc98
+          - ghc910
+          - ghc912
+        interface.attrs:
+          defaultValue:
+          - haskell
+          description: Notebook cells that have these attributes will match this kernel,
+            allowing it to run the code.
+          listType:
+            type: string
+          title: Notebook attributes
+          type: list
+        interface.extensions:
+          defaultValue:
+          - hs
+          description: Files with these extensions will match against this kernel,
+            allowing you to run the code as if it were a Jupyter cell.
+          listType:
+            type: string
+          title: File extensions
+          type: list
+        lsp.haskell-language-server.debug:
+          defaultValue: false
+          title: 'Haskell-language-server: enable debug output'
+          type: boolean
+        lsp.haskell-language-server.enable:
+          defaultValue: true
+          title: Enable haskell-language-server
+          type: boolean
+        lsp.haskell-language-server.super-debug:
+          defaultValue: false
+          title: 'Haskell-language-server: enable verbose debug output'
+          type: boolean
+  - name: language-servers.spellchecker
+    meta:
+      name: hunspell-1.7.2
+      category: Language servers
+      changelog: https://github.com/hunspell/hunspell/releases/tag/v1.7.2
+      description: Spell checker
+      display_name: Spellchecker 0.6.2
+      homepage: http://hunspell.github.io/
+      icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
+      icon_monochrome: /nix/store/fgg1fxac13xjhlzzak131dgr8l76wnvb-pen-alt.svg
+      language_server_names:
+      - spellchecker
+      main_program: hunspell
+      maintainers:
+      - name: Seth Flynn
+        email: getchoo@tuta.io
+        github: getchoo
+        githubId: 48872998
+        matrix: '@getchoo:matrix.org'
+      - name: Ross Smyth
+        github: RossSmyth
+        githubId: 18294397
+        matrix: '@rosssmyth:matrix.org'
+  - name: shells.zsh
+    meta:
+      name: zsh-5.9
+      description: Z shell
+      display_name: ZSH 5.9
+      homepage: https://www.zsh.org/
+      icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
+      icon_monochrome: /nix/store/pxi818izs009a3qrd0k7szw7pkchq3h6-zsh-monochrome.svg
+      main_program: zsh-with-theme
+      maintainers:
+      - name: Pascal Wittmann
+        email: mail@pascal-wittmann.de
+        github: pSub
+        githubId: 83842
+      - name: Artturi N
+        email: artturin@artturin.com
+        github: Artturin
+        githubId: 56650223
+        matrix: '@artturin:matrix.org'
+      version: '5.9'
+- src:
+    tag: fetch_from_github
+    owner: NixOS
+    repo: nixpkgs
+    rev: 70c09395689ff758e6ae06ce77497ab0eb65b9cd
+    hash: sha256-IevXFODGzX6E+24BBoJds8iVwa+NX2JT2jCDDtBZY5A=
+    timestamp: 2026-01-18T00:09:46Z
+    ref:
+      tag: branch
+      contents: release-25.11
+  packages: []
+settings:
+  default_kernel: $.channels[0].packages[0]
