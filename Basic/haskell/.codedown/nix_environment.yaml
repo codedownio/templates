@@ -4,8 +4,6 @@ channels:
     owner: codedownio
     repo: codedown-languages
     rev: 332452f595f594850198e0679177d3ae54ab5c5f
-    hash: sha256-MGDWUNV+osfGxawkshCzwkVf3pj3VWCRjJfE6hS7L80=
-    timestamp: 2026-01-18T00:39:35Z
   packages:
   - name: kernels.haskell
     settings:
@@ -17,8 +15,6 @@ channels:
     owner: NixOS
     repo: nixpkgs
     rev: 70c09395689ff758e6ae06ce77497ab0eb65b9cd
-    hash: sha256-IevXFODGzX6E+24BBoJds8iVwa+NX2JT2jCDDtBZY5A=
-    timestamp: 2026-01-18T00:09:46Z
     ref:
       tag: branch
       contents: release-25.11
