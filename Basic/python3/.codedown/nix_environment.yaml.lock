@@ -240,9 +240,9 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 63590ac958a8af30ebd52c7a0309d8c52a94dd77
-    hash: sha256-RxSg1EioTWNpoLaykiT1UQKTo/K0PPdLqCyQgNjNqWs=
-    timestamp: 2026-01-30T02:59:32Z
+    rev: ee19cd9893d4317475d420634f26305a4ac1139b
+    hash: sha256-h4DqqTizWuAe8r+TRka5l5BtkUSHkblYJYUwfCFOZrs=
+    timestamp: 2026-01-30T11:07:36Z
     ref:
       tag: branch
       contents: release-25.11
