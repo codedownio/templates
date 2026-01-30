@@ -1,26 +1,30 @@
 channels:
-- src:
-    tag: fetch_from_github
-    owner: codedownio
-    repo: codedown-languages
-    rev: 332452f595f594850198e0679177d3ae54ab5c5f
-  packages:
-  - name: kernels.bash
-    settings:
-      enable: true
-  - name: kernels.python3
-    settings:
-      enable: true
-  - name: language-servers.spellchecker
-  - name: shells.zsh
-- src:
-    tag: fetch_from_github
-    owner: NixOS
-    repo: nixpkgs
-    rev: 70c09395689ff758e6ae06ce77497ab0eb65b9cd
-    ref:
-      tag: branch
-      contents: release-25.11
-  packages: []
+  - src:
+      tag: fetch_from_github
+      owner: codedownio
+      repo: codedown-languages
+      rev: 60492c3653e22a78a9a1315578126dbd5057d4c4
+      hash: sha256-ZOT42Q5oFoiDq2hUIllxDrS01b7Gao8mu2aK03AiBDw=
+      timestamp: '2026-01-30T09:35:27Z'
+    packages:
+      - name: kernels.bash
+        settings:
+          enable: true
+      - name: kernels.python3
+        settings:
+          enable: true
+      - name: language-servers.spellchecker
+      - name: shells.zsh
+  - src:
+      tag: fetch_from_github
+      owner: NixOS
+      repo: nixpkgs
+      rev: 63590ac958a8af30ebd52c7a0309d8c52a94dd77
+      ref:
+        tag: branch
+        contents: release-25.11
+      hash: sha256-RxSg1EioTWNpoLaykiT1UQKTo/K0PPdLqCyQgNjNqWs=
+      timestamp: '2026-01-30T02:59:32Z'
+    packages: []
 settings:
   default_kernel: $.channels[0].packages[0]
