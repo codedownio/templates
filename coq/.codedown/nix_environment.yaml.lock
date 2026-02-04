@@ -1,0 +1,162 @@
+channels:
+- src:
+    tag: fetch_from_github
+    owner: codedownio
+    repo: codedown-languages
+    rev: 60492c3653e22a78a9a1315578126dbd5057d4c4
+    hash: sha256-ZOT42Q5oFoiDq2hUIllxDrS01b7Gao8mu2aK03AiBDw=
+    timestamp: 2026-01-30T09:35:27Z
+  packages:
+  - name: kernels.coq
+    settings:
+      enable: true
+    packages:
+    - name: bignums
+      meta:
+        name: rocq-core9.0-bignums-9.0.0+rocq9.0
+        homepage: https://github.com/rocq-community/bignums
+        maintainers: []
+        spdx_id: LGPL-2.0
+        version: 9.0.0+rocq9.0
+    meta:
+      name: coq-9.0.0
+      description: Coq proof assistant
+      display_name: Coq 9.0.0
+      has_packages: true
+      homepage: https://coq.inria.fr
+      icon: /nix/store/a53nci4a0azwb10qpmjkvlnn01z52vaz-coq-logos/logo-64x64.png
+      icon_monochrome: /nix/store/5w3hfbx47rddh48kif57j38f34clx3ib-coq-monochrome.svg
+      main_program: coqide
+      maintainers:
+      - name: Russell O'Connor
+        email: roconnor@r6.ca
+        github: roconnor
+        githubId: 852967
+      - name: Austin Seipp
+        email: aseipp@pobox.com
+        github: thoughtpolice
+        githubId: 3416
+      - name: Vincent Laporte
+        email: Vincent.Laporte@gmail.com
+        github: vbgl
+        githubId: 2612464
+      - name: Théo Zimmermann
+        email: theo.zimmermann@telecom-paris.fr
+        github: Zimmi48
+        githubId: 1108325
+      modes:
+        attrs:
+        - coq
+        code_mirror_mode: coq
+        extensions:
+        - v
+      settings_schema:
+        packages:
+          defaultValue: []
+          hidden: true
+          listType:
+            type: string
+          title: List of Coq packages to use
+          type: list
+        coqPackages:
+          defaultValue: coqPackages
+          title: Coq packages set
+          type: enum
+          values:
+          - coqPackages
+          - coqPackages_8_10
+          - coqPackages_8_11
+          - coqPackages_8_12
+          - coqPackages_8_13
+          - coqPackages_8_14
+          - coqPackages_8_15
+          - coqPackages_8_16
+          - coqPackages_8_17
+          - coqPackages_8_18
+          - coqPackages_8_19
+          - coqPackages_8_20
+          - coqPackages_8_7
+          - coqPackages_8_8
+          - coqPackages_8_9
+          - coqPackages_9_0
+          - coqPackages_9_1
+        enable:
+          defaultValue: false
+          hidden: true
+          title: Enable Coq kernel
+          type: boolean
+        interface.attrs:
+          defaultValue:
+          - coq
+          description: Notebook cells that have these attributes will match this kernel,
+            allowing it to run the code.
+          listType:
+            type: string
+          title: Notebook attributes
+          type: list
+        interface.extensions:
+          defaultValue:
+          - v
+          description: Files with these extensions will match against this kernel,
+            allowing you to run the code as if it were a Jupyter cell.
+          listType:
+            type: string
+          title: File extensions
+          type: list
+      spdx_id: LGPL-2.1
+  - name: language-servers.spellchecker
+    meta:
+      name: hunspell-1.7.2
+      category: Language servers
+      changelog: https://github.com/hunspell/hunspell/releases/tag/v1.7.2
+      description: Spell checker
+      display_name: Spellchecker 0.6.2
+      homepage: http://hunspell.github.io/
+      icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
+      icon_monochrome: /nix/store/fgg1fxac13xjhlzzak131dgr8l76wnvb-pen-alt.svg
+      language_server_names:
+      - spellchecker
+      main_program: hunspell
+      maintainers:
+      - name: Seth Flynn
+        email: getchoo@tuta.io
+        github: getchoo
+        githubId: 48872998
+        matrix: '@getchoo:matrix.org'
+      - name: Ross Smyth
+        github: RossSmyth
+        githubId: 18294397
+        matrix: '@rosssmyth:matrix.org'
+  - name: shells.zsh
+    meta:
+      name: zsh-5.9
+      description: Z shell
+      display_name: ZSH 5.9
+      homepage: https://www.zsh.org/
+      icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
+      icon_monochrome: /nix/store/pxi818izs009a3qrd0k7szw7pkchq3h6-zsh-monochrome.svg
+      main_program: zsh-with-theme
+      maintainers:
+      - name: Pascal Wittmann
+        email: mail@pascal-wittmann.de
+        github: pSub
+        githubId: 83842
+      - name: Artturi N
+        email: artturin@artturin.com
+        github: Artturin
+        githubId: 56650223
+        matrix: '@artturin:matrix.org'
+      version: '5.9'
+- src:
+    tag: fetch_from_github
+    owner: NixOS
+    repo: nixpkgs
+    rev: ee19cd9893d4317475d420634f26305a4ac1139b
+    hash: sha256-h4DqqTizWuAe8r+TRka5l5BtkUSHkblYJYUwfCFOZrs=
+    timestamp: 2026-01-30T11:07:36Z
+    ref:
+      tag: branch
+      contents: release-25.11
+  packages: []
+settings:
+  default_kernel: $.channels[0].packages[0]

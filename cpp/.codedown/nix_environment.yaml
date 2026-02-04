@@ -1,0 +1,27 @@
+channels:
+- src:
+    tag: fetch_from_github
+    owner: codedownio
+    repo: codedown-languages
+    rev: 60492c3653e22a78a9a1315578126dbd5057d4c4
+    hash: sha256-ZOT42Q5oFoiDq2hUIllxDrS01b7Gao8mu2aK03AiBDw=
+    timestamp: 2026-01-30T09:35:27Z
+  packages:
+  - name: kernels.cpp
+    settings:
+      enable: true
+  - name: language-servers.spellchecker
+  - name: shells.zsh
+- src:
+    tag: fetch_from_github
+    owner: NixOS
+    repo: nixpkgs
+    rev: ee19cd9893d4317475d420634f26305a4ac1139b
+    hash: sha256-h4DqqTizWuAe8r+TRka5l5BtkUSHkblYJYUwfCFOZrs=
+    timestamp: 2026-01-30T11:07:36Z
+    ref:
+      tag: branch
+      contents: release-25.11
+  packages: []
+settings:
+  default_kernel: $.channels[0].packages[0]

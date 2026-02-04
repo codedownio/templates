@@ -1,0 +1,242 @@
+channels:
+- src:
+    tag: fetch_from_github
+    owner: codedownio
+    repo: codedown-languages
+    rev: 60492c3653e22a78a9a1315578126dbd5057d4c4
+    hash: sha256-ZOT42Q5oFoiDq2hUIllxDrS01b7Gao8mu2aK03AiBDw=
+    timestamp: 2026-01-30T09:35:27Z
+  packages:
+  - name: kernels.cpp
+    settings:
+      enable: true
+    meta:
+      name: clang-19.1.7
+      description: C language family frontend for LLVM (wrapper script)
+      display_name: C++ 23
+      has_packages: false
+      homepage: https://clang.llvm.org/
+      icon: /nix/store/igprbcl4y3ica7mc81b0lsxag5scwx6y-cpp23.svg
+      icon_monochrome: /nix/store/6s88lyiavl24acfxhmdasqs1lr8zsky9-cpp23-monochrome.svg
+      language_server_names:
+      - clangd
+      main_program: clang
+      maintainers:
+      - name: Will Dietz
+        email: w@wdtz.org
+        github: dtzWill
+        githubId: 817330
+        keys:
+        - fingerprint: 389A 78CB CD88 5E0C 4701  DEB9 FD42 C7D0 D414 94C8
+      - name: Emily
+        email: nixpkgs@emily.moe
+        github: emilazy
+        githubId: 18535642
+      - name: John Ericson
+        email: John.Ericson@Obsidian.Systems
+        github: Ericson2314
+        githubId: 1055245
+        matrix: '@ericson2314:matrix.org'
+      - name: Jason O'Conal
+        email: jason@oconal.id.au
+        github: lovek323
+        githubId: 265084
+      - name: Alyssa Ross
+        email: hi@alyssa.is
+        github: alyssais
+        githubId: 2768870
+        keys:
+        - fingerprint: 7573 56D7 79BB B888 773E  415E 736C CDF9 EF51 BD97
+        matrix: '@qyliss:fairydust.space'
+      - name: Tristan Ross
+        email: tristan.ross@midstall.com
+        github: RossComputerGuy
+        githubId: 19699320
+        keys:
+        - fingerprint: FD5D F7A8 85BB 378A 0157  5356 B09C 4220 3566 9AF8
+        matrix: '@rosscomputerguy:matrix.org'
+      - name: Rahul Butani
+        email: rrbutani+nix@gmail.com
+        github: rrbutani
+        githubId: 7833358
+        keys:
+        - fingerprint: 7DCA 5615 8AB2 621F 2F32  9FF4 1C7C E491 479F A273
+        matrix: '@rbutani:matrix.org'
+      - name: Lukas Epple
+        email: sternenseemann@systemli.org
+        github: sternenseemann
+        githubId: 3154475
+      - name: Will Dietz
+        email: w@wdtz.org
+        github: dtzWill
+        githubId: 817330
+        keys:
+        - fingerprint: 389A 78CB CD88 5E0C 4701  DEB9 FD42 C7D0 D414 94C8
+      - name: Emily
+        email: nixpkgs@emily.moe
+        github: emilazy
+        githubId: 18535642
+      - name: John Ericson
+        email: John.Ericson@Obsidian.Systems
+        github: Ericson2314
+        githubId: 1055245
+        matrix: '@ericson2314:matrix.org'
+      - name: Jason O'Conal
+        email: jason@oconal.id.au
+        github: lovek323
+        githubId: 265084
+      - name: Alyssa Ross
+        email: hi@alyssa.is
+        github: alyssais
+        githubId: 2768870
+        keys:
+        - fingerprint: 7573 56D7 79BB B888 773E  415E 736C CDF9 EF51 BD97
+        matrix: '@qyliss:fairydust.space'
+      - name: Tristan Ross
+        email: tristan.ross@midstall.com
+        github: RossComputerGuy
+        githubId: 19699320
+        keys:
+        - fingerprint: FD5D F7A8 85BB 378A 0157  5356 B09C 4220 3566 9AF8
+        matrix: '@rosscomputerguy:matrix.org'
+      - name: Rahul Butani
+        email: rrbutani+nix@gmail.com
+        github: rrbutani
+        githubId: 7833358
+        keys:
+        - fingerprint: 7DCA 5615 8AB2 621F 2F32  9FF4 1C7C E491 479F A273
+        matrix: '@rbutani:matrix.org'
+      - name: Lukas Epple
+        email: sternenseemann@systemli.org
+        github: sternenseemann
+        githubId: 3154475
+      modes:
+        attrs:
+        - c++23
+        - cpp
+        code_mirror_mime_type: text/x-c++src
+        code_mirror_mode: clike
+        extensions:
+        - cpp
+        - hpp
+        - cxx
+        - hxx
+        - c
+        - h
+      settings_schema:
+        packages:
+          defaultValue: []
+          hidden: true
+          listType:
+            type: string
+          title: List of packages
+          type: list
+        enable:
+          defaultValue: false
+          hidden: true
+          title: Enable C++ kernel
+          type: boolean
+        flavor:
+          defaultValue: c++23
+          title: C++ flavor
+          type: enum
+          values:
+          - c++17
+          - c++20
+          - c++23
+          - c++2c
+          - gnu++17
+          - gnu++20
+          - gnu++23
+          - gnu++2c
+        interface.attrs:
+          defaultValue:
+          - cpp
+          description: Notebook cells that have these attributes will match this kernel,
+            allowing it to run the code.
+          listType:
+            type: string
+          title: Notebook attributes
+          type: list
+        interface.extensions:
+          defaultValue:
+          - cpp
+          - hpp
+          - cxx
+          - hxx
+          - c
+          - h
+          description: Files with these extensions will match against this kernel,
+            allowing you to run the code as if it were a Jupyter cell.
+          listType:
+            type: string
+          title: File extensions
+          type: list
+        lsp.clangd.debug:
+          defaultValue: false
+          title: 'Clangd: enable debug output'
+          type: boolean
+        lsp.clangd.enable:
+          defaultValue: true
+          title: Enable clangd language server
+          type: boolean
+        lsp.clangd.super-debug:
+          defaultValue: false
+          title: 'Clangd: enable verbose debug output'
+          type: boolean
+  - name: language-servers.spellchecker
+    meta:
+      name: hunspell-1.7.2
+      category: Language servers
+      changelog: https://github.com/hunspell/hunspell/releases/tag/v1.7.2
+      description: Spell checker
+      display_name: Spellchecker 0.6.2
+      homepage: http://hunspell.github.io/
+      icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
+      icon_monochrome: /nix/store/fgg1fxac13xjhlzzak131dgr8l76wnvb-pen-alt.svg
+      language_server_names:
+      - spellchecker
+      main_program: hunspell
+      maintainers:
+      - name: Seth Flynn
+        email: getchoo@tuta.io
+        github: getchoo
+        githubId: 48872998
+        matrix: '@getchoo:matrix.org'
+      - name: Ross Smyth
+        github: RossSmyth
+        githubId: 18294397
+        matrix: '@rosssmyth:matrix.org'
+  - name: shells.zsh
+    meta:
+      name: zsh-5.9
+      description: Z shell
+      display_name: ZSH 5.9
+      homepage: https://www.zsh.org/
+      icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
+      icon_monochrome: /nix/store/pxi818izs009a3qrd0k7szw7pkchq3h6-zsh-monochrome.svg
+      main_program: zsh-with-theme
+      maintainers:
+      - name: Pascal Wittmann
+        email: mail@pascal-wittmann.de
+        github: pSub
+        githubId: 83842
+      - name: Artturi N
+        email: artturin@artturin.com
+        github: Artturin
+        githubId: 56650223
+        matrix: '@artturin:matrix.org'
+      version: '5.9'
+- src:
+    tag: fetch_from_github
+    owner: NixOS
+    repo: nixpkgs
+    rev: ee19cd9893d4317475d420634f26305a4ac1139b
+    hash: sha256-h4DqqTizWuAe8r+TRka5l5BtkUSHkblYJYUwfCFOZrs=
+    timestamp: 2026-01-30T11:07:36Z
+    ref:
+      tag: branch
+      contents: release-25.11
+  packages: []
+settings:
+  default_kernel: $.channels[0].packages[0]
