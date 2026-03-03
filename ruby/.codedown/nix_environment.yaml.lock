@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 60492c3653e22a78a9a1315578126dbd5057d4c4
-    hash: sha256-ZOT42Q5oFoiDq2hUIllxDrS01b7Gao8mu2aK03AiBDw=
-    timestamp: 2026-01-30T09:35:27Z
+    rev: 7aeae06a979b4cf9fcefcae4c1c12ae93b0c6c73
+    hash: sha256-BOQ1DNP6iIk9zA6H8zPHTmBS9bdqOr8MEpxS53TIvhU=
+    timestamp: 2026-03-03T10:11:25Z
   packages:
   - name: kernels.ruby
     settings:
@@ -142,9 +142,9 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: ee19cd9893d4317475d420634f26305a4ac1139b
-    hash: sha256-h4DqqTizWuAe8r+TRka5l5BtkUSHkblYJYUwfCFOZrs=
-    timestamp: 2026-01-30T11:07:36Z
+    rev: 47aea2b40a6de16dcbc4b4cf6bab3fd779b8678c
+    hash: sha256-Tk/Y60I6ldjeFbM7ZTzNbXcZUPMOtGrR37fh3AY5qow=
+    timestamp: 2026-03-03T08:27:17Z
     ref:
       tag: branch
       contents: release-25.11
