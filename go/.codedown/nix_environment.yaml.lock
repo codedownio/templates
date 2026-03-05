@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 7aeae06a979b4cf9fcefcae4c1c12ae93b0c6c73
-    hash: sha256-BOQ1DNP6iIk9zA6H8zPHTmBS9bdqOr8MEpxS53TIvhU=
-    timestamp: 2026-03-03T10:11:25Z
+    rev: 337090657d6ab73b8edcd6b8309fedee5e7a54e3
+    hash: sha256-KSKIODWdrBn6CQmq32NfJJErKzlPSAxhmmsD9Oe6lnE=
+    timestamp: 2026-03-05T07:26:30Z
   packages:
   - name: kernels.go
     settings:
@@ -163,9 +163,9 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 47aea2b40a6de16dcbc4b4cf6bab3fd779b8678c
-    hash: sha256-Tk/Y60I6ldjeFbM7ZTzNbXcZUPMOtGrR37fh3AY5qow=
-    timestamp: 2026-03-03T08:27:17Z
+    rev: 20f276a6030e95682d3693780ae6c2f40113931e
+    hash: sha256-QvhXjtLuHlvRr6XNwZPk7c+64SMmG2C5Be10PNGEG+E=
+    timestamp: 2026-03-05T19:46:17Z
     ref:
       tag: branch
       contents: release-25.11
