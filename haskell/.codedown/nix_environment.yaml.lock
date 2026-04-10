@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 7633b48188cbfda7b128758ab65bc701954cdba0
-    hash: sha256-TEfGgDgj2tFxL8BXIG/jKxyPgJmnfsbdB6AqOENZe4c=
-    timestamp: 2026-03-31T08:22:26Z
+    rev: 1127f697e3448d7991b8f3c7c7cc223063fd848f
+    hash: sha256-Zz7Awf6EG89OP1l7/CK3FkR514UkXkS84q7xpE4XWI8=
+    timestamp: 2026-04-10T00:52:59Z
   packages:
   - name: kernels.haskell
     settings:
@@ -130,9 +130,9 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: d8389e7cbb4f893444a237ecc20c5719e3c65144
-    hash: sha256-eT0x5hmUK/r951TjO/Olwu/t4DJDsXkCcciv3hxLsTY=
-    timestamp: 2026-03-31T07:27:47Z
+    rev: 863c462d78dd3e9de7ca3516b28764ef0346a763
+    hash: sha256-ikVevlyl0tMS+ThY+WOku08gVE6l39+P864qrSSMDB8=
+    timestamp: 2026-04-10T04:14:04Z
     ref:
       tag: branch
       contents: release-25.11
