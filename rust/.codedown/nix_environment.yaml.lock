@@ -3,15 +3,15 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 1127f697e3448d7991b8f3c7c7cc223063fd848f
-    hash: sha256-Zz7Awf6EG89OP1l7/CK3FkR514UkXkS84q7xpE4XWI8=
-    timestamp: 2026-04-10T00:52:59Z
+    rev: 02c02af9949655264409c74451fd8c5e6af53679
+    hash: sha256-Rj1mY8Cb7N7ogdiKzegGM/kqCKLpohnf2Vx4WA/MqGA=
+    timestamp: 2026-06-06T10:13:43Z
   packages:
   - name: kernels.rust
     settings:
       enable: true
     meta:
-      name: rustc-1.89.0
+      name: rustc-1.95.0
       description: Safe, concurrent, practical language (wrapper script)
       display_name: Rust
       has_packages: true
@@ -20,52 +20,13 @@ channels:
       icon_monochrome: /nix/store/qnckhaflk68vgmq8r2fxm1lxxm0ga67v-rust-logo-monochrome.svg
       language_server_names:
       - rust-analyzer
+      main_program: rustc
       maintainers:
-      - name: Ryan Scheel
-        email: ryan.havvy@gmail.com
-        github: Havvy
-        githubId: 731722
-      - name: figsoda
-        email: figsoda@pm.me
-        github: figsoda
-        githubId: 40620903
-        matrix: '@figsoda:matrix.org'
       - name: Jörg Thalheim
         email: joerg@thalheim.io
         github: Mic92
         githubId: 96200
         matrix: '@joerg:thalheim.io'
-      - name: Theodore Ni
-        email: 43ngvg@masqt.com
-        github: tjni
-        githubId: 3806110
-        keys:
-        - fingerprint: 4384 B8E1 299F C028 1641  7B8F EC30 EFBE FA7E 84A4
-        matrix: '@tni:matrix.org'
-      - name: Winter
-        email: nixos@winter.cafe
-        github: winterqt
-        githubId: 78392041
-      - name: zowoq
-        github: zowoq
-        githubId: 59103226
-      - name: figsoda
-        email: figsoda@pm.me
-        github: figsoda
-        githubId: 40620903
-        matrix: '@figsoda:matrix.org'
-      - name: Jörg Thalheim
-        email: joerg@thalheim.io
-        github: Mic92
-        githubId: 96200
-        matrix: '@joerg:thalheim.io'
-      - name: Theodore Ni
-        email: 43ngvg@masqt.com
-        github: tjni
-        githubId: 3806110
-        keys:
-        - fingerprint: 4384 B8E1 299F C028 1641  7B8F EC30 EFBE FA7E 84A4
-        matrix: '@tni:matrix.org'
       - name: Winter
         email: nixos@winter.cafe
         github: winterqt
@@ -136,7 +97,7 @@ channels:
           type: enum
           values:
           - rust
-          - rust_1_89
+          - rust_1_95
   - name: language-servers.spellchecker
     meta:
       name: hunspell-1.7.2
@@ -179,14 +140,15 @@ channels:
         github: Artturin
         githubId: 56650223
         matrix: '@artturin:matrix.org'
+      spdx_id: MIT-Modern-Variant
       version: '5.9'
 - src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 863c462d78dd3e9de7ca3516b28764ef0346a763
-    hash: sha256-ikVevlyl0tMS+ThY+WOku08gVE6l39+P864qrSSMDB8=
-    timestamp: 2026-04-10T04:14:04Z
+    rev: e62c578a0a80c2fa2b143ea2550026ae45ca886d
+    hash: sha256-025ipygSzSXA9P62F+yOtAcCq6+8m/L2KcGFnHb37qg=
+    timestamp: 2026-06-06T04:34:59Z
     ref:
       tag: branch
       contents: release-25.11

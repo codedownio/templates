@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 1127f697e3448d7991b8f3c7c7cc223063fd848f
-    hash: sha256-Zz7Awf6EG89OP1l7/CK3FkR514UkXkS84q7xpE4XWI8=
-    timestamp: 2026-04-10T00:52:59Z
+    rev: 02c02af9949655264409c74451fd8c5e6af53679
+    hash: sha256-Rj1mY8Cb7N7ogdiKzegGM/kqCKLpohnf2Vx4WA/MqGA=
+    timestamp: 2026-06-06T10:13:43Z
   packages:
   - name: kernels.coq
     settings:
@@ -13,20 +13,20 @@ channels:
     packages:
     - name: bignums
       meta:
-        name: rocq-core9.0-bignums-9.0.0+rocq9.0
+        name: rocq-core9.1-bignums-9.0.0+rocq9.1
         homepage: https://github.com/rocq-community/bignums
         maintainers: []
         spdx_id: LGPL-2.0
-        version: 9.0.0+rocq9.0
+        version: 9.0.0+rocq9.1
     meta:
-      name: coq-9.0.0
+      name: coq-9.1.1
       description: Coq proof assistant
-      display_name: Coq 9.0.0
+      display_name: Coq 9.1.1
       has_packages: true
       homepage: https://coq.inria.fr
-      icon: /nix/store/a53nci4a0azwb10qpmjkvlnn01z52vaz-coq-logos/logo-64x64.png
+      icon: /nix/store/0n5v16hg3gy7biq40z27akgnvcv0gdsr-coq-logos/logo-64x64.png
       icon_monochrome: /nix/store/5w3hfbx47rddh48kif57j38f34clx3ib-coq-monochrome.svg
-      main_program: coqide
+      main_program: coqtop
       maintainers:
       - name: Russell O'Connor
         email: roconnor@r6.ca
@@ -80,6 +80,7 @@ channels:
           - coqPackages_8_9
           - coqPackages_9_0
           - coqPackages_9_1
+          - coqPackages_9_2
         enable:
           defaultValue: false
           hidden: true
@@ -146,14 +147,15 @@ channels:
         github: Artturin
         githubId: 56650223
         matrix: '@artturin:matrix.org'
+      spdx_id: MIT-Modern-Variant
       version: '5.9'
 - src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 863c462d78dd3e9de7ca3516b28764ef0346a763
-    hash: sha256-ikVevlyl0tMS+ThY+WOku08gVE6l39+P864qrSSMDB8=
-    timestamp: 2026-04-10T04:14:04Z
+    rev: e62c578a0a80c2fa2b143ea2550026ae45ca886d
+    hash: sha256-025ipygSzSXA9P62F+yOtAcCq6+8m/L2KcGFnHb37qg=
+    timestamp: 2026-06-06T04:34:59Z
     ref:
       tag: branch
       contents: release-25.11

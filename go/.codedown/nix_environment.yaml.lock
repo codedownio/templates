@@ -3,16 +3,16 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 1127f697e3448d7991b8f3c7c7cc223063fd848f
-    hash: sha256-Zz7Awf6EG89OP1l7/CK3FkR514UkXkS84q7xpE4XWI8=
-    timestamp: 2026-04-10T00:52:59Z
+    rev: 02c02af9949655264409c74451fd8c5e6af53679
+    hash: sha256-Rj1mY8Cb7N7ogdiKzegGM/kqCKLpohnf2Vx4WA/MqGA=
+    timestamp: 2026-06-06T10:13:43Z
   packages:
   - name: kernels.go
     settings:
       enable: true
     meta:
-      name: go-1.24.5
-      changelog: https://go.dev/doc/devel/release#go1.24
+      name: go-1.25.9
+      changelog: https://go.dev/doc/devel/release#go1.25
       description: Go Programming language
       display_name: Go
       has_packages: false
@@ -23,6 +23,11 @@ channels:
       - gopls
       main_program: go
       maintainers:
+      - name: Jörg Thalheim
+        email: joerg@thalheim.io
+        github: Mic92
+        githubId: 96200
+        matrix: '@joerg:thalheim.io'
       - name: Wael Nasreddine
         email: wael.nasreddine@gmail.com
         github: kalbasit
@@ -33,14 +38,10 @@ channels:
         github: katexochen
         githubId: 49727155
         matrix: '@katexochen:matrix.org'
-      - name: Jörg Thalheim
-        email: joerg@thalheim.io
-        github: Mic92
-        githubId: 96200
-        matrix: '@joerg:thalheim.io'
-      - name: zowoq
-        github: zowoq
-        githubId: 59103226
+      - name: Muhammad Falak R Wani
+        email: falakreyaz@gmail.com
+        github: mfrw
+        githubId: 4929861
       - name: Aaron Bieber
         email: aaron@bolddaemon.com
         github: qbit
@@ -48,10 +49,6 @@ channels:
         keys:
         - fingerprint: 3586 3350 BFEA C101 DB1A 4AF0 1F81 112D 62A9 ADCE
         matrix: '@qbit:tapenet.org'
-      - name: Muhammad Falak R Wani
-        email: falakreyaz@gmail.com
-        github: mfrw
-        githubId: 4929861
       modes:
         attrs:
         - go
@@ -81,9 +78,10 @@ channels:
           type: enum
           values:
           - go
-          - go_1_22
           - go_1_23
           - go_1_24
+          - go_1_25
+          - go_1_26
           - go_latest
         interface.attrs:
           defaultValue:
@@ -158,14 +156,15 @@ channels:
         github: Artturin
         githubId: 56650223
         matrix: '@artturin:matrix.org'
+      spdx_id: MIT-Modern-Variant
       version: '5.9'
 - src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 863c462d78dd3e9de7ca3516b28764ef0346a763
-    hash: sha256-ikVevlyl0tMS+ThY+WOku08gVE6l39+P864qrSSMDB8=
-    timestamp: 2026-04-10T04:14:04Z
+    rev: e62c578a0a80c2fa2b143ea2550026ae45ca886d
+    hash: sha256-025ipygSzSXA9P62F+yOtAcCq6+8m/L2KcGFnHb37qg=
+    timestamp: 2026-06-06T04:34:59Z
     ref:
       tag: branch
       contents: release-25.11

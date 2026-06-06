@@ -3,18 +3,18 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 1127f697e3448d7991b8f3c7c7cc223063fd848f
-    hash: sha256-Zz7Awf6EG89OP1l7/CK3FkR514UkXkS84q7xpE4XWI8=
-    timestamp: 2026-04-10T00:52:59Z
+    rev: 02c02af9949655264409c74451fd8c5e6af53679
+    hash: sha256-Rj1mY8Cb7N7ogdiKzegGM/kqCKLpohnf2Vx4WA/MqGA=
+    timestamp: 2026-06-06T10:13:43Z
   packages:
   - name: kernels.bash
     settings:
       enable: true
     meta:
-      name: bash-interactive-5.3p3
+      name: bash-interactive-5.3p9
       description: GNU Bourne-Again Shell, the de facto standard shell on Linux (for
         interactive use)
-      display_name: Bash 5.3p3
+      display_name: Bash 5.3p9
       has_packages: false
       homepage: https://www.gnu.org/software/bash/
       icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
@@ -22,7 +22,25 @@ channels:
       language_server_names:
       - bash-language-server
       main_program: bash
-      maintainers: []
+      maintainers:
+      - name: Silvan Mosberger
+        email: contact@infinisil.com
+        github: infinisil
+        githubId: 20525370
+        keys:
+        - fingerprint: 6C2B 55D4 4E04 8266 6B7D  DA1A 422E 9EDA E015 7170
+        matrix: '@infinisil:matrix.org'
+      - name: Alexander Bantyev
+        email: balsoft75@gmail.com
+        github: balsoft
+        githubId: 18467667
+      - name: Pyrox
+        email: pyrox@pyrox.dev
+        github: pyrox0
+        githubId: 35778371
+        keys:
+        - fingerprint: 4CA9 72FB ADC8 1416 0F10  3138 FE1D 8A7D 620C 611F
+        matrix: '@pyrox:pyrox.dev'
       modes:
         attrs:
         - bash
@@ -102,14 +120,15 @@ channels:
         github: Artturin
         githubId: 56650223
         matrix: '@artturin:matrix.org'
+      spdx_id: MIT-Modern-Variant
       version: '5.9'
 - src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 863c462d78dd3e9de7ca3516b28764ef0346a763
-    hash: sha256-ikVevlyl0tMS+ThY+WOku08gVE6l39+P864qrSSMDB8=
-    timestamp: 2026-04-10T04:14:04Z
+    rev: e62c578a0a80c2fa2b143ea2550026ae45ca886d
+    hash: sha256-025ipygSzSXA9P62F+yOtAcCq6+8m/L2KcGFnHb37qg=
+    timestamp: 2026-06-06T04:34:59Z
     ref:
       tag: branch
       contents: release-25.11

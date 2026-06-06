@@ -3,15 +3,15 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 1127f697e3448d7991b8f3c7c7cc223063fd848f
-    hash: sha256-Zz7Awf6EG89OP1l7/CK3FkR514UkXkS84q7xpE4XWI8=
-    timestamp: 2026-04-10T00:52:59Z
+    rev: 02c02af9949655264409c74451fd8c5e6af53679
+    hash: sha256-Rj1mY8Cb7N7ogdiKzegGM/kqCKLpohnf2Vx4WA/MqGA=
+    timestamp: 2026-06-06T10:13:43Z
   packages:
   - name: kernels.cpp
     settings:
       enable: true
     meta:
-      name: clang-19.1.7
+      name: clang-21.1.7
       description: C language family frontend for LLVM (wrapper script)
       display_name: C++ 23
       has_packages: false
@@ -22,32 +22,6 @@ channels:
       - clangd
       main_program: clang
       maintainers:
-      - name: Will Dietz
-        email: w@wdtz.org
-        github: dtzWill
-        githubId: 817330
-        keys:
-        - fingerprint: 389A 78CB CD88 5E0C 4701  DEB9 FD42 C7D0 D414 94C8
-      - name: Emily
-        email: nixpkgs@emily.moe
-        github: emilazy
-        githubId: 18535642
-      - name: John Ericson
-        email: John.Ericson@Obsidian.Systems
-        github: Ericson2314
-        githubId: 1055245
-        matrix: '@ericson2314:matrix.org'
-      - name: Jason O'Conal
-        email: jason@oconal.id.au
-        github: lovek323
-        githubId: 265084
-      - name: Alyssa Ross
-        email: hi@alyssa.is
-        github: alyssais
-        githubId: 2768870
-        keys:
-        - fingerprint: 7573 56D7 79BB B888 773E  415E 736C CDF9 EF51 BD97
-        matrix: '@qyliss:fairydust.space'
       - name: Tristan Ross
         email: tristan.ross@midstall.com
         github: RossComputerGuy
@@ -55,36 +29,6 @@ channels:
         keys:
         - fingerprint: FD5D F7A8 85BB 378A 0157  5356 B09C 4220 3566 9AF8
         matrix: '@rosscomputerguy:matrix.org'
-      - name: Rahul Butani
-        email: rrbutani+nix@gmail.com
-        github: rrbutani
-        githubId: 7833358
-        keys:
-        - fingerprint: 7DCA 5615 8AB2 621F 2F32  9FF4 1C7C E491 479F A273
-        matrix: '@rbutani:matrix.org'
-      - name: Lukas Epple
-        email: sternenseemann@systemli.org
-        github: sternenseemann
-        githubId: 3154475
-      - name: Will Dietz
-        email: w@wdtz.org
-        github: dtzWill
-        githubId: 817330
-        keys:
-        - fingerprint: 389A 78CB CD88 5E0C 4701  DEB9 FD42 C7D0 D414 94C8
-      - name: Emily
-        email: nixpkgs@emily.moe
-        github: emilazy
-        githubId: 18535642
-      - name: John Ericson
-        email: John.Ericson@Obsidian.Systems
-        github: Ericson2314
-        githubId: 1055245
-        matrix: '@ericson2314:matrix.org'
-      - name: Jason O'Conal
-        email: jason@oconal.id.au
-        github: lovek323
-        githubId: 265084
       - name: Alyssa Ross
         email: hi@alyssa.is
         github: alyssais
@@ -92,13 +36,15 @@ channels:
         keys:
         - fingerprint: 7573 56D7 79BB B888 773E  415E 736C CDF9 EF51 BD97
         matrix: '@qyliss:fairydust.space'
-      - name: Tristan Ross
-        email: tristan.ross@midstall.com
-        github: RossComputerGuy
-        githubId: 19699320
-        keys:
-        - fingerprint: FD5D F7A8 85BB 378A 0157  5356 B09C 4220 3566 9AF8
-        matrix: '@rosscomputerguy:matrix.org'
+      - name: John Ericson
+        email: John.Ericson@Obsidian.Systems
+        github: Ericson2314
+        githubId: 1055245
+        matrix: '@Ericson2314:matrix.org'
+      - name: Emily
+        email: nixpkgs@emily.moe
+        github: emilazy
+        githubId: 18535642
       - name: Rahul Butani
         email: rrbutani+nix@gmail.com
         github: rrbutani
@@ -226,14 +172,15 @@ channels:
         github: Artturin
         githubId: 56650223
         matrix: '@artturin:matrix.org'
+      spdx_id: MIT-Modern-Variant
       version: '5.9'
 - src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 863c462d78dd3e9de7ca3516b28764ef0346a763
-    hash: sha256-ikVevlyl0tMS+ThY+WOku08gVE6l39+P864qrSSMDB8=
-    timestamp: 2026-04-10T04:14:04Z
+    rev: e62c578a0a80c2fa2b143ea2550026ae45ca886d
+    hash: sha256-025ipygSzSXA9P62F+yOtAcCq6+8m/L2KcGFnHb37qg=
+    timestamp: 2026-06-06T04:34:59Z
     ref:
       tag: branch
       contents: release-25.11
