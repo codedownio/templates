@@ -3,9 +3,9 @@ channels:
       tag: fetch_from_github
       owner: codedownio
       repo: codedown-languages
-      rev: 02c02af9949655264409c74451fd8c5e6af53679
-      hash: sha256-Rj1mY8Cb7N7ogdiKzegGM/kqCKLpohnf2Vx4WA/MqGA=
-      timestamp: '2026-06-06T10:13:43Z'
+      rev: 0cc7efd48b348f75bc0c53aba9c90661be29c34d
+      hash: sha256-QbXahHRTPaCC+LYfMUmj/4ihEtXBIajHBhzurK0Nn14=
+      timestamp: '2026-06-08T04:51:28Z'
     packages:
       - name: language-servers.spellchecker
       - name: shells.zsh
@@ -13,10 +13,10 @@ channels:
       tag: fetch_from_github
       owner: NixOS
       repo: nixpkgs
-      rev: e62c578a0a80c2fa2b143ea2550026ae45ca886d
+      rev: d7fed073bedb1782de1f26683422ccd5b0207cd9
       ref:
         tag: branch
         contents: release-25.11
-      hash: sha256-025ipygSzSXA9P62F+yOtAcCq6+8m/L2KcGFnHb37qg=
-      timestamp: '2026-06-06T04:34:59Z'
+      hash: sha256-H9DfJNbILxfSlqThz6z/7zyGb85SqMvvRg2snMjWiAk=
+      timestamp: '2026-06-07T23:35:59Z'
     packages: []
