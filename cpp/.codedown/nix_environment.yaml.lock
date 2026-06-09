@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 0cc7efd48b348f75bc0c53aba9c90661be29c34d
-    hash: sha256-QbXahHRTPaCC+LYfMUmj/4ihEtXBIajHBhzurK0Nn14=
-    timestamp: 2026-06-08T04:51:28Z
+    rev: 891ca9f7f7dbccdaddf871110273f3b850407180
+    hash: sha256-/J9PsK34ndejR4yWERwaYNXGWItF7zpW7dP9KOgkh8w=
+    timestamp: 2026-06-09T07:49:33Z
   packages:
   - name: kernels.cpp
     settings:
@@ -136,7 +136,7 @@ channels:
       category: Language servers
       changelog: https://github.com/hunspell/hunspell/releases/tag/v1.7.2
       description: Spell checker
-      display_name: Spellchecker 0.6.2
+      display_name: Spellchecker 0.6.3
       homepage: http://hunspell.github.io/
       icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
       icon_monochrome: /nix/store/fgg1fxac13xjhlzzak131dgr8l76wnvb-pen-alt.svg
@@ -174,16 +174,68 @@ channels:
         matrix: '@artturin:matrix.org'
       spdx_id: MIT-Modern-Variant
       version: '5.9'
+  settings_schema:
+    extraNix:
+      codeMirrorMode: nix
+      defaultValue: ''
+      description: Arbitrary Nix expression that evaluates to a derivation, which
+        will be joined into the environment. The expression has "pkgs" in scope, an
+        imported Nixpkgs package set.
+      loc:
+      - extraNix
+      placeholder: |
+        with pkgs;
+        symlinkJoin {
+          name = "extra-packages";
+          paths = [ hello cowsay ];
+        }
+      title: Extra Nix
+      type: lines
+    variables:
+      defaultValue: {}
+      description: Environment variables to set.
+      loc:
+      - variables
+      title: Environment variables
+      type: attrs
+      valueType:
+        type: string
 - src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: d7fed073bedb1782de1f26683422ccd5b0207cd9
-    hash: sha256-H9DfJNbILxfSlqThz6z/7zyGb85SqMvvRg2snMjWiAk=
-    timestamp: 2026-06-07T23:35:59Z
+    rev: fb4eb89fa6a4cb5c7bf9c47fb54b77a3c44efd88
+    hash: sha256-klzn9mBbtQvbTq++0B5KKNWT4pzTF+0SGo7Q2ylJsdg=
+    timestamp: 2026-06-09T18:12:23Z
     ref:
       tag: branch
       contents: release-25.11
   packages: []
+  settings_schema:
+    extraNix:
+      codeMirrorMode: nix
+      defaultValue: ''
+      description: Arbitrary Nix expression that evaluates to a derivation, which
+        will be joined into the environment. The expression has "pkgs" in scope, an
+        imported Nixpkgs package set.
+      loc:
+      - extraNix
+      placeholder: |
+        with pkgs;
+        symlinkJoin {
+          name = "extra-packages";
+          paths = [ hello cowsay ];
+        }
+      title: Extra Nix
+      type: lines
+    variables:
+      defaultValue: {}
+      description: Environment variables to set.
+      loc:
+      - variables
+      title: Environment variables
+      type: attrs
+      valueType:
+        type: string
 settings:
   default_kernel: $.channels[0].packages[0]
