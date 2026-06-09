@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 891ca9f7f7dbccdaddf871110273f3b850407180
-    hash: sha256-/J9PsK34ndejR4yWERwaYNXGWItF7zpW7dP9KOgkh8w=
-    timestamp: 2026-06-09T07:49:33Z
+    rev: 841eecc5756cc109d73649d70aaf4cad67c8335d
+    hash: sha256-ya7tUEfash5CJXgT64/sjx70bfUE3QIYhxsa2SXPAdU=
+    timestamp: 2026-06-09T21:29:35Z
   packages:
   - name: kernels.julia
     settings:
@@ -157,39 +157,14 @@ channels:
         matrix: '@artturin:matrix.org'
       spdx_id: MIT-Modern-Variant
       version: '5.9'
-  settings_schema:
-    extraNix:
-      codeMirrorMode: nix
-      defaultValue: ''
-      description: Arbitrary Nix expression that evaluates to a derivation, which
-        will be joined into the environment. The expression has "pkgs" in scope, an
-        imported Nixpkgs package set.
-      loc:
-      - extraNix
-      placeholder: |
-        with pkgs;
-        symlinkJoin {
-          name = "extra-packages";
-          paths = [ hello cowsay ];
-        }
-      title: Extra Nix
-      type: lines
-    variables:
-      defaultValue: {}
-      description: Environment variables to set.
-      loc:
-      - variables
-      title: Environment variables
-      type: attrs
-      valueType:
-        type: string
+  settings_schema: {}
 - src:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: fb4eb89fa6a4cb5c7bf9c47fb54b77a3c44efd88
-    hash: sha256-klzn9mBbtQvbTq++0B5KKNWT4pzTF+0SGo7Q2ylJsdg=
-    timestamp: 2026-06-09T18:12:23Z
+    rev: d776225b15cd4ef06f9ee232975955a0c5105658
+    hash: sha256-AAxYt25ftx04wBOiiBIovSqNhrv9GfeubXwvz0AVYYA=
+    timestamp: 2026-06-09T21:09:33Z
     ref:
       tag: branch
       contents: release-25.11
@@ -211,14 +186,5 @@ channels:
         }
       title: Extra Nix
       type: lines
-    variables:
-      defaultValue: {}
-      description: Environment variables to set.
-      loc:
-      - variables
-      title: Environment variables
-      type: attrs
-      valueType:
-        type: string
 settings:
   default_kernel: $.channels[0].packages[0]
