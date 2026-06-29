@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 841eecc5756cc109d73649d70aaf4cad67c8335d
-    hash: sha256-ya7tUEfash5CJXgT64/sjx70bfUE3QIYhxsa2SXPAdU=
-    timestamp: 2026-06-09T21:29:35Z
+    rev: f49e186b2ef316f741aba9c5414901a8b8918aaa
+    hash: sha256-AW8EhYyowL0c56cv6ynBu40mTsQnlznmDs11wKZZZYM=
+    timestamp: 2026-06-26T05:46:34Z
   packages:
   - name: kernels.bash
     settings:
@@ -77,6 +77,12 @@ channels:
           defaultValue: true
           title: Enable Bash language server
           type: boolean
+        misc.enableVariableInspector:
+          defaultValue: true
+          description: This will show a summary of the currently defined variables
+            in the UI.
+          title: Enable the variable inspector
+          type: boolean
       spdx_id: GPL-3.0-or-later
   - name: language-servers.spellchecker
     meta:
@@ -127,9 +133,9 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: d776225b15cd4ef06f9ee232975955a0c5105658
-    hash: sha256-AAxYt25ftx04wBOiiBIovSqNhrv9GfeubXwvz0AVYYA=
-    timestamp: 2026-06-09T21:09:33Z
+    rev: 1d4e0f865d68258aada31e68e6d79c8c463f3b34
+    hash: sha256-db/8NgfehQlPNt8rMY0J1gvwzTaURU/foM7y/AQimIM=
+    timestamp: 2026-06-29T21:05:57Z
     ref:
       tag: branch
       contents: release-25.11
