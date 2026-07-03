@@ -3,9 +3,9 @@ channels:
       tag: fetch_from_github
       owner: codedownio
       repo: codedown-languages
-      rev: f49e186b2ef316f741aba9c5414901a8b8918aaa
-      hash: sha256-AW8EhYyowL0c56cv6ynBu40mTsQnlznmDs11wKZZZYM=
-      timestamp: '2026-06-26T05:46:34Z'
+      rev: 5936a3f045277d2478750e92395d82644f90be5d
+      hash: sha256-Q5oJ4DyM2DWq2FZ9JE6+yhwb683EIF2DjBjhv/BE4cs=
+      timestamp: '2026-07-03T01:20:04Z'
     packages:
       - name: kernels.julia
         settings:
@@ -16,9 +16,9 @@ channels:
       tag: fetch_from_github
       owner: NixOS
       repo: nixpkgs
-      rev: 1d4e0f865d68258aada31e68e6d79c8c463f3b34
-      hash: sha256-db/8NgfehQlPNt8rMY0J1gvwzTaURU/foM7y/AQimIM=
-      timestamp: '2026-06-29T21:05:57Z'
+      rev: 0921fdb3e13e40fe25fbc52b89661a9d6d32ac68
+      hash: sha256-ESJ4VgytmAt+98YLM8466luln4HyEZ9Q36b9+Bb4P5w=
+      timestamp: '2026-07-01T11:22:33Z'
       ref:
         tag: branch
         contents: release-25.11
