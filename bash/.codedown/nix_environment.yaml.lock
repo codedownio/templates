@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 5936a3f045277d2478750e92395d82644f90be5d
-    hash: sha256-Q5oJ4DyM2DWq2FZ9JE6+yhwb683EIF2DjBjhv/BE4cs=
-    timestamp: 2026-07-03T01:20:04Z
+    rev: 5c7b0da26d06a77d87a8caf78ec41cac392cbc8c
+    hash: sha256-4ddFMKmUQPY/AOEFquYaFahYGtUF1j7frEw9jb+NfQs=
+    timestamp: 2026-07-10T11:49:54Z
   packages:
   - name: kernels.bash
     settings:
@@ -85,6 +85,14 @@ channels:
           type: boolean
       spdx_id: GPL-3.0-or-later
   - name: language-servers.spellchecker
+    settings:
+      enable: true
+      markdown:
+        enable: true
+      typst:
+        checkBlockComments: false
+        checkLineComments: false
+        enable: true
     meta:
       name: hunspell-1.7.2
       category: Language servers
@@ -95,7 +103,8 @@ channels:
       icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
       icon_monochrome: /nix/store/fgg1fxac13xjhlzzak131dgr8l76wnvb-pen-alt.svg
       language_server_names:
-      - spellchecker
+      - markdown-spellchecker
+      - typst-spellchecker
       main_program: hunspell
       maintainers:
       - name: Seth Flynn
@@ -107,6 +116,47 @@ channels:
         github: RossSmyth
         githubId: 18294397
         matrix: '@rosssmyth:matrix.org'
+      settings_schema:
+        enable:
+          defaultValue: false
+          description: Enable the spellchecker language server(s).
+          hidden: true
+          loc:
+          - enable
+          title: Enable spellchecker
+          type: boolean
+        markdown.enable:
+          defaultValue: true
+          description: Include the Markdown spellchecker (.md, .ipynb).
+          loc:
+          - markdown
+          - enable
+          title: Check Markdown
+          type: boolean
+        typst.checkBlockComments:
+          defaultValue: false
+          description: Spellcheck the prose inside Typst block comments (/* ... */).
+          loc:
+          - typst
+          - checkBlockComments
+          title: Check Typst block comments
+          type: boolean
+        typst.checkLineComments:
+          defaultValue: false
+          description: Spellcheck the prose inside Typst line comments (// ...).
+          loc:
+          - typst
+          - checkLineComments
+          title: Check Typst line comments
+          type: boolean
+        typst.enable:
+          defaultValue: true
+          description: Include the Typst spellchecker (.typ).
+          loc:
+          - typst
+          - enable
+          title: Check Typst
+          type: boolean
   - name: shells.zsh
     meta:
       name: zsh-5.9
@@ -133,12 +183,12 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 0921fdb3e13e40fe25fbc52b89661a9d6d32ac68
-    hash: sha256-ESJ4VgytmAt+98YLM8466luln4HyEZ9Q36b9+Bb4P5w=
-    timestamp: 2026-07-01T11:22:33Z
+    rev: 0cf1b4f2c3ebd28764715903b078119e2ab4bc1c
+    hash: sha256-D6gdamo1g6ptvXtFPNS19C7yEtKPvputhkpEL7NCt/o=
+    timestamp: 2026-07-30T23:49:33Z
     ref:
       tag: branch
-      contents: release-25.11
+      contents: release-26.05
   packages: []
   settings_schema:
     extraNix:
