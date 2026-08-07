@@ -3,9 +3,9 @@ channels:
       tag: fetch_from_github
       owner: codedownio
       repo: codedown-languages
-      rev: 19a5589fa5c347771a46b0eb25174a28b28f30f2
-      hash: sha256-eHO4jbJ7+W760DL+yRwm0mT8kvIEoVugnEzq7i4ixIw=
-      timestamp: '2026-08-07T02:27:54Z'
+      rev: 8f33eb70fe1d9171b54162b34b13f286ed624141
+      hash: sha256-RXnHyFhdzr5+Wq9dNh/87eYSTj3/JfmjkvWy2N/MQPE=
+      timestamp: '2026-08-07T09:24:26Z'
     packages:
       - name: language-servers.spellchecker
       - name: shells.zsh
