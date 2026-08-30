@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: cb726a11c6ac5190dee42afb59c97e1bcf1bc725
-    hash: sha256-s9jYrRWRURb9dxIZSlXhUM4jQXLu2cuI5xu+yOzghPg=
-    timestamp: 2026-08-29T06:40:28Z
+    rev: 4b4eccd23290e16a96464a7de65699f2fe0a04d7
+    hash: sha256-OBK3SIFB/YLi0Xm/CeHqbtxBDyXp5W0sbkaY4fAGRnU=
+    timestamp: 2026-08-30T00:30:31Z
   packages:
   - name: kernels.octave
     settings:
