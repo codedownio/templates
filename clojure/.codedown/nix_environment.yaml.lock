@@ -3,15 +3,15 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 4b4eccd23290e16a96464a7de65699f2fe0a04d7
-    hash: sha256-OBK3SIFB/YLi0Xm/CeHqbtxBDyXp5W0sbkaY4fAGRnU=
-    timestamp: 2026-08-30T00:30:31Z
+    rev: d620b2136407a38d589b766b3ac847c42b22d639
+    hash: sha256-3ACh6Vef5eJTJTlj1G0Bm9KzoI6MWeH/jq0IPhcO/YI=
+    timestamp: 2026-09-01T01:08:03Z
   packages:
   - name: kernels.clojure
     settings:
       enable: true
     meta:
-      name: clojure-1.12.3.1577
+      name: clojure-1.12.5.1645
       description: Lisp dialect for the JVM
       display_name: Clojure
       has_packages: false
@@ -141,9 +141,9 @@ channels:
           type: boolean
   - name: shells.zsh
     meta:
-      name: zsh-5.9
+      name: zsh-5.9.1
       description: Z shell
-      display_name: ZSH 5.9
+      display_name: ZSH 5.9.1
       homepage: https://www.zsh.org/
       icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
       icon_monochrome: /nix/store/pxi818izs009a3qrd0k7szw7pkchq3h6-zsh-monochrome.svg
@@ -159,7 +159,7 @@ channels:
         githubId: 56650223
         matrix: '@artturin:matrix.org'
       spdx_id: MIT-Modern-Variant
-      version: '5.9'
+      version: 5.9.1
   settings_schema: {}
 - src:
     tag: fetch_from_github

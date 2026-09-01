@@ -3,18 +3,18 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 4b4eccd23290e16a96464a7de65699f2fe0a04d7
-    hash: sha256-OBK3SIFB/YLi0Xm/CeHqbtxBDyXp5W0sbkaY4fAGRnU=
-    timestamp: 2026-08-30T00:30:31Z
+    rev: d620b2136407a38d589b766b3ac847c42b22d639
+    hash: sha256-3ACh6Vef5eJTJTlj1G0Bm9KzoI6MWeH/jq0IPhcO/YI=
+    timestamp: 2026-09-01T01:08:03Z
   packages:
   - name: kernels.bash
     settings:
       enable: true
     meta:
-      name: bash-interactive-5.3p3
+      name: bash-interactive-5.3p9
       description: GNU Bourne-Again Shell, the de facto standard shell on Linux (for
         interactive use)
-      display_name: Bash 5.3p3
+      display_name: Bash 5.3p9
       has_packages: false
       homepage: https://www.gnu.org/software/bash/
       icon: /nix/store/rq7n1n9chh3kw9gjj4mfawq8jq2ixbi1-bash-logo-128x128.png
@@ -30,6 +30,25 @@ channels:
         keys:
         - fingerprint: 6C2B 55D4 4E04 8266 6B7D  DA1A 422E 9EDA E015 7170
         matrix: '@infinisil:matrix.org'
+      - name: Alexander Bantyev
+        email: balsoft75@gmail.com
+        github: balsoft
+        githubId: 18467667
+      - name: Andreas Rammhold
+        email: andreas@rammhold.de
+        github: andir
+        githubId: 638836
+      - name: Leona Maroni
+        email: nix@leona.is
+        github: leona-ya
+        githubId: 11006031
+      - name: Pyrox
+        email: pyrox@pyrox.dev
+        github: pyrox0
+        githubId: 35778371
+        keys:
+        - fingerprint: 4CA9 72FB ADC8 1416 0F10  3138 FE1D 8A7D 620C 611F
+        matrix: '@pyrox:pyrox.dev'
       modes:
         attrs:
         - bash
@@ -148,9 +167,9 @@ channels:
           type: boolean
   - name: shells.zsh
     meta:
-      name: zsh-5.9
+      name: zsh-5.9.1
       description: Z shell
-      display_name: ZSH 5.9
+      display_name: ZSH 5.9.1
       homepage: https://www.zsh.org/
       icon: /nix/store/nzgsbafx1li5igxbs70wi1hqhk2wdhzh-zsh-color.svg
       icon_monochrome: /nix/store/pxi818izs009a3qrd0k7szw7pkchq3h6-zsh-monochrome.svg
@@ -166,7 +185,7 @@ channels:
         githubId: 56650223
         matrix: '@artturin:matrix.org'
       spdx_id: MIT-Modern-Variant
-      version: '5.9'
+      version: 5.9.1
   settings_schema: {}
 - src:
     tag: fetch_from_github

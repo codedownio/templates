@@ -3,9 +3,9 @@ channels:
       tag: fetch_from_github
       owner: codedownio
       repo: codedown-languages
-      rev: 4b4eccd23290e16a96464a7de65699f2fe0a04d7
-      hash: sha256-OBK3SIFB/YLi0Xm/CeHqbtxBDyXp5W0sbkaY4fAGRnU=
-      timestamp: '2026-08-30T00:30:31Z'
+      rev: d620b2136407a38d589b766b3ac847c42b22d639
+      hash: sha256-3ACh6Vef5eJTJTlj1G0Bm9KzoI6MWeH/jq0IPhcO/YI=
+      timestamp: '2026-09-01T01:08:03Z'
     packages:
       - name: kernels.coq
         settings:
