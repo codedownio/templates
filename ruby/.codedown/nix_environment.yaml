@@ -3,9 +3,9 @@ channels:
       tag: fetch_from_github
       owner: codedownio
       repo: codedown-languages
-      rev: d620b2136407a38d589b766b3ac847c42b22d639
-      hash: sha256-3ACh6Vef5eJTJTlj1G0Bm9KzoI6MWeH/jq0IPhcO/YI=
-      timestamp: '2026-09-01T01:08:03Z'
+      rev: 27190265e331656e6ba110937079f163cdb29365
+      hash: sha256-l4zhpND9iqcGtRr5DqL45fZxIvoK1d6BkwF2KvnkpJ4=
+      timestamp: '2026-09-15T00:58:57Z'
     packages:
       - name: kernels.ruby
         settings:
