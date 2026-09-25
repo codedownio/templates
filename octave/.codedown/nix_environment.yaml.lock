@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 27190265e331656e6ba110937079f163cdb29365
-    hash: sha256-l4zhpND9iqcGtRr5DqL45fZxIvoK1d6BkwF2KvnkpJ4=
-    timestamp: 2026-09-15T00:58:57Z
+    rev: b2df1de509cd0f586904de0b5487a3a809803160
+    hash: sha256-eoYzel9LEPRl3fLYFkEZ8+R52dG7UBAmce/piN9Yjgs=
+    timestamp: 2026-09-24T23:23:36Z
   packages:
   - name: kernels.octave
     settings:
@@ -91,7 +91,7 @@ channels:
       category: Language servers
       changelog: https://github.com/hunspell/hunspell/releases/tag/v1.7.2
       description: Spell checker
-      display_name: Spellchecker 0.6.3
+      display_name: Spellchecker 0.6.5
       homepage: http://hunspell.github.io/
       icon: /nix/store/iv0l66606331c2463l17avxrk4j2wjai-pen-alt.png
       icon_monochrome: /nix/store/fgg1fxac13xjhlzzak131dgr8l76wnvb-pen-alt.svg
