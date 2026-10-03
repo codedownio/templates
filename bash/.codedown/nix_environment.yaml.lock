@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: b2df1de509cd0f586904de0b5487a3a809803160
-    hash: sha256-eoYzel9LEPRl3fLYFkEZ8+R52dG7UBAmce/piN9Yjgs=
-    timestamp: 2026-09-24T23:23:36Z
+    rev: 1cff04e6e86bf372d8ef1751be9415ab7f03c8e6
+    hash: sha256-b5lEdu+UeTa/znNR/iHQXu1qrG5gygGscoyXLm22g+4=
+    timestamp: 2026-10-03T02:37:56Z
   packages:
   - name: kernels.bash
     settings:
@@ -191,12 +191,12 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: cd648d6ea62bc0ffba91e61fcfe5e33c1e2004b1
-    hash: sha256-pg6hLjDeAWaUOzh2JM2Cw0BwYpGtOyNr6A4FBwP9Ymo=
-    timestamp: 2026-07-06T22:09:36Z
+    rev: 19a09b49e746bc4ec4f9a6853a9d6ebdabdbb141
+    hash: sha256-TtrXUvAgpSuI5HMOeZhX+R7ZmUvt1zcSRA7wYPEQS4A=
+    timestamp: 2026-10-03T07:32:56Z
     ref:
       tag: branch
-      contents: release-25.11
+      contents: release-26.05
   packages: []
   settings_schema:
     extraNix:
