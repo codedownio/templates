@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 1cff04e6e86bf372d8ef1751be9415ab7f03c8e6
-    hash: sha256-b5lEdu+UeTa/znNR/iHQXu1qrG5gygGscoyXLm22g+4=
-    timestamp: 2026-10-03T02:37:56Z
+    rev: 8d174b3a6487e7e454667b10a09748c10e731f71
+    hash: sha256-CxXTSI3HnMJiKlocGMXyjykRPCKo9R6+Rw+gm+2LC8o=
+    timestamp: 2026-10-08T01:20:17Z
   packages:
   - name: kernels.rust
     settings:
@@ -201,9 +201,9 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 9d792c97015f02bccf43cdb3fb126380a1dacbb1
-    hash: sha256-RpIami/C213gSBQDhbRt7wXLwRkmjXNgywbnKNt/VLk=
-    timestamp: 2026-10-04T02:44:33Z
+    rev: 7c8764b7c7b09b34f632464276218ef9090eaa11
+    hash: sha256-MWhktfFtFE8Jl7bf9Pkp7TR5MSdYCjCswSo0Gkb4ywc=
+    timestamp: 2026-10-08T02:24:34Z
     ref:
       tag: branch
       contents: release-26.05
