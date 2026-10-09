@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 8d174b3a6487e7e454667b10a09748c10e731f71
-    hash: sha256-CxXTSI3HnMJiKlocGMXyjykRPCKo9R6+Rw+gm+2LC8o=
-    timestamp: 2026-10-08T01:20:17Z
+    rev: 18432665433b7a09501fc9c2fc78e4601a26626d
+    hash: sha256-+Dj/WWpFCygT0iIe9lB++J+DfL0WlS7AoT0BBfO9Ft8=
+    timestamp: 2026-10-09T23:24:33Z
   packages:
   - name: kernels.cpp
     settings:
@@ -248,9 +248,9 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 7c8764b7c7b09b34f632464276218ef9090eaa11
-    hash: sha256-MWhktfFtFE8Jl7bf9Pkp7TR5MSdYCjCswSo0Gkb4ywc=
-    timestamp: 2026-10-08T02:24:34Z
+    rev: 6a40ea287aa5884702571c407c82837349c59b7c
+    hash: sha256-nbMHUf4n42QY5cr39hUMwTfe+7Rh/7fcWYxGFrlEsF0=
+    timestamp: 2026-10-09T22:35:16Z
     ref:
       tag: branch
       contents: release-26.05
