@@ -3,9 +3,9 @@ channels:
       tag: fetch_from_github
       owner: codedownio
       repo: codedown-languages
-      rev: 18432665433b7a09501fc9c2fc78e4601a26626d
-      hash: sha256-+Dj/WWpFCygT0iIe9lB++J+DfL0WlS7AoT0BBfO9Ft8=
-      timestamp: '2026-10-09T23:24:33Z'
+      rev: 1ad3ba8db3e043340f8ee8d24b9507a11756a70a
+      hash: sha256-+2eqjTIevue+sUhZEAsKIgi0fnUCq+r1Z+5vv717EII=
+      timestamp: '2026-10-10T00:34:14Z'
     packages:
       - name: kernels.bash
         settings:
