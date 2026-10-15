@@ -3,9 +3,9 @@ channels:
       tag: fetch_from_github
       owner: codedownio
       repo: codedown-languages
-      rev: 66310d8c550197f0ede469055ac037c5977b15a7
-      hash: sha256-qDfs11zvSGmSzV9U1fY83toleqfkNkMnsMEFiDomlp4=
-      timestamp: '2026-10-15T03:15:35Z'
+      rev: 31d1422d78ed3958ea23b44d97ec87a0a07f47f3
+      hash: sha256-SPMseHIw7ZZ3nfCx6KG3cxIVO1OfiXW5FvDteEgHyC0=
+      timestamp: '2026-10-15T10:43:11Z'
     packages:
       - name: kernels.octave
         settings:
@@ -16,9 +16,9 @@ channels:
       tag: fetch_from_github
       owner: NixOS
       repo: nixpkgs
-      rev: 26f4107e47e3ad0ffd0db220469ba83b6f6d96e8
-      hash: sha256-OaQwAtPMTjQiY2sT/2/62UbSPhzP/0aDnWzMm/NCiUw=
-      timestamp: '2026-10-15T02:17:34Z'
+      rev: 2cc731cfe9ca8089bfdeebf64364ea8094babe3b
+      hash: sha256-R1mmSbhMrNNd9Zk0lgzqCfJ9OaX0IWqNh0MMObKY+yQ=
+      timestamp: '2026-10-15T10:32:25Z'
       ref:
         tag: branch
         contents: release-26.05
