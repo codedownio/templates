@@ -3,9 +3,9 @@ channels:
     tag: fetch_from_github
     owner: codedownio
     repo: codedown-languages
-    rev: 31d1422d78ed3958ea23b44d97ec87a0a07f47f3
-    hash: sha256-SPMseHIw7ZZ3nfCx6KG3cxIVO1OfiXW5FvDteEgHyC0=
-    timestamp: 2026-10-15T10:43:11Z
+    rev: 09be90f559bf9e679e4cc26a024567af2c742048
+    hash: sha256-ag/7V24FIbAH3BNBgb3Su5+dXtPzSqF/BS5TmanR3K0=
+    timestamp: 2026-10-22T21:19:44Z
   packages:
   - name: kernels.clojure
     settings:
@@ -165,9 +165,9 @@ channels:
     tag: fetch_from_github
     owner: NixOS
     repo: nixpkgs
-    rev: 6a70f6fa02f6bf0a0505c848d4cc92a9682920a3
-    hash: sha256-Ym2ONOasPM4ZNt1NGKlGIswCL0OYFENYOYdmymuD4q0=
-    timestamp: 2026-10-15T21:06:44Z
+    rev: 932e20e65ee54ffe26e31d9cb1601bce8e3f48e5
+    hash: sha256-0RbD5qmVFNx1oY3srx8RIie/vztkrMIPCBZOi41IVxQ=
+    timestamp: 2026-10-23T00:39:07Z
     ref:
       tag: branch
       contents: release-26.05
